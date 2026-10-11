@@ -1,0 +1,139 @@
+/* Modern Mom HQ: course-wide lesson styles for the Kajabi Premier theme.
+   Loaded once from the course theme, so every lesson picks it up.
+   Uses #section-post_body so these rules win over each lesson's own inline styles. */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap');
+@font-face{font-family:'Faustine';src:url('fonts/Faustine.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+
+#section-post_body{
+  --ivory:#F3EFE6;--oat:#D9CDBD;--taupe:#A89A87;--wine:#4A1E1E;--cherry:#8A1E1E;
+  --chocolate:#5A3A2E;--black:#0F0F0F;
+  --serif:'Instrument Serif',Georgia,serif;--sans:'Work Sans',system-ui,sans-serif;
+  --script:'Faustine','Snell Roundhand',cursive;
+  --radius:16px;--shadow:0 2px 5px rgba(15,15,15,.07);
+}
+
+/* Lesson panel: ivory page feel instead of a white box */
+#section-post_body .panel{background:var(--ivory);box-shadow:none;border:0}
+#section-post_body .panel__body{padding-top:8px}
+
+/* Kajabi's lesson title becomes the hero headline; module name becomes the eyebrow */
+#section-post_body .panel__sub-title{
+  order:-1;font-family:var(--sans) !important;font-size:11px !important;font-weight:600 !important;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--chocolate) !important;margin:28px 0 12px
+}
+#section-post_body .panel__title{
+  font-family:var(--serif) !important;font-weight:400 !important;color:var(--black) !important;
+  font-size:clamp(36px,5vw,56px) !important;line-height:1.05 !important;letter-spacing:0 !important;
+  text-wrap:balance;margin:0 0 28px !important
+}
+#section-post_body .panel__block{display:flex;flex-direction:column}
+#section-post_body .panel__block > *{order:0}
+/* Lessons built with the standalone layout carry their own headline */
+#section-post_body .panel__block:has(#mmhq-root) > .panel__title,
+#section-post_body .panel__block:has(#mmhq-root) > .panel__sub-title{display:none}
+
+/* Body */
+#section-post_body .mm{font-family:var(--sans);color:var(--black);font-size:17px;line-height:1.65;width:100%}
+#section-post_body .mm p,#section-post_body .mm li{text-wrap:pretty}
+#section-post_body .mm .lead{
+  font-family:var(--sans);font-size:19px;line-height:1.55;color:var(--black);
+  padding-bottom:24px;margin:0 0 8px;border-bottom:1px solid var(--taupe)
+}
+#section-post_body .mm .lead em{font-family:var(--serif);font-style:italic;font-size:1.15em;color:var(--cherry)}
+#section-post_body .mm h2{
+  font-family:var(--serif);font-weight:400;color:var(--black);font-size:clamp(28px,3.6vw,36px);
+  line-height:1.1;letter-spacing:0;text-wrap:balance;margin:48px 0 14px
+}
+#section-post_body .mm h2 em,#section-post_body .mm h2 i{font-style:italic;color:var(--cherry);font-size:1em}
+#section-post_body .mm h3{
+  font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:600;color:var(--cherry);margin:32px 0 10px
+}
+#section-post_body .mm em{font-family:var(--serif);font-style:italic;color:var(--cherry)}
+#section-post_body .mm a{color:var(--cherry);text-underline-offset:3px}
+#section-post_body .mm b,#section-post_body .mm strong{font-weight:600}
+
+/* Note / callout */
+#section-post_body .mm .note{
+  background:var(--oat);border:1px solid var(--taupe);border-left:4px solid var(--cherry);
+  border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 24px;margin:28px 0
+}
+
+/* Dark band */
+#section-post_body .mm .dark{
+  background:var(--wine);color:var(--ivory);border-radius:var(--radius);padding:28px 30px;margin:32px 0
+}
+#section-post_body .mm .dark em{color:var(--oat)}
+#section-post_body .mm .dark b{color:var(--ivory)}
+
+/* Prompt box */
+#section-post_body .mm .pr{
+  background:var(--oat);border:1px solid var(--taupe);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:22px 24px;margin:24px 0
+}
+#section-post_body .mm .pr-l{
+  font-family:var(--sans);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:600;color:var(--cherry);margin-bottom:12px
+}
+#section-post_body .mm .pr pre{
+  background:var(--ivory);border:1px solid var(--taupe);border-radius:10px;padding:16px 18px;
+  font:400 15px/1.6 var(--sans);color:var(--black);margin:0 0 16px;white-space:pre-wrap
+}
+
+/* Buttons */
+#section-post_body .mm .cp{
+  background:var(--cherry);color:var(--ivory);border:0;border-radius:999px;padding:12px 24px;
+  font:600 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;
+  transition:opacity 200ms ease,transform 200ms ease
+}
+#section-post_body .mm .cp:hover{opacity:.88;transform:translateY(-1px)}
+
+/* Do this now */
+#section-post_body .mm .do{
+  background:var(--wine);color:var(--ivory);border:0;border-radius:var(--radius);
+  padding:8px 28px 22px;margin:44px 0 8px
+}
+#section-post_body .mm .do h3{color:var(--oat);margin-top:22px}
+#section-post_body .mm .do ul{list-style:none;padding:0;margin:0}
+#section-post_body .mm .do li{position:relative;padding:8px 0 8px 32px;border-bottom:1px solid rgba(243,239,230,.2);margin:0}
+#section-post_body .mm .do li:last-child{border-bottom:0}
+#section-post_body .mm .do li::before{
+  content:"";position:absolute;left:0;top:11px;width:18px;height:18px;border:1.5px solid var(--ivory);border-radius:5px
+}
+#section-post_body .mm .do em{color:var(--oat)}
+#section-post_body .mm .do a{color:var(--oat)}
+
+/* Numbered steps list */
+#section-post_body .mm .steps{list-style:none;padding:0;display:grid;gap:10px}
+#section-post_body .mm .steps li{
+  background:var(--oat);border:1px solid var(--taupe);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:14px 18px;margin:0
+}
+#section-post_body .mm .steps b{color:var(--cherry);letter-spacing:.12em;font-size:12px}
+
+/* Tables */
+#section-post_body .mm table{
+  width:100%;border-collapse:separate;border-spacing:0;margin:20px 0;font-size:15px;
+  background:var(--oat);border:1px solid var(--taupe);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)
+}
+#section-post_body .mm th{
+  text-align:left;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  color:var(--ivory);background:var(--wine);padding:12px 14px;border:0
+}
+#section-post_body .mm td{padding:12px 14px;border-bottom:1px solid rgba(168,154,135,.5);vertical-align:top}
+#section-post_body .mm tr:last-child td{border-bottom:0}
+
+/* Printable checklist sheet keeps its own print styles; only soften its frame on screen */
+#section-post_body .mm .sheet{border-radius:var(--radius);border-color:var(--taupe);box-shadow:var(--shadow)}
+
+/* Script accent, available to any lesson */
+#section-post_body .script{font-family:var(--script);color:var(--cherry);font-size:2rem;line-height:1.25;text-transform:lowercase}
+
+@media(max-width:640px){
+  #section-post_body .mm{font-size:16px}
+  #section-post_body .mm .pr,#section-post_body .mm .note{padding:18px}
+  #section-post_body .mm .do{padding:6px 20px 18px}
+  #section-post_body .mm table{font-size:14px}
+  #section-post_body .mm th,#section-post_body .mm td{padding:10px}
+}
