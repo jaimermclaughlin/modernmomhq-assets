@@ -1,9 +1,13 @@
 /* Modern Mom HQ lesson styles (matched to getmodernmomhq.com design system)
    Usage in a Kajabi lesson: wrap content in <div id="mmhq-root" class="mmhq"> ... </div>
-   Fonts: Instrument Serif + Work Sans (Google Fonts). Scholar and La Luxes Script are
-   used first if they are ever loaded; otherwise the fallbacks below apply. */
+   Fonts: Instrument Serif + Work Sans (Google Fonts), Faustine script (fonts/ folder). */
 
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap');
+
+
+@font-face{font-family:'Faustine';src:url('fonts/Faustine.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Faustine Lower Swashes';src:url('fonts/FaustineLowerSwashes.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Faustine Upper Swashes';src:url('fonts/FaustineUpperSwashes.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 
 .mmhq{
   --ivory:#F3EFE6;
