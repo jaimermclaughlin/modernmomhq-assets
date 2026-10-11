@@ -19,7 +19,7 @@
 
 /* Kajabi's lesson title becomes the hero headline; module name becomes the eyebrow */
 #section-post_body .panel__sub-title{
-  order:-1;font-family:var(--sans) !important;font-size:11px !important;font-weight:600 !important;
+  font-family:var(--sans) !important;font-size:11px !important;font-weight:600 !important;
   letter-spacing:.18em;text-transform:uppercase;color:var(--chocolate) !important;margin:28px 0 12px
 }
 #section-post_body .panel__title{
@@ -27,8 +27,9 @@
   font-size:clamp(36px,5vw,56px) !important;line-height:1.05 !important;letter-spacing:0 !important;
   text-wrap:balance;margin:0 0 28px !important
 }
-#section-post_body .panel__block{display:flex;flex-direction:column}
-#section-post_body .panel__block > *{order:0}
+#section-post_body .panel__block{display:flex !important;flex-direction:column !important}
+#section-post_body .panel__block > *{order:1}
+#section-post_body .panel__block > .panel__sub-title{order:0 !important}
 /* Lessons built with the standalone layout carry their own headline */
 #section-post_body .panel__block:has(#mmhq-root) > .panel__title,
 #section-post_body .panel__block:has(#mmhq-root) > .panel__sub-title{display:none}
