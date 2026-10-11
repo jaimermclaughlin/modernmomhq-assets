@@ -138,3 +138,10 @@
   #section-post_body .mm table{font-size:14px}
   #section-post_body .mm th,#section-post_body .mm td{padding:10px}
 }
+
+/* Keep the printable sheet's own compact headings */
+#section-post_body .mm .sheet h2{
+  font-family:'Work Sans',Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:700;color:var(--black);line-height:1.4;margin:2px 0 4px;text-wrap:wrap
+}
+#section-post_body .mm .sheet h2 small{font-family:'Work Sans',Arial,sans-serif;font-style:normal;color:var(--chocolate);font-size:12px;letter-spacing:.04em;text-transform:none;font-weight:500}
