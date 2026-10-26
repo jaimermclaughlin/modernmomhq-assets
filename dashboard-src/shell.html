@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audience Intelligence Dashboard</title>
+<meta name="description" content="Market intelligence on millennial women, women with ADHD or executive function challenges, and mothers: pain points, rejected advice, unmet needs, social listening, creator landscape and disruptor opportunities, with every source linked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Faustine';src:url(data:font/woff2;base64,{{FONT}}) format('woff2');font-weight:400;font-style:normal;font-display:swap}
+{{STYLE}}
+</style>
+<script>try{var t=localStorage.getItem('mmhq-intel-theme');if(t){t=JSON.parse(t);if(t)document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
+</head>
+<body>
+<a href="#main" class="sr-only">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <div class="top-grid">
+      <div>
+        <span class="eyebrow">Modern Mom HQ &middot; Audience Intelligence</span>
+        <h1>Millennial women, ADHD and <em>modern motherhood</em></h1>
+        <p class="lede">What this audience is experiencing, questioning, rejecting and searching for, built from published research, data and women&rsquo;s own words. <span class="script">research first</span></p>
+        <div class="meta-row">
+          <span>Compiled <b id="meta-compiled"></b></span>
+          <span><b id="meta-sources"></b> linked sources</span>
+          <span>Window: <span id="meta-window"></span></span>
+        </div>
+      </div>
+      <div class="tools">
+        <button class="btn" id="theme-btn" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg> Dark mode</button>
+        <button class="btn" id="print-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg> Print or save PDF</button>
+        <a class="btn" href="#library" onclick="setTimeout(function(){var l=document.getElementById('limitations');if(l)l.scrollIntoView();},60)">Research limitations</a>
+      </div>
+    </div>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label for="global-search" class="sr-only">Search all findings and sources</label>
+      <input id="global-search" type="search" placeholder="Search all findings and sources" autocomplete="off">
+    </div>
+    <div class="search-results" id="search-results" aria-live="polite"></div>
+    <details class="integrity">
+      <summary><svg class="chev" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg><span><b>Read this first.</b> Built from web search only: Reddit and social comment sections were not accessible, no quote was phrase-verified, and frequency here is not prevalence. <u>Open for full limitations and how to read the labels.</u></span></summary>
+      <div class="body">
+        <div id="limits-summary"></div>
+        <h4>How evidence is labeled</h4>
+        <div class="legend-grid" id="legend"></div>
+      </div>
+    </details>
+  </div>
+</header>
+<nav class="tabs" aria-label="Dashboard sections"><div class="wrap"><div class="tabs-inner" id="tabs" role="tablist"></div></div></nav>
+<main id="main">
+  <div class="wrap">
+    <section class="panel" id="panel-exec" role="tabpanel" aria-labelledby="tab-exec"></section>
+    <section class="panel" id="panel-segments" role="tabpanel" aria-labelledby="tab-segments"></section>
+    <section class="panel" id="panel-pain" role="tabpanel" aria-labelledby="tab-pain"></section>
+    <section class="panel" id="panel-sick" role="tabpanel" aria-labelledby="tab-sick"></section>
+    <section class="panel" id="panel-want" role="tabpanel" aria-labelledby="tab-want"></section>
+    <section class="panel" id="panel-listen" role="tabpanel" aria-labelledby="tab-listen"></section>
+    <section class="panel" id="panel-landscape" role="tabpanel" aria-labelledby="tab-landscape"></section>
+    <section class="panel" id="panel-disrupt" role="tabpanel" aria-labelledby="tab-disrupt"></section>
+    <section class="panel" id="panel-recs" role="tabpanel" aria-labelledby="tab-recs"></section>
+    <section class="panel" id="panel-library" role="tabpanel" aria-labelledby="tab-library"></section>
+    <section class="panel" id="panel-log" role="tabpanel" aria-labelledby="tab-log"></section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Built for Jaime McLaughlin (Unfiltered Motherhood, North Star, Modern Mom HQ). Research compiled October 26, 2026 from web search results. Firsthand statements show what women say, not how many women say it. Interpretations and opportunity ratings are qualitative judgments, labeled as such. Verify statistics against original sources before publishing.</p>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+{{SCRIPT}}
+</script>
+</body>
+</html>
