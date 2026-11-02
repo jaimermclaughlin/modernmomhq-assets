@@ -1,6 +1,7 @@
 (function(){
 'use strict';
 var D = window.DATA;
+var ART = window.DASH_MODE === 'artifact';
 var TODAY = new Date(D.meta.compiledISO + 'T12:00:00');
 var DAY = 86400000;
 
@@ -501,7 +502,7 @@ RENDER.library = function(){
   S.forEach(function(s){s._cited=cited[s.id]||0;});
   var h = head('10 \u00b7 Research Library','Every source, <em>linked</em>',esc(D.libraryIntro));
   h += '<div class="filters" id="lib-filters">'+selectHTML('Source type','type',uniq(S.map(function(s){return s.type;})).sort().map(function(x){return [x,x];}))+selectHTML('Platform','platform',uniq(S.map(function(s){return s.platform;})).sort().map(function(x){return [x,x];}))+selectHTML('Evidence quality','quality',[['High','High'],['Moderate','Moderate'],['Low','Low']])+selectHTML('Recency','rec',[['90d','Last 90 days'],['12m','Last 12 months'],['older','Older'],['undated','Date not shown']])+
-    '<label>Filter text<input type="search" data-key="q" placeholder="Title, publisher, note"></label><button class="btn small" id="lib-csv" type="button">Export CSV</button><span class="count" id="lib-count"></span></div>';
+    '<label>Filter text<input type="search" data-key="q" placeholder="Title, publisher, note"></label><button class="btn small" id="lib-csv" type="button">'+(ART?'Copy as CSV':'Export CSV')+'</button><span class="count" id="lib-count"></span></div>';
   h += '<div class="table-wrap"><table id="lib-table"><thead><tr>'+[['title','Source'],['type','Type'],['platform','Platform'],['date','Date'],['quality','Evidence quality'],['_cited','Cited in']].map(function(c){return '<th scope="col"><button type="button" data-sort="'+c[0]+'">'+c[1]+' <span aria-hidden="true">\u2195</span></button></th>';}).join('')+'</tr></thead><tbody id="lib-body"></tbody></table></div>';
   h += '<h3 style="font-family:var(--display);font-size:28px;font-weight:400;margin:34px 0 8px" id="limitations">Research limitations</h3>';
   h += '<div class="table-wrap"><table><thead><tr><th scope="col">Platform or source</th><th scope="col">Access status</th><th scope="col">What could be seen</th><th scope="col">What could not</th></tr></thead><tbody>'+D.limitations.platforms.map(function(p){return '<tr><td style="font-weight:600">'+esc(p.platform)+'</td><td>'+esc(p.status)+'</td><td>'+esc(p.could)+'</td><td>'+esc(p.couldnt)+'</td></tr>';}).join('')+'</tbody></table></div>';
@@ -541,7 +542,19 @@ function drawLib(){
 function exportCSV(list){
   var cols = ['title','url','pub','platform','date','type','quality','note'];
   var csv = cols.join(',')+'\n'+list.map(function(s){return cols.map(function(c){return '"'+String(s[c]||'').replace(/"/g,'""')+'"';}).join(',');}).join('\n');
-  download('audience-research-sources.csv','text/csv',csv);
+  output('audience-research-sources.csv','text/csv',csv,'CSV');
+}
+function output(name,type,content,label){ if(ART) copyText(content,label); else download(name,type,content); }
+function copyText(text,label){
+  function fallback(){
+    var box=$('#copy-box');
+    if(!box){box=document.createElement('div');box.id='copy-box';box.className='card';box.style.cssText='position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:60;max-width:720px;margin:0 auto';
+      box.innerHTML='<div class="card-top"><b>Copy this text</b><button class="btn small" type="button" id="copy-close">Close</button></div><label for="copy-text" class="sr-only">Text to copy</label><textarea id="copy-text" style="width:100%;min-height:160px;font:13px/1.4 ui-monospace,monospace;background:var(--bg);color:var(--ink);border:1px solid var(--line-strong);border-radius:8px;padding:8px"></textarea><p class="small muted" style="margin:6px 0 0">Select all, then copy with Ctrl+C or Cmd+C.</p>';
+      document.body.appendChild(box);$('#copy-close').addEventListener('click',function(){box.remove();});}
+    var ta=$('#copy-text'); ta.value=text; ta.focus(); ta.select();
+  }
+  try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(function(){toast(label+' copied to clipboard');},fallback); return; } }catch(e){}
+  fallback();
 }
 function download(name,type,content){
   try{var blob=new Blob([content],{type:type});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);toast('Downloaded '+name);}catch(e){toast('Download is not available here');}
@@ -553,7 +566,7 @@ RENDER.log = function(){
   var h = head('11 \u00b7 My Research Log','Keep this <em>going</em>',esc(D.logIntro));
   var starred = Object.keys(stars).sort(function(a,b){return stars[b]-stars[a];}).map(function(id){return INDEX[id];}).filter(Boolean);
   h += '<div class="grid two"><div class="card"><h3>Saved items ('+starred.length+')</h3>'+(starred.length?'<ul class="src-list">'+starred.map(function(x){return '<li><a href="#" data-jump="'+esc(x.id)+'">'+esc(x.title)+'</a><div class="src-meta">'+esc(x.section)+'</div></li>';}).join('')+'</ul>':'<p class="muted small">Select the \u2606 on any finding, quote, creator or opportunity to save it here.</p>')+'</div>';
-  h += '<div class="card"><h3>Add a new observation</h3><p class="small muted">Saved in this browser only. Export to keep a copy or move it to another device.</p><form id="log-form" class="form-grid">'+
+  h += '<div class="card"><h3>Add a new observation</h3><p class="small muted">'+(ART?'Saved in this browser only. Use Copy log to keep a backup, and Import to bring a saved log onto another device.':'Saved in this browser only. Export to keep a copy or move it to another device.')+'</p><form id="log-form" class="form-grid">'+
     '<label class="full">What you observed<textarea name="obs" required placeholder="e.g. Comment thread under a reel about school pickup guilt"></textarea></label>'+
     '<label class="full">Exact quote (only if copied word for word)<textarea name="quote" placeholder="Paste exact wording"></textarea></label>'+
     '<label>Link<input name="url" type="url" placeholder="https://"></label>'+
@@ -561,7 +574,7 @@ RENDER.log = function(){
     '<label>Date seen<input name="date" type="date"></label>'+
     '<label>Segment<select name="seg">'+D.segments.map(function(s){return '<option value="'+s.id+'">'+esc(s.short)+'</option>';}).join('')+'</select></label>'+
     '<label>Evidence type<select name="type"><option>Firsthand</option><option>Research</option><option>Journalism</option><option>Expert/Creator</option><option>My interpretation</option></select></label>'+
-    '<div class="full" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" type="submit">Save observation</button><button class="btn" type="button" id="log-export">Export log (JSON)</button><label class="btn" style="cursor:pointer">Import JSON<input id="log-import" type="file" accept="application/json" class="sr-only"></label></div></form></div></div>';
+    '<div class="full" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" type="submit">Save observation</button><button class="btn" type="button" id="log-export">'+(ART?'Copy log (JSON)':'Export log (JSON)')+'</button><label class="btn" style="cursor:pointer">Import JSON<input id="log-import" type="file" accept="application/json" class="sr-only"></label></div></form></div></div>';
   h += '<h3 style="font-family:var(--display);font-size:26px;font-weight:400;margin:26px 0 10px">Your observations ('+entries.length+')</h3>';
   h += entries.length?'<div class="grid two">'+entries.slice().reverse().map(function(e,i){var idx=entries.length-1-i;return '<article class="card"><div class="card-top"><span class="cat">'+esc(e.platform)+' \u00b7 '+(e.date?fmtDate(e.date):'Date not set')+'</span><button class="btn small" data-del="'+idx+'" type="button">Delete</button></div><p>'+esc(e.obs)+'</p>'+(e.quote?'<blockquote class="q"><p>\u201c'+esc(e.quote)+'\u201d</p></blockquote>':'')+'<div class="tags">'+segTag(e.seg)+'<span class="tag">'+esc(e.type)+'</span></div>'+(e.url?'<a class="small" href="'+esc(e.url)+'" target="_blank" rel="noopener noreferrer">'+esc(e.url)+'</a>':'')+'</article>';}).join('')+'</div>':'<div class="empty">No observations yet. Your own comment sections and DMs are the best next data source.</div>';
   h += '<div class="card" style="margin-top:22px"><h3>Suggested listening routine</h3><ul>'+D.routine.map(function(r){return '<li>'+esc(r)+'</li>';}).join('')+'</ul></div>';
@@ -571,7 +584,7 @@ RENDER.log = function(){
     if(!e.obs) return; var list = store('log')||[]; list.push(e); if(store('log',list)===null&&!store('log')) toast('Could not save: browser storage is unavailable'); else toast('Observation saved'); RENDER.log();
   });
   $all('[data-del]').forEach(function(b){b.addEventListener('click',function(){var list=store('log')||[];list.splice(+b.getAttribute('data-del'),1);store('log',list);RENDER.log();});});
-  $('#log-export').addEventListener('click',function(){download('my-audience-research-log.json','application/json',JSON.stringify({exported:new Date().toISOString(),observations:store('log')||[],saved:Object.keys(stars)},null,2));});
+  $('#log-export').addEventListener('click',function(){output('my-audience-research-log.json','application/json',JSON.stringify({exported:new Date().toISOString(),observations:store('log')||[],saved:Object.keys(stars)},null,2),'Log');});
   $('#log-import').addEventListener('change',function(ev){var file=ev.target.files[0];if(!file)return;var r=new FileReader();r.onload=function(){try{var j=JSON.parse(r.result);var cur=store('log')||[];store('log',cur.concat(j.observations||[]));(j.saved||[]).forEach(function(id){stars[id]=stars[id]||Date.now();});store('stars',stars);toast('Imported');RENDER.log();}catch(e){toast('That file could not be read');}};r.readAsText(file);});
 };
 
@@ -636,9 +649,11 @@ function init(){
   sb.addEventListener('input',function(){clearTimeout(t);t=setTimeout(function(){globalSearch(sb.value);},120);});
   sb.addEventListener('keydown',function(e){if(e.key==='Escape'){sb.value='';globalSearch('');}});
   document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();sb.focus();}});
-  var saved = store('theme'); if(saved) setTheme(saved); else setTheme('');
-  $('#theme-btn').addEventListener('click',function(){var dark=$('#theme-btn').getAttribute('aria-pressed')==='true';setTheme(dark?'light':'dark');});
-  $('#print-btn').addEventListener('click',function(){PANELS.forEach(function(p){if(!rendered[p.id]){RENDER[p.id]();rendered[p.id]=true;}});window.print();});
+  if($('#theme-btn')){
+    var saved = store('theme'); if(saved) setTheme(saved); else setTheme('');
+    $('#theme-btn').addEventListener('click',function(){var dark=$('#theme-btn').getAttribute('aria-pressed')==='true';setTheme(dark?'light':'dark');});
+  }
+  if($('#print-btn')) $('#print-btn').addEventListener('click',function(){PANELS.forEach(function(p){if(!rendered[p.id]){RENDER[p.id]();rendered[p.id]=true;}});window.print();});
   window.addEventListener('hashchange',function(){var id=location.hash.slice(1);if(id&&id!==currentTab)go(id);});
   go(location.hash.slice(1)||'exec');
 }

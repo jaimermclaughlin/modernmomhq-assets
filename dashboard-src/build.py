@@ -18,7 +18,15 @@ if '</script' in script.lower():
 with open(os.path.join(REPO, 'fonts', 'Faustine.woff2'), 'rb') as f:
     font = base64.b64encode(f.read()).decode('ascii')
 
-html = read('shell.html').replace('{{STYLE}}', read('styles.css')).replace('{{FONT}}', font).replace('{{SCRIPT}}', script)
+ART = '--artifact' in sys.argv
+if ART:
+    OUT = sys.argv[sys.argv.index('--artifact')+1]
+if ART:
+    import re
+    script, n = re.subn(r"function download\(name,type,content\)\{\n.*?\n\}\n", "function download(){}\n", script, flags=re.S)
+    if n != 1:
+        sys.exit('Could not strip the download function for the artifact build')
+html = read('shell_artifact.html' if ART else 'shell.html').replace('{{STYLE}}', read('styles.css')).replace('{{FONT}}', font).replace('{{SCRIPT}}', script)
 with open(OUT, 'w', encoding='utf-8') as f:
     f.write(html)
 print('wrote', OUT, len(html.encode('utf-8')), 'bytes')

@@ -84,8 +84,9 @@ li{margin:.3em 0}
 .small{font-size:13.5px}
 
 /* Layout */
-.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
-@media (min-width:720px){.wrap{padding:0 28px}}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+@media (min-width:720px){.wrap{padding-left:max(28px, env(safe-area-inset-left, 0px));padding-right:max(28px, env(safe-area-inset-right, 0px))}}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:30;background:var(--bg)}
 header.top{padding:34px 0 18px;border-bottom:1px solid var(--line)}
 .top-grid{display:grid;gap:18px}
 @media (min-width:960px){.top-grid{grid-template-columns:1.5fr 1fr;align-items:end}}
@@ -119,7 +120,7 @@ mark{background:#F2D7A6;color:inherit;border-radius:3px;padding:0 2px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) mark{background:#6B4A1D}}
 
 /* Nav */
-nav.tabs{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav.tabs{position:sticky;top:env(safe-area-inset-top, 0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .tabs-inner{display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin;padding:8px 0}
 .tab{flex:0 0 auto;font:inherit;font-size:13.5px;font-weight:500;padding:8px 13px;border-radius:999px;border:1px solid transparent;background:none;color:var(--ink-2);cursor:pointer;white-space:nowrap}
 .tab:hover{background:var(--surface-2)}
@@ -217,7 +218,7 @@ blockquote.q p{margin:0 0 6px;color:var(--ink);font-family:var(--display);font-s
 .numbered > li::before{content:counter(k);position:absolute;left:0;top:14px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:600;font-size:14px}
 
 /* Tables */
-.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.table-wrap{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
 table{border-collapse:collapse;width:100%;font-size:14px}
 th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--surface-2);position:sticky;top:0}
@@ -248,7 +249,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 /* Footer */
 footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:13px}
 .empty{padding:22px;text-align:center;color:var(--muted);border:1px dashed var(--line-strong);border-radius:var(--radius)}
-.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;z-index:50;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom, 0px));left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;z-index:50;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.show{opacity:1}
 
 /* Log form */
