@@ -12,3 +12,9 @@ Shared styles for Modern Mom HQ Kajabi lessons and pages.
 - `research_notes/Millennial women ADHD audience research/`: the raw evidence notes, with every source URL, quote fidelity label and search log.
 - Content Resources tab (added November 2026): the three 2020 workbooks (Master Your Family Meetings, Master Your Kids Reward System, Master Your Motherhood Mindset) checked against the research, with every piece flagged as create new, edit and rebrand, or use what I have. Its data lives in `dashboard-src/data_resources.js`.
 - `dashboard-src/`: the dashboard's data and code. Edit the `data_*.js` files, run `node check.js` (checks that every cited source exists and that no em dashes slipped in), then `python3 build.py` to regenerate the HTML.
+
+## Workbook (November 2026)
+
+- `guides/pdf/Master-Your-Motherhood-Workbook.pdf`: Master Your Motherhood, the general Modern Mom HQ workbook (Letter size, printable), rebuilt from the 2020 Master Your workbooks and the audience research.
+- `guides/master-your-motherhood.html` and `guides/guide.css`: the source. Edit these, then run `node guides/build.js` (needs Playwright with Chromium and Python 3 with pypdf). The build fills in the contents page numbers and adds chapter bookmarks.
+- `guides/fonts/`: Instrument Serif and Work Sans (SIL Open Font License, license files included).
