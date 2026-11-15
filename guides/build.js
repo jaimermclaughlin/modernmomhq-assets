@@ -27,6 +27,24 @@ const BODY_OPTS = {
   const page = await browser.newPage();
   await page.goto('file://' + SRC);
   await page.evaluate(() => document.fonts.ready);
+  // Number citations in reading order and sort the Sources list to match
+  const src = await page.evaluate(() => {
+    const list = document.querySelector('ol.sources');
+    const items = {}; [...list.children].forEach(li => { items[li.id] = li; });
+    const order = [], missing = [];
+    document.querySelectorAll('a[href^="#src-"]').forEach(a => {
+      if (a.closest('ol.sources')) return;
+      const id = a.getAttribute('href').slice(1);
+      if (!items[id]) { missing.push(id); return; }
+      if (!order.includes(id)) order.push(id);
+      a.textContent = order.indexOf(id) + 1;
+    });
+    const unused = Object.keys(items).filter(id => !order.includes(id));
+    order.forEach(id => list.appendChild(items[id]));
+    return { count: order.length, missing, unused };
+  });
+  if (src.missing.length || src.unused.length) throw new Error('Source problems: ' + JSON.stringify(src));
+  console.log('sources', src.count);
   const fontsOk = await page.evaluate(() => ['Instrument Serif', 'Work Sans', 'Faustine'].map(f => [f, document.fonts.check('16px "' + f + '"')]));
   console.log('fonts', JSON.stringify(fontsOk));
 

@@ -116,6 +116,21 @@ td{border-bottom:1px solid var(--line);padding:5pt 6pt;vertical-align:top}
 .sq{display:inline-block;width:10pt;height:10pt;border:1.2px solid var(--taupe);border-radius:2pt;vertical-align:middle}
 .script-num{font-family:var(--script);font-size:60pt;color:var(--oat);line-height:1.1}
 
+/* Start Here flow */
+.flow{list-style:none;padding:0;margin:18pt 0 6pt;counter-reset:none}
+.flow li{display:flex;gap:14pt;align-items:center;padding:11pt 0;border-bottom:1px solid var(--line);margin:0}
+.flow li:last-child{border-bottom:0}
+.flow .fn{flex:0 0 30pt;height:30pt;border-radius:50%;background:var(--cherry);color:var(--ivory);font-family:var(--serif);font-size:17pt;display:flex;align-items:center;justify-content:center}
+.flow b{font-size:12.5pt;font-weight:600}
+.flow div > span:not(.pill){display:block;color:var(--muted);font-size:9.6pt;margin-top:1pt}
+.pill.rec{background:var(--wine);color:var(--ivory);border-color:var(--wine);font-size:7pt;font-weight:600;letter-spacing:.12em;text-transform:uppercase;vertical-align:2pt;margin-left:6pt}
+
+/* Cycle tracker */
+.tracker table{margin:4pt 0}
+.tracker th{text-align:center;padding:4pt 2pt;font-size:6.5pt}
+.tracker td{height:19pt;padding:0;border-left:1px solid var(--line);text-align:center}
+.tracker td.d{border-left:0;font-weight:600;font-size:8.5pt;color:var(--muted);width:16%}
+
 /* Contents */
 .toc{list-style:none;padding:0;margin:14pt 0 0}
 .toc li{display:flex;align-items:baseline;gap:8pt;padding:4.5pt 0;border-bottom:1px solid var(--line);margin:0}
