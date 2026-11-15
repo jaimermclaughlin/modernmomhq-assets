@@ -79,6 +79,10 @@ sup a{color:var(--cherry)}
 
 /* Shop link */
 .shop{background:var(--ivory);border:1px dashed var(--taupe);border-radius:10pt;padding:10pt 14pt;margin-top:12pt}
+.shoplink{text-decoration:underline;text-decoration-color:var(--oat);text-underline-offset:2pt}
+.shop .aff{display:block;margin-top:4pt;font-size:8pt;color:var(--muted);font-style:italic}
+.shopline{margin-top:4pt}
+.nw{white-space:nowrap}
 
 /* Boxes */
 .box{border-radius:10pt;padding:11pt 14pt;margin:12pt 0;break-inside:avoid}

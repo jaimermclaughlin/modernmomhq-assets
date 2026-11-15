@@ -530,3 +530,14 @@ You asked me to improve and expand these sections without changing your message.
 - **Motherhood, ADHD or Hormones?:** new "Your cycle, week by week" page, a full page on PMDD (what it feels like, what helps, how it overlaps with ADHD) and a page on conditions that often come with ADHD.
 - **Brand:** North Star removed. The About page now says you share weekly articles on your Substack, Unfiltered Motherhood, and that your coaching and digital guides live at getmodernmomhq.com.
 - **Script font:** now Awesome Ways (cover, Pivot Check opener, sign-off). The font file is kept out of the repository because it is licensed; keep a copy at guides/fonts/AwesomeWays.otf to rebuild.
+
+## Round 3: ShopMy links
+
+All links were copied from your ShopMy shop (shopmy.us/shop/jmclaughlin) as it showed on 2026-11-15.
+
+- **Kids' Rewards, Skylight page:** the placeholder is now "Shop the Skylight" with the Skylight Calendar 2 (15-inch) and Skylight Calendar Max (27-inch) links exactly as your shop uses them, plus your Home Systems & Organization collection.
+- **Your Schedule, "Three small setups":** a shop box pointing to your Home Systems & Organization collection (hooks, zipper pouches, school binder, visual timer). The heading, cards and shop box now stay together on one page.
+- **Keep Mom Going, routine #1:** "Shop my five-minute makeup bag" links to your My Current Makeup Bag collection. "Five-minute" comes from your collection description ("I want to be able to do my makeup in five minutes or less").
+- **About page:** "The products I recommend: shopmy.us/shop/jmclaughlin."
+- **Disclosure:** "Product links in this workbook may be affiliate links" on the Skylight box and the About page, matching the note on your ShopMy collections ("The products featured here may contain affiliate links").
+- **Not added:** the book collections (Self-Help, Psychology, Non-Fiction) mix in faith titles, which this workbook leaves out, and single-book links in your shop are per-click redirect links rather than stable links.
