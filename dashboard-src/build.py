@@ -10,7 +10,7 @@ def read(name):
 
 data_files = ['data_meta.js', 'data_sources1.js', 'data_sources2.js', 'data_sources3.js',
               'data_findings.js', 'data_sick_want.js', 'data_listening.js',
-              'data_landscape.js', 'data_strategy.js']
+              'data_landscape.js', 'data_strategy.js', 'data_resources.js']
 script = '\n'.join(read(f) for f in data_files) + '\n' + read('app.js')
 if '</script' in script.lower():
     sys.exit('Refusing to build: a data string contains a closing script tag')

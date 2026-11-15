@@ -103,8 +103,9 @@ function hasSeg(item,seg){
   return s.indexOf(seg)>-1;
 }
 function textOf(item){
-  var parts=[item.title,item.summary,item.why,item.cat,item.evidence,item.conventional,item.experiencing,item.whyIncomplete,item.alternative,item.relevance,item.q,item.theme,item.name,item.focus];
+  var parts=[item.title,item.summary,item.why,item.cat,item.evidence,item.conventional,item.experiencing,item.whyIncomplete,item.alternative,item.relevance,item.q,item.theme,item.name,item.focus,item.what,item.from,item.format,item.home,item.caution];
   (item.quotes||[]).forEach(function(q){parts.push(q.q);});
+  (item.changes||[]).forEach(function(c){parts.push(c);});
   (item.points||[]).forEach(function(p){parts.push(p);});
   return parts.filter(Boolean).join(' ').toLowerCase();
 }
@@ -180,6 +181,7 @@ var PANELS = [
   {id:'landscape',name:'Content Landscape'},
   {id:'disrupt',name:'Disruptor Matrix'},
   {id:'recs',name:'Strategic Recommendations'},
+  {id:'resources',name:'Content Resources'},
   {id:'library',name:'Research Library'},
   {id:'log',name:'My Research Log'}
 ];
@@ -484,6 +486,130 @@ RENDER.recs = function(){
   h += '<div class="grid two" style="margin-top:22px">'+block('Topics deserving further investigation',R.investigate)+block('How to use this with a relationship-first goal',R.approach)+'</div>';
   $('#panel-recs').innerHTML = h;
 };
+/* Content Resources */
+var resState = {segs:[]}, covState = {segs:[]};
+var FLAG_ICO = {create:'+', edit:'✎', use:'✓'};
+var FLAG_ORDER = ['use','edit','create'];
+var PRIO = {Now:0, Next:1, Later:2};
+function flagInfo(id){var f=((D.resources&&D.resources.flags)||[]).filter(function(x){return x.id===id;})[0];return f||{id:id,name:id,desc:''};}
+function flagBadge(id){var f=flagInfo(id);return '<span class="badge fl-'+esc(id)+'" title="'+esc(f.desc)+'"><span class="ico" aria-hidden="true">'+(FLAG_ICO[id]||'')+'</span>'+esc(f.name)+'</span>';}
+var COV = {
+  yes:{name:'Covered',desc:'The 2020 workbooks address this in a way that matches the research.'},
+  part:{name:'Partly',desc:'Touched on, but the research suggests something important is missing.'},
+  conflict:{name:'Works against it',desc:'Addressed in a way the research suggests backfires with this audience.'},
+  no:{name:'Not covered',desc:'Nothing in the three workbooks addresses this.'}
+};
+function covBadge(c){var x=COV[c]||COV.no;return '<span class="badge cv-'+esc(c)+'" title="'+esc(x.desc)+'">'+esc(x.name)+'</span>';}
+function jumpList(ids){return (ids||[]).map(function(l){return '<a href="#" data-jump="'+esc(l)+'">'+esc(lookupTitle(l))+'</a>';}).join(' · ');}
+function srcInline(ids){
+  if(!ids||!ids.length) return '';
+  return '<div class="src-meta" style="margin-top:3px">Source: '+ids.map(function(id){var s=SRC[id];return s?'<a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+'</a> ('+esc(s.pub)+')':esc(id);}).join(' · ')+'</div>';
+}
+function auditList(arr){
+  return '<ul class="tight">'+arr.map(function(b){
+    return '<li>'+esc(b.text)+(b.links&&b.links.length?'<div class="src-meta" style="margin-top:3px">In the research: '+jumpList(b.links)+'</div>':'')+srcInline(b.sources)+'</li>';
+  }).join('')+'</ul>';
+}
+var ITEM_MAP = null;
+function itemById(id){
+  if(!ITEM_MAP){ITEM_MAP={};['painPoints','sickOf','wants','disruptors'].forEach(function(k){D[k].forEach(function(i){ITEM_MAP[i.id]=i;});});}
+  return ITEM_MAP[id];
+}
+function resById(id){return D.resources.items.filter(function(r){return r.id===id;})[0];}
+function resCard(r){
+  var lead = r.flag==='create'?'What to build':(r.flag==='use'?'Before you post it':'What to change');
+  return '<article class="card" id="item-'+esc(r.id)+'">'+
+    '<div class="card-top"><span class="cat">'+(r.type==='content'?'Content piece':'Resource')+'</span><span style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">'+flagBadge(r.flag)+starBtn(r.id,r.title)+'</span></div>'+
+    '<h3>'+esc(r.title)+'</h3>'+
+    '<p>'+esc(r.what)+'</p>'+
+    '<dl class="kv">'+
+      '<div><dt>Built from</dt><dd>'+esc(r.from)+'</dd></div>'+
+      '<div><dt>Format and home</dt><dd>'+esc(r.format)+' · '+esc(r.home)+'</dd></div>'+
+      (r.changes&&r.changes.length?'<div><dt>'+lead+'</dt><dd><ul class="tight">'+r.changes.map(function(c){return '<li>'+esc(c)+'</li>';}).join('')+'</ul></dd></div>':'')+
+      '<div><dt>Why the research supports it</dt><dd>'+esc(r.why)+'</dd></div>'+
+      (r.caution?'<div><dt>Handle with care</dt><dd>'+esc(r.caution)+'</dd></div>':'')+
+      '<div><dt>Pain points and evidence</dt><dd class="small">'+jumpList(r.links)+'</dd></div>'+
+    '</dl>'+
+    '<div class="tags"><span class="tag">Priority: '+esc(r.priority)+'</span>'+(r.pillars||[]).map(function(p){return '<span class="tag">Pillar '+p+'</span>';}).join('')+(r.segs||[]).map(segTag).join('')+'</div>'+
+    '<div style="margin-top:10px">'+levelBadge('hypothesis')+'</div>'+
+    evidenceHTML(r)+
+  '</article>';
+}
+function resPasses(r,st){
+  if(st.flag&&r.flag!==st.flag) return false;
+  if(st.type&&r.type!==st.type) return false;
+  if(st.pillar&&(r.pillars||[]).indexOf(+st.pillar)<0) return false;
+  if(st.priority&&r.priority!==st.priority) return false;
+  if(st.segs&&st.segs.length&&!st.segs.some(function(s){return hasSeg(r,s);})) return false;
+  if(st.q&&textOf(r).indexOf(st.q)<0) return false;
+  return true;
+}
+function drawRes(){
+  var items = D.resources.items, list = items.filter(function(r){return resPasses(r,resState);});
+  $('#res-count').textContent = list.length+' of '+items.length+' pieces';
+  var out = FLAG_ORDER.map(function(f){
+    var sub = list.filter(function(r){return r.flag===f;}).sort(function(a,b){return PRIO[a.priority]-PRIO[b.priority];});
+    if(!sub.length) return '';
+    return '<h4 class="flag-h">'+flagBadge(f)+' <span class="muted small">'+sub.length+' · '+esc(flagInfo(f).desc)+'</span></h4><div class="grid two">'+sub.map(resCard).join('')+'</div>';
+  }).join('');
+  $('#res-list').innerHTML = out || '<div class="empty">Nothing matches these filters.</div>';
+}
+function drawCov(){
+  var st = covState, all = D.resources.coverage;
+  var rows = all.filter(function(c){
+    var it = itemById(c[0])||{};
+    if(st.cov&&c[1]!==st.cov) return false;
+    if(st.has==='with'&&!c[3]) return false;
+    if(st.has==='without'&&c[3]) return false;
+    if(st.segs&&st.segs.length&&!st.segs.some(function(s){return hasSeg(it,s);})) return false;
+    return true;
+  });
+  $('#cov-count').textContent = rows.length+' of '+all.length+' rows';
+  $('#cov-body').innerHTML = rows.length?rows.map(function(c){
+    var it = itemById(c[0])||{}, res = c[3]?c[3].split(' '):[];
+    return '<tr><td class="c-item"><a href="#" data-jump="'+esc(c[0])+'">'+esc(lookupTitle(c[0]))+'</a><div class="src-meta">'+esc(INDEX[c[0]]?INDEX[c[0]].section:'')+'</div></td>'+
+      '<td class="c-who"><div class="tags" style="margin:0">'+(it.segs||[]).map(segTag).join('')+'</div></td>'+
+      '<td class="c-cov"><span class="c-lab">2020 workbooks: </span>'+covBadge(c[1])+(c[2]?'<div class="src-meta" style="margin-top:4px">'+esc(c[2])+'</div>':'')+(c[4]?'<div class="small" style="margin-top:4px">'+esc(c[4])+'</div>':'')+'</td>'+
+      '<td class="c-res"><span class="c-lab">Addressed now by</span>'+(res.length?res.map(function(id){var r=resById(id);return '<div style="margin-bottom:6px"><a href="#" data-jump="'+esc(id)+'">'+esc(r?r.title:id)+'</a> <span class="fl-mini fl-'+esc(r?r.flag:'')+'">'+esc(r?flagInfo(r.flag).name:'')+'</span></div>';}).join(''):'<span class="muted small">Nothing planned yet</span>')+'</td></tr>';
+  }).join(''):'<tr><td colspan="4"><div class="empty">Nothing matches these filters.</div></td></tr>';
+}
+function auditCard(p){
+  return '<details class="card audit" id="item-'+esc(p.id)+'"><summary><span class="cat">'+esc(p.label)+'</span><b class="audit-title">'+esc(p.name)+'</b>'+
+    '<div class="tags" style="margin-top:6px"><span class="tag">'+p.holds.length+' still hold up</span><span class="tag">'+p.change.length+' to change</span><span class="tag">'+p.fix.length+' to fix before reuse</span></div>'+
+    '<span class="small" style="color:var(--accent);font-weight:600">+ Open the audit</span></summary>'+
+    '<p class="small" style="margin-top:12px"><b>Inside:</b> '+esc(p.inside)+'</p>'+
+    '<div class="grid three">'+
+      '<div><h4>What still holds up</h4>'+auditList(p.holds)+'</div>'+
+      '<div><h4>What the research says to change</h4>'+auditList(p.change)+'</div>'+
+      '<div><h4>Fix before you reuse it</h4>'+auditList(p.fix)+'</div>'+
+    '</div>'+
+    '<p class="small" style="margin:12px 0 0"><b>Becomes:</b> '+jumpList(p.becomes)+'</p>'+
+  '</details>';
+}
+RENDER.resources = function(){
+  var R = D.resources;
+  var h = head('10 · Content Resources','Your 2020 workbooks, <em>rebuilt</em>',esc(R.intro));
+  var n = {create:0,edit:0,use:0}; R.items.forEach(function(r){n[r.flag]++;});
+  var open = R.coverage.filter(function(c){return c[1]==='no'&&!c[3];}).length;
+  h += '<div class="hero-strip">'+FLAG_ORDER.map(function(f){return '<div class="stat"><div class="n">'+n[f]+'</div><div class="l">'+flagBadge(f)+'<div style="margin-top:6px">'+esc(flagInfo(f).desc)+'</div></div></div>';}).join('')+
+    '<div class="stat"><div class="n">'+open+'</div><div class="l">Pain points with nothing planned yet. These are future content topics, not workbook fixes.</div></div></div>';
+  h += '<h3 class="sec-h">How to rebrand them</h3><div class="grid two">'+
+    '<div class="card"><h3>Where each piece lives</h3><ul class="tight">'+R.homes.map(function(x){return '<li><b>'+esc(x.brand)+':</b> '+esc(x.role)+'</li>';}).join('')+'</ul><p class="small muted" style="margin:8px 0 0">'+esc(R.funnel)+'</p></div>'+
+    '<div class="card"><h3>Strip from every workbook</h3><ul class="tight">'+R.removeEverywhere.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul></div>'+
+    '<div class="card"><h3>A decision only you can make: faith content</h3><p class="small" style="margin:0">'+esc(R.faith)+'</p></div>'+
+    '<div class="card"><h3>What was reviewed</h3><p class="small" style="margin:0">'+esc(R.notUploaded)+' Added '+esc(R.added)+'.</p><p class="small" style="margin:8px 0 0"><b>Priority:</b> '+R.priorities.map(function(p){return esc(p.id)+' = '+esc(p.desc);}).join(' ')+'</p></div>'+
+  '</div>';
+  h += '<h3 class="sec-h">Your content resources, flagged</h3>';
+  h += '<div class="filters" id="res-filters">'+segChips('res',true)+selectHTML('Flag','flag',FLAG_ORDER.map(function(f){return [f,flagInfo(f).name];}))+selectHTML('Type','type',[['resource','Resource'],['content','Content piece']])+selectHTML('Content pillar','pillar',D.pillars.map(function(p){return [String(p.n),'Pillar '+p.n+': '+p.name];}))+selectHTML('Priority','priority',[['Now','Now'],['Next','Next'],['Later','Later']])+'<label>Filter text<input type="search" data-key="q" placeholder="Search resources"></label><span class="count" id="res-count"></span></div><div id="res-list"></div>';
+  h += '<h3 class="sec-h">Pain points: what your workbooks covered, and what covers them now</h3><p class="small muted" style="margin-top:-4px">Every pain point in this research, plus the wants and rejected advice your workbooks touch. Use the segment filter to see ADHD-specific rows or rows that apply to all mothers. Coverage is my reading of the workbooks against the research, not a measured score.</p>';
+  h += '<div class="filters" id="cov-filters">'+segChips('cov',true)+selectHTML('2020 coverage','cov',Object.keys(COV).map(function(k){return [k,COV[k].name];}))+selectHTML('Planned resource','has',[['with','Has a planned resource'],['without','Nothing planned yet']])+'<span class="count" id="cov-count"></span></div>';
+  h += '<div class="table-wrap"><table class="cov-table"><thead><tr><th scope="col">Pain point or need</th><th scope="col">Who</th><th scope="col">Your 2020 workbooks</th><th scope="col">Addressed now by</th></tr></thead><tbody id="cov-body"></tbody></table></div>';
+  h += '<h3 class="sec-h">The three workbooks, checked against the research</h3><div class="grid">'+R.products.map(auditCard).join('')+'</div>';
+  $('#panel-resources').innerHTML = h;
+  bindFilters($('#res-filters'),resState,drawRes);
+  bindFilters($('#cov-filters'),covState,drawCov);
+  drawRes(); drawCov();
+};
 var INDEX = {};
 function lookupTitle(id){var x=INDEX[id];return x?x.title:id;}
 document.addEventListener('click',function(e){
@@ -499,8 +625,9 @@ RENDER.library = function(){
   ['painPoints','sickOf','wants','disruptors','creators'].forEach(function(k){D[k].forEach(function(i){allSources(i).forEach(function(id){cited[id]=(cited[id]||0)+1;});});});
   D.listening.forEach(function(x){cited[x.src]=(cited[x.src]||0)+1;});
   D.exec.findings.concat(D.exec.patterns,D.exec.surprises,D.exec.implications).forEach(function(i){allSources(i).forEach(function(id){cited[id]=(cited[id]||0)+1;});});
+  if(D.resources){D.resources.items.forEach(function(i){allSources(i).forEach(function(id){cited[id]=(cited[id]||0)+1;});});D.resources.products.forEach(function(p){p.holds.concat(p.change,p.fix).forEach(function(b){(b.sources||[]).forEach(function(id){cited[id]=(cited[id]||0)+1;});});});}
   S.forEach(function(s){s._cited=cited[s.id]||0;});
-  var h = head('10 \u00b7 Research Library','Every source, <em>linked</em>',esc(D.libraryIntro));
+  var h = head('11 \u00b7 Research Library','Every source, <em>linked</em>',esc(D.libraryIntro));
   h += '<div class="filters" id="lib-filters">'+selectHTML('Source type','type',uniq(S.map(function(s){return s.type;})).sort().map(function(x){return [x,x];}))+selectHTML('Platform','platform',uniq(S.map(function(s){return s.platform;})).sort().map(function(x){return [x,x];}))+selectHTML('Evidence quality','quality',[['High','High'],['Moderate','Moderate'],['Low','Low']])+selectHTML('Recency','rec',[['90d','Last 90 days'],['12m','Last 12 months'],['older','Older'],['undated','Date not shown']])+
     '<label>Filter text<input type="search" data-key="q" placeholder="Title, publisher, note"></label><button class="btn small" id="lib-csv" type="button">'+(ART?'Copy as CSV':'Export CSV')+'</button><span class="count" id="lib-count"></span></div>';
   h += '<div class="table-wrap"><table id="lib-table"><thead><tr>'+[['title','Source'],['type','Type'],['platform','Platform'],['date','Date'],['quality','Evidence quality'],['_cited','Cited in']].map(function(c){return '<th scope="col"><button type="button" data-sort="'+c[0]+'">'+c[1]+' <span aria-hidden="true">\u2195</span></button></th>';}).join('')+'</tr></thead><tbody id="lib-body"></tbody></table></div>';
@@ -563,7 +690,7 @@ function download(name,type,content){
 /* My research log */
 RENDER.log = function(){
   var entries = store('log') || [];
-  var h = head('11 \u00b7 My Research Log','Keep this <em>going</em>',esc(D.logIntro));
+  var h = head('12 \u00b7 My Research Log','Keep this <em>going</em>',esc(D.logIntro));
   var starred = Object.keys(stars).sort(function(a,b){return stars[b]-stars[a];}).map(function(id){return INDEX[id];}).filter(Boolean);
   h += '<div class="grid two"><div class="card"><h3>Saved items ('+starred.length+')</h3>'+(starred.length?'<ul class="src-list">'+starred.map(function(x){return '<li><a href="#" data-jump="'+esc(x.id)+'">'+esc(x.title)+'</a><div class="src-meta">'+esc(x.section)+'</div></li>';}).join('')+'</ul>':'<p class="muted small">Select the \u2606 on any finding, quote, creator or opportunity to save it here.</p>')+'</div>';
   h += '<div class="card"><h3>Add a new observation</h3><p class="small muted">'+(ART?'Saved in this browser only. Use Copy log to keep a backup, and Import to bring a saved log onto another device.':'Saved in this browser only. Export to keep a copy or move it to another device.')+'</p><form id="log-form" class="form-grid">'+
@@ -604,6 +731,10 @@ function buildIndex(){
   ['patterns','repetitive','overrep','underserved','performing','opportunities'].forEach(function(k){(D.landscape[k]||[]).forEach(function(i){add('landscape','Landscape',i);});});
   D.disruptors.forEach(function(i){add('disrupt','Disruptor: '+i.approach,i);});
   ['problems','differentiation','investigate','approach','pillars'].forEach(function(k){D.recs[k].forEach(function(i){add('recs','Recommendation',i);});});
+  if(D.resources){
+    D.resources.items.forEach(function(i){add('resources','Content resource: '+flagInfo(i.flag).name,i);});
+    D.resources.products.forEach(function(p){INDEX[p.id]={id:p.id,tab:'resources',section:'2020 workbook audit',title:p.name+' (2020 workbook)',text:(p.name+' '+p.label+' '+p.inside+' '+p.holds.concat(p.change,p.fix).map(function(b){return b.text;}).join(' ')).toLowerCase()};});
+  }
 }
 function globalSearch(q){
   var box = $('#search-results');
