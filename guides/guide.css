@@ -104,7 +104,7 @@ sup a{color:var(--cherry)}
 .jaime h4{color:var(--wine)}
 .box.story{break-inside:auto;padding:13pt 17pt;font-size:10pt;line-height:1.5}
 .story p{margin:0 0 7pt}
-.story h4{margin:4pt 0 8pt}
+.story h4{margin:4pt 0 8pt;break-after:avoid}
 .story h4 ~ h4{margin-top:12pt}
 .story ul{margin:0 0 8pt}
 .jaime .q{font-family:var(--serif);font-size:15pt;line-height:1.3;font-style:italic}

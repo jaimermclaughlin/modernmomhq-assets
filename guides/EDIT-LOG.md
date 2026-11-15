@@ -581,3 +581,17 @@ Copyedited for grammar, spelling and flow from the original 2020 PDFs (Master Yo
 
 ### Front matter
 - The "In this chapter" lists for chapters 1, 3 and 5 and their Contents descriptions now include the restored sections.
+
+## Round 5: tip 4 rewritten (Your Mindset)
+
+Rewritten at your request so it no longer says that a lot of what gets called mommy shaming is really moms sharing wisdom.
+
+- **New heading:** "4. Learn to give and accept constructive criticism, and know the difference between helpful and hurtful."
+- **New content:**
+  - mommy shaming is real, and constructive criticism and shaming are different
+  - when a comment stings, ask why: it may have touched something you're already sensitive about
+  - don't go around criticizing people, but if you see something, say something, with four questions to ask yourself first
+  - the wisdom is knowing when it's helpful and when it's hurtful, whether you're giving it or receiving it
+- **Kept from 2020:** lower that wall of protection; have hard conversations, and accept hard conversations; share openly, honestly and kindly; a surplus of advice once you become a mom (don't shoot it all down); winging it every day; create a tribe and do this mom thing together.
+- **Removed:** "I freaking hate that term," "a lot of what I see is simply moms sharing wisdom," and "their delivery might be off."
+- **Layout:** headings inside your story blocks now stay with the text that follows them. Tip 6's heading had been stranded at the bottom of a page.
