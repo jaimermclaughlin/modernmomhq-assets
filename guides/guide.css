@@ -83,6 +83,16 @@ sup a{color:var(--cherry)}
 .shop .aff{display:block;margin-top:4pt;font-size:8pt;color:var(--muted);font-style:italic}
 .shopline{margin-top:4pt}
 .nw{white-space:nowrap}
+/* Round 4: pull quotes, scripture, sign-off, mindset comparison */
+.pullquote{margin:16pt .45in;text-align:center;break-inside:avoid}
+.pullquote p{font-family:var(--serif);font-style:italic;font-size:15pt;line-height:1.35;color:var(--wine);margin:0}
+.pullquote .by,.verse .by{display:block;margin-top:6pt;font-size:7.5pt;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+.verse{margin:10pt .3in 12pt;text-align:center;break-inside:avoid}
+.verse p{font-family:var(--serif);font-style:italic;font-size:12.5pt;line-height:1.4;color:var(--wine);margin:0}
+.story .signoff{font-family:var(--serif);font-style:italic;font-size:14pt;color:var(--wine);margin:10pt 0 2pt}
+.mindsets{margin:4pt 0 12pt}
+.mindsets ul{margin:0;padding-left:14pt}
+.mindsets li{margin-bottom:3pt}
 
 /* Boxes */
 .box{border-radius:10pt;padding:11pt 14pt;margin:12pt 0;break-inside:avoid}

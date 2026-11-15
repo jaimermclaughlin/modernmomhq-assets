@@ -541,3 +541,43 @@ All links were copied from your ShopMy shop (shopmy.us/shop/jmclaughlin) as it s
 - **About page:** "The products I recommend: shopmy.us/shop/jmclaughlin."
 - **Disclosure:** "Product links in this workbook may be affiliate links" on the Skylight box and the About page, matching the note on your ShopMy collections ("The products featured here may contain affiliate links").
 - **Not added:** the book collections (Self-Help, Psychology, Non-Fiction) mix in faith titles, which this workbook leaves out, and single-book links in your shop are per-click redirect links rather than stable links.
+
+## Round 4: restored 2020 sections
+
+Copyedited for grammar, spelling and flow from the original 2020 PDFs (Master Your Mindset, Combat the Chaos with Family Meetings). Meaning kept. Changes beyond grammar are listed under each section.
+
+### Chapter 1, Your Mindset (after "Hold both truths")
+- **Choices + different mindsets:** restored in full.
+- **Fixed vs. growth mindset:**
+  - The Carol Dweck passage is now written as your summary of her idea, without quotation marks, and cited to her book *Mindset: The New Psychology of Success* (2006). The 2020 wording is a paraphrase, not her exact quote.
+  - "Document their intelligence" became "proving their intelligence" for clarity.
+  - The Big Life Journal poster image is not reproduced, because it is their product. Your line pointing readers to biglifejournal.com stays.
+  - New "Fixed mindset / Growth mindset" comparison cards, written in our own words from your tips.
+- **Moving to a growth mindset, tips 2 to 7:** restored in full, with a note that tip 1 is the "Embrace your strengths and your weaknesses" page in Chapter 6.
+  - Tip 2: "crippled by the fear of failure" became "paralyzed by the fear of failing."
+  - Tip 4: added one closing line so the second half of the title ("know when it isn't constructive") is answered: "And when it isn't constructive? Ask yourself whether it was meant to help you or to shame you. If it was only meant to shame you, you can let it go." This line is new. Remove it if you prefer.
+- **How to break through mental roadblocks (opening):**
+  - The Abigail Brenner quote is kept and cited to her Psychology Today post "You Are What You Believe" (November 2012). The dash inside her quote became parentheses.
+  - "One that we do in my Self Care Challenge" became "one I use with the women I work with," because the challenge is from the old brand.
+  - "I will give you some personal examples" was dropped, because "Here are mine." follows right after.
+
+### Chapter 3, Family Meetings
+- **What is a family meeting? / When should family meetings take place?:** restored as the chapter's first block. Your schedule (yearly on New Year's Eve, monthly on the first Sunday or the day before the month starts, weekly on Sunday afternoons) is now a short list.
+- **Sunday Adelaja quote:** a pull quote after that block, cited to Goodreads (listed under his book *How to Become Great Through Time Conversion*).
+- **Important points for discussion, and how to handle chores:** restored in full after the ground rules, including the Brooklynn and dishes examples. "We can serve our family in areas that aren't their strengths and vice versa" became "each of us can serve the family in the areas that aren't someone else's strength."
+- **Layout:** the FAQs now follow on the same page, and "Let AI do the boring part" moved after the FAQs.
+
+### Chapter 5, Sharing the Load
+- **A letter from Stuart:** restored in full, in his voice, signed "Stuart," with his closing questions as a pull quote.
+  - The 2am story is back inside his letter, where it was in 2020.
+  - The paragraph starting "Now picture the same night with a plan" was added in round 2. It is not from his original letter, so check that he is happy with it there.
+  - "Our 11 year old loves to bake" became "Our oldest loves to bake." She was 11 in 2020; the 2020 FAQ lists the older two as 11 and 8.
+  - "Mother Theresa" became "Mother Teresa."
+  - "Leadership and Self Deception" became *Leadership and Self-Deception*, by the Arbinger Institute.
+  - Galatians 5:13 is the NIV wording. The NIV copyright notice Biblica requires is now on the inside cover.
+- **Layout:**
+  - "When they won't take part" now continues on the same page as the scripts.
+  - The "When your season changes" box moved to the "A page for your partner" worksheet, so it doesn't sit alone on a page.
+
+### Front matter
+- The "In this chapter" lists for chapters 1, 3 and 5 and their Contents descriptions now include the restored sections.
