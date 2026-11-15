@@ -147,7 +147,11 @@ td{border-bottom:1px solid var(--line);padding:5pt 6pt;vertical-align:top}
 /* Sources */
 .sources{font-size:8.2pt;line-height:1.35;padding-left:16pt}
 .sources li{margin-bottom:3pt;break-inside:avoid}
-.sources a{word-break:break-all}
+.sources a{word-break:normal;overflow-wrap:normal}
+
+/* Line breaking: balanced last lines, no single lines stranded at a page edge */
+p,li,td,th,dd,h1,h2,h3,h4,.d,.lead{text-wrap:pretty}
+p,li{orphans:2;widows:2}
 
 /* Build modes: the cover and the body are printed separately, then merged */
 html.only-cover body > *:not(.cover){display:none !important}

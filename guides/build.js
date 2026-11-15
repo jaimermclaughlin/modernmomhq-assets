@@ -45,6 +45,102 @@ const BODY_OPTS = {
   });
   if (src.missing.length || src.unused.length) throw new Error('Source problems: ' + JSON.stringify(src));
   console.log('sources', src.count);
+  // Typography: keep the last two words of every sentence and block together, and let long URLs break only at / . - characters
+  await page.evaluate(() => {
+    document.querySelectorAll('ol.sources a').forEach(a => {
+      const parts = a.textContent.split(/(?<=[\/.\-_?=&])/);
+      a.textContent = '';
+      parts.forEach((p, i) => { a.appendChild(document.createTextNode(p)); if (i < parts.length - 1) a.appendChild(document.createElement('wbr')); });
+    });
+    const SEL = window.__TEXT_SEL = 'p, li, td, th, h1, h2, h3, h4, dd, .d, .lead, .anchor span, .flow b, .flow div > span, .buck .for, .buck .fam, .note, .pill';
+    const els = [...document.querySelectorAll(SEL)].filter(el => !el.querySelector(SEL) && !el.closest('ol.sources'));
+    const WS = /[ \t\n\r]/;
+    els.forEach(el => {
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: n => n.parentElement.closest('sup') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+      const nodes = []; let n; while ((n = walker.nextNode())) nodes.push(n);
+      const map = []; nodes.forEach(node => { for (let i = 0; i < node.data.length; i++) map.push([node, i]); });
+      const text = nodes.map(x => x.data).join('');
+      const tokens = []; const re = /[^ \t\n\r]+/g; let m;
+      while ((m = re.exec(text))) tokens.push([m.index, m.index + m[0].length, m[0]]);
+      const edits = new Map();
+      const join = (k) => {
+        if (k < 1) return;
+        let s0 = tokens[k - 1][1], s1 = tokens[k][0];
+        if (s1 <= s0) return;
+        for (let i = s0; i < s1; i++) {
+          const [node, off] = map[i];
+          if (!edits.has(node)) edits.set(node, []);
+          edits.get(node).push([off, i === s0 ? '\u00a0' : '']);
+        }
+      };
+      tokens.forEach((t, k) => { if (/[.!?](["\u201d\u2019)\]]*)$/.test(t[2])) join(k); });
+      if (tokens.length > 1) join(tokens.length - 1);
+      edits.forEach((list, node) => {
+        const chars = node.data.split('');
+        list.forEach(([off, ch]) => { chars[off] = ch; });
+        node.data = chars.join('');
+      });
+    });
+  });
+
+  // Layout checks in print layout at the real text width (7in): clipped or overflowing text, and lines holding a single sentence-ending word
+  await page.emulateMedia({ media: 'print' });
+  await page.setViewportSize({ width: 672, height: 1000 });
+  await page.evaluate(() => { document.documentElement.className = 'no-cover'; });
+  const layout = await page.evaluate(() => {
+    const out = { overflow: [], oneWord: [] };
+    const W = document.documentElement.clientWidth;
+    const tw = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = tw.nextNode())) {
+      if (!n.data.trim()) continue;
+      const el = n.parentElement;
+      const r = document.createRange(); r.selectNodeContents(n);
+      for (const rect of r.getClientRects()) {
+        if (rect.width === 0) continue;
+        if (rect.right > W + 0.5 || rect.left < -0.5) { out.overflow.push('past page edge: ' + n.data.trim().slice(0, 70)); break; }
+        let a = el, bad = null;
+        while (a && a !== document.body) {
+          const cs = getComputedStyle(a);
+          const boxed = parseFloat(cs.borderTopWidth) > 0 || parseFloat(cs.borderLeftWidth) > 0 || !/rgba\(0, 0, 0, 0\)|transparent/.test(cs.backgroundColor) || a.tagName === 'TD' || a.tagName === 'TH';
+          if (boxed) { const b = a.getBoundingClientRect(); if (rect.right > b.right + 1 || rect.left < b.left - 1 || rect.bottom > b.bottom + 1 || rect.top < b.top - 2) { bad = (a.className || a.tagName); } break; }
+          a = a.parentElement;
+        }
+        if (bad) { out.overflow.push('outside its box (' + bad + '): ' + n.data.trim().slice(0, 70)); break; }
+      }
+    }
+    const SEL = window.__TEXT_SEL;
+    const els = [...document.querySelectorAll(SEL)].filter(el => !el.querySelector(SEL) && !el.closest('ol.sources'));
+    els.forEach(el => {
+      const words = [];
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: x => x.parentElement.closest('sup') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+      let t;
+      while ((t = walker.nextNode())) {
+        const re = /[^ \t\n\r\u00a0]+/g; let m;
+        while ((m = re.exec(t.data))) {
+          const r = document.createRange(); r.setStart(t, m.index); r.setEnd(t, m.index + m[0].length);
+          const rc = r.getClientRects()[0]; if (rc) words.push({ w: m[0], top: rc.top, h: rc.height });
+        }
+      }
+      if (!words.length) return;
+      const lines = []; let cur = [words[0]];
+      for (let i = 1; i < words.length; i++) { if (words[i].top > cur[0].top + cur[0].h * 0.6) { lines.push(cur); cur = [words[i]]; } else cur.push(words[i]); }
+      lines.push(cur);
+      if (lines.length < 2) return;
+      lines.forEach((ln, i) => {
+        const single = ln.length === 1;
+        const ends = /[.!?](["\u201d\u2019)\]]*)$/.test(ln[0].w);
+        if (single && (i === lines.length - 1 || ends)) out.oneWord.push(ln[0].w + '  <=  ' + el.textContent.trim().replace(/\s+/g, ' ').slice(0, 70));
+      });
+    });
+    return out;
+  });
+  console.log('layout check: overflow', layout.overflow.length, '| one-word lines', layout.oneWord.length);
+  if (layout.overflow.length || layout.oneWord.length) {
+    [...layout.overflow, ...layout.oneWord].forEach(x => console.log('  ' + x));
+    if (!process.env.ALLOW_LAYOUT_ISSUES) throw new Error('Layout problems found');
+  }
+
   const fontsOk = await page.evaluate(() => ['Instrument Serif', 'Work Sans', 'Faustine'].map(f => [f, document.fonts.check('16px "' + f + '"')]));
   console.log('fonts', JSON.stringify(fontsOk));
 

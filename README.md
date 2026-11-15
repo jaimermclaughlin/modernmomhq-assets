@@ -18,3 +18,5 @@ Shared styles for Modern Mom HQ Kajabi lessons and pages.
 - `guides/pdf/Master-Your-Motherhood-Workbook.pdf`: Master Your Motherhood, the general Modern Mom HQ workbook (Letter size, printable), rebuilt from the 2020 Master Your workbooks and the audience research.
 - `guides/master-your-motherhood.html` and `guides/guide.css`: the source. Edit these, then run `node guides/build.js` (needs Playwright with Chromium and Python 3 with pypdf). The build fills in the contents page numbers and adds chapter bookmarks.
 - `guides/fonts/`: Instrument Serif and Work Sans (SIL Open Font License, license files included).
+- `guides/EDIT-LOG.md`: every copyedit made to Jaime's original 2020 text, before and after.
+- The build also checks the layout: it fails if any text spills outside its box or past the page edge, or if any line holds a single word that ends a sentence or paragraph.
