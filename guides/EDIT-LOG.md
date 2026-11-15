@@ -510,3 +510,23 @@ Copyedit of the original 2020 passages in *Master Your Motherhood: The Workbook*
 **After:** Are you being as intentional with your “one-on-ones” with your kids and spouse as you are with your employees?
 
 ---
+
+# Round 2 (November 2026): improvements and additions
+
+You asked me to improve and expand these sections without changing your message. The full new text is in the workbook; this is a summary of what changed.
+
+- **The motherhood that society has left us with:** clearer opening; explains how society's picture of motherhood leaves moms feeling they are doing it wrong; spells out what "it takes a village" means; ends by connecting to the rest of the workbook.
+- **The labels you were given:** new introduction explaining where labels come from, plus a "What this exercise does" and "How it works" box before your lies and truths.
+- **Have you lost yourself in motherhood?** Added "How do you know if you've lost yourself?" signs; turned the questions into a list; tightened sentences; same message and voice.
+- **"Normal" household roles:** explains what the "emotional burden" means, adds everyday examples, and makes clear that the fix is owning work start to finish, not "helping mom."
+- **Our personal experience:** adds what changed (talking to each other on a regular rhythm, not a better planner) and that both parents run the meetings after the first few, with Dad able to run it without you.
+- **Family meeting FAQs:** added "Who runs the meeting?", "How long should it take?" and "What if we miss a week?"; tightened the other answers.
+- **Family meetings ground rules:** "Rotate the leader" is now "Both parents run it."
+- **The 2am story:** split into clearer beats and added the same night "with a plan" made at the family meeting.
+- **Embrace your strengths and your weaknesses:** added more everyday examples and a closing on how strengths shift with your season.
+- **Chapter openers:** each now shows its topic (for example "Kids' Rewards") above the headline.
+- **Kids' Rewards:** new page on the Skylight Calendar (chore chart, stars and rewards, what needs Skylight Plus). The ShopMy link is a placeholder until you send it.
+- **Keep Mom Going:** "Get ready every day. It matters." is now routine #1 in your words; new "Schedule your bad day" section in your words, with a research note on bottling up emotions and a line on when a bad day is more than a bad day.
+- **Motherhood, ADHD or Hormones?:** new "Your cycle, week by week" page, a full page on PMDD (what it feels like, what helps, how it overlaps with ADHD) and a page on conditions that often come with ADHD.
+- **Brand:** North Star removed. The About page now says you share weekly articles on your Substack, Unfiltered Motherhood, and that your coaching and digital guides live at getmodernmomhq.com.
+- **Script font:** set to Awesome Ways. It shows as Faustine until the Awesome Ways font file is added to guides/fonts/.

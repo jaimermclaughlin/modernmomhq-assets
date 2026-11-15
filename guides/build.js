@@ -141,8 +141,11 @@ const BODY_OPTS = {
     if (!process.env.ALLOW_LAYOUT_ISSUES) throw new Error('Layout problems found');
   }
 
-  const fontsOk = await page.evaluate(() => ['Instrument Serif', 'Work Sans', 'Faustine'].map(f => [f, document.fonts.check('16px "' + f + '"')]));
+  const fontsOk = await page.evaluate(() => ['Instrument Serif', 'Work Sans', 'Faustine', 'Awesome Ways'].map(f => [f, document.fonts.check('16px "' + f + '"')]));
   console.log('fonts', JSON.stringify(fontsOk));
+  if (!fontsOk.find(f => f[0] === 'Awesome Ways')[1]) console.log('NOTE: Awesome Ways font file not found in guides/fonts/, using Faustine for script text');
+  const placeholders = await page.evaluate(() => document.querySelectorAll('a[href="#SHOPMY-LINK"]').length);
+  if (placeholders) console.log('NOTE: ' + placeholders + ' ShopMy link placeholder(s) still need a real link');
 
   // 1. Cover, edge to edge, no footer
   await page.evaluate(() => { document.documentElement.className = 'only-cover'; });

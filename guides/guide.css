@@ -7,12 +7,14 @@
 @font-face{font-family:'Work Sans';src:url('fonts/work-sans-latin-500-normal.woff2') format('woff2');font-weight:500;font-style:normal}
 @font-face{font-family:'Work Sans';src:url('fonts/work-sans-latin-600-normal.woff2') format('woff2');font-weight:600;font-style:normal}
 @font-face{font-family:'Faustine';src:url('../fonts/Faustine.woff2') format('woff2');font-weight:400;font-style:normal}
+/* Script font: Awesome Ways (licensed; drop the file into guides/fonts/ as AwesomeWays.woff2, .otf or .ttf). Falls back to Faustine until it is there. */
+@font-face{font-family:'Awesome Ways';src:url('fonts/AwesomeWays.woff2') format('woff2'),url('fonts/AwesomeWays.otf') format('opentype'),url('fonts/AwesomeWays.ttf') format('truetype');font-weight:400;font-style:normal}
 
 :root{
   --ivory:#F3EFE6; --ivory-2:#F8F5EE; --oat:#D9CDBD; --taupe:#A89A87;
   --wine:#4A1E1E; --cherry:#8A1E1E; --olive:#3F3B2F; --chocolate:#5A3A2E;
   --ink:#0F0F0F; --ink-2:#3B3530; --muted:#6B6158; --line:#CFC3B2;
-  --serif:'Instrument Serif',Georgia,serif; --sans:'Work Sans',Helvetica,Arial,sans-serif; --script:'Faustine','Snell Roundhand',cursive;
+  --serif:'Instrument Serif',Georgia,serif; --sans:'Work Sans',Helvetica,Arial,sans-serif; --script:'Awesome Ways','Faustine','Snell Roundhand',cursive;
 }
 @page{size:Letter}
 *{box-sizing:border-box}
@@ -64,6 +66,19 @@ sup a{color:var(--cherry)}
 .opener .inthis h4{margin-top:0}
 .opener .inthis ul{margin:0;columns:2;column-gap:22pt}
 .opener .inthis li{break-inside:avoid}
+
+/* Chapter topic label */
+.opener .topic{font-family:var(--serif);font-style:italic;font-size:22pt;line-height:1.1;color:var(--cherry);margin:6pt 0 0;padding-bottom:6pt;border-bottom:1px solid var(--oat);display:inline-block}
+
+/* Cycle week cards */
+.phase{border-left:3px solid var(--cherry);background:var(--ivory-2);border-radius:0 8pt 8pt 0;padding:8pt 12pt;margin:0 0 8pt;break-inside:avoid}
+.phase p{margin:2pt 0;font-size:9.6pt}
+.ph-h{display:flex;gap:10pt;align-items:baseline;margin-bottom:2pt}
+.ph-h b{font-family:var(--serif);font-weight:400;font-size:15pt;color:var(--wine)}
+.ph-h span{font-size:8pt;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Shop link */
+.shop{background:var(--ivory);border:1px dashed var(--taupe);border-radius:10pt;padding:10pt 14pt;margin-top:12pt}
 
 /* Boxes */
 .box{border-radius:10pt;padding:11pt 14pt;margin:12pt 0;break-inside:avoid}
