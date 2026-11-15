@@ -134,7 +134,7 @@ td{border-bottom:1px solid var(--line);padding:5pt 6pt;vertical-align:top}
 .week td{height:1.55in;border-left:1px solid var(--line)}
 .week td.rl{font-weight:600;font-size:8.5pt;width:13%;vertical-align:middle;border-left:0}
 .sq{display:inline-block;width:10pt;height:10pt;border:1.2px solid var(--taupe);border-radius:2pt;vertical-align:middle}
-.script-num{font-family:var(--script);font-size:60pt;color:var(--oat);line-height:1.1}
+.opener .num.script-num{font-family:var(--script);font-size:58pt;color:var(--oat);line-height:1.25;margin-bottom:10pt}
 
 /* Start Here flow */
 .flow{list-style:none;padding:0;margin:18pt 0 6pt;counter-reset:none}

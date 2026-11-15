@@ -529,4 +529,4 @@ You asked me to improve and expand these sections without changing your message.
 - **Keep Mom Going:** "Get ready every day. It matters." is now routine #1 in your words; new "Schedule your bad day" section in your words, with a research note on bottling up emotions and a line on when a bad day is more than a bad day.
 - **Motherhood, ADHD or Hormones?:** new "Your cycle, week by week" page, a full page on PMDD (what it feels like, what helps, how it overlaps with ADHD) and a page on conditions that often come with ADHD.
 - **Brand:** North Star removed. The About page now says you share weekly articles on your Substack, Unfiltered Motherhood, and that your coaching and digital guides live at getmodernmomhq.com.
-- **Script font:** set to Awesome Ways. It shows as Faustine until the Awesome Ways font file is added to guides/fonts/.
+- **Script font:** now Awesome Ways (cover, Pivot Check opener, sign-off). The font file is kept out of the repository because it is licensed; keep a copy at guides/fonts/AwesomeWays.otf to rebuild.
