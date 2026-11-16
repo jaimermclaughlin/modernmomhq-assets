@@ -650,3 +650,32 @@ Every moved section was copied word for word into a draft holding file in `guide
   - The AAP guideline is now cited directly (Wolraich and others, *Pediatrics*, 2019, doi.org/10.1542/peds.2019-2528) instead of a summary of it.
   - Sources that left with their sections are in the draft files.
 - **Chapters 6 and 7:** new short "If ADHD is in your house" notes, because their old notes moved out.
+
+## Round 7: Master Your Motherhood Round B (new tools and examples)
+
+New writing only. Your existing words didn't change, apart from three cross-references that still used old chapter names. The book is now 63 pages. Nothing new makes a research claim; these pages are practical steps. Examples are labeled "Example" and use a made-up family, not yours.
+
+- **Every chapter:** a one-page "System at a glance" at the end, with what it solves, the steps, how you'll know it's working, the minimum version, and when to redo it. This delivers the "One page that sums up the system" promise on the Start Here page.
+- **Chapter 1:** "What keeps going wrong" worksheet: your top three recurring problems, what each costs you, which chapter helps, and the one place to start.
+- **Chapter 2:** "Example: handing over school paperwork," a before-and-after table across the four parts, plus a filled-in handoff note.
+- **Chapter 3:** "When agreements keep falling through," six steps to try before taking an area back, pointing to the honest checkpoint.
+- **Chapter 4:** "Example: a weekly meeting, filled in," including the decisions table.
+- **Chapter 5:** "Fit it to your child's age," starting points for preschool, elementary, and tweens and teens. It sits on the Skylight page.
+- **Chapter 6:** "Morning and evening routine builder" worksheet.
+- **Chapter 7:**
+  - "Good enough, on purpose" (one family's standards for dishes, laundry, floors and dinner)
+  - "Ask for support"
+  - "Commitments audit" worksheet
+- **Chapter 8:**
+  - "What to redo first" for eight kinds of change
+  - "Why did it stop working?" checklist
+  - an "In this chapter" list
+- **New closing sections:**
+  - "Your first 30 days": one step a week, each with a bad-day version
+  - "When it isn't working": troubleshooting for six common snags, each pointing to the chapter that helps
+  - both are in the clickable Contents and the bookmarks
+- **Fixed cross-references:**
+  - "a template in Sharing the Load" became "a template in Chapter 3"
+  - "the ownership map from Your Mental Load" became "from Chapter 2"
+  - "the routines in Keep Mom Going matter more" became "protecting your capacity (Chapter 7) matters more"
+- **Layout:** slightly tighter Contents rows so the page fits on one sheet.

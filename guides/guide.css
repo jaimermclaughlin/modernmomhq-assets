@@ -167,9 +167,9 @@ td{border-bottom:1px solid var(--line);padding:5pt 6pt;vertical-align:top}
 
 /* Contents */
 .toc{list-style:none;padding:0;margin:14pt 0 0}
-.toc li{display:flex;align-items:baseline;gap:8pt;padding:4.5pt 0;border-bottom:1px solid var(--line);margin:0}
+.toc li{display:flex;align-items:baseline;gap:8pt;padding:3pt 0;border-bottom:1px solid var(--line);margin:0}
 .toc .n{font-family:var(--serif);font-size:18pt;color:var(--oat);width:28pt}
-.toc .t{font-family:var(--serif);font-size:15.5pt;flex:1}
+.toc .t{font-family:var(--serif);font-size:14.5pt;flex:1}
 .toc .d{display:block;font-family:var(--sans);font-size:8.5pt;color:var(--muted);margin-top:1pt}
 .toc .p{font-weight:600;font-size:10pt;color:var(--cherry)}
 
@@ -193,3 +193,12 @@ html.no-cover .cover{display:none !important}
 .box.story.letter{border-left:2px solid var(--wine);padding:2pt 0 2pt 16pt}
 .box.evidence{background:var(--ivory);border:0;border-left:3px solid var(--olive);border-radius:0 10pt 10pt 0}
 .toc .t > a{color:inherit;text-decoration:none}
+
+/* Round 7: worked examples and one-page system summaries */
+.example{border:1.5px dashed var(--taupe);border-radius:10pt;padding:12pt 14pt;margin:12pt 0;background:#fff}
+.example > .tag{display:inline-block;font-size:7pt;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ivory);background:var(--chocolate);border-radius:999px;padding:2pt 8pt}
+.example p.small{margin:0 0 5pt}
+.ex{font-style:italic;color:var(--ink-2)}
+.glance .lead{margin:14pt 0 8pt;font-size:13pt}
+.glance ol.steps{margin:4pt 0 14pt;padding-left:18pt}
+.glance ol.steps li{margin-bottom:10pt;font-size:12.5pt;line-height:1.4}
