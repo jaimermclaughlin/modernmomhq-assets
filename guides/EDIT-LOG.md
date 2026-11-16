@@ -696,3 +696,70 @@ New writing only. Your existing words didn't change, apart from three cross-refe
   - every field outlined on the rendered pages to confirm it sits on its line area, cell, blank or checkbox
   - every field filled with sample text and every box ticked, then rendered
   - the ticked boxes use a drawn check mark, so they look the same in every PDF app
+
+## Round 9: editorial review fixes
+
+From the editorial review of the 63-page workbook. Already handled in Round C, before the review was written:
+- the Pivot Check chapter names
+- the fillable PDF and worksheet pack
+- the NIV copyright notice ("ADHD coach" was confirmed by you earlier)
+
+### Must-fix items
+- **Reward menu worksheet:** "A buck goes back to the bank for... (keep this list short)" became "What we're practicing this month..." It contradicted "earned bucks stay earned."
+- **The 2am story:** "Same baby, same exhaustion, no resentment" became "...but far less resentment." That line was added in round 2, and a plan can't promise no resentment.
+
+### Stuart's letter, condensed
+The letter went from 1,444 to 1,082 words. The 2am story is kept whole, and the rest of the letter is about a third shorter, in his own sentences.
+- **Kept in full:**
+  - the opening
+  - the adult expectations paragraph
+  - dinnertime
+  - the men, women and team-effort lines
+  - the 2am story
+  - the serving paragraphs
+  - Galatians 5:13
+  - your challenge to him
+  - his closing
+- **Shortened:**
+  - the grandmas paragraph (dropped "help with the food" and "They would literally serve the entire time")
+  - the divorce paragraph (dropped "and helped out where needed")
+  - the preteen and teen chores, now one paragraph
+  - "Serving others is a good feeling" (dropped "humbling and rewarding, and it's the gift that keeps on giving")
+  - the baking story (now three sentences)
+  - the *Leadership and Self-Deception* paragraph
+  - the two business paragraphs, now one: "At work, if someone on your team is struggling, or sales are slow and customers are unhappy, you step in..."
+  - the last paragraph, shortened to "Your family needs the same from you: an active role, leadership, communication and help to succeed, in whatever form you all decide."
+- **Cut:**
+  - the list of historical figures (Abraham Lincoln, Mother Teresa, Gandhi, Muhammad Ali, Socrates, Nelson Mandela, Martin Luther King Jr., Jesus)
+  - "I may never break a sports record" and "my name will probably be forgotten in three or four generations"
+
+The full letter is in git history (commit 803f4d4 and earlier).
+
+### Older-sounding phrases, same meaning
+- "We've all heard our sweet-hearted spouses say..." became "We've all heard a well-meaning partner say..." Also, "That is so kind" became "It's a kind offer."
+- "One simple change can create HUGE waves of change" became "One simple change makes a big difference."
+- "Below, we outline the entire system... We are excited to see how it helps your kiddos and takes some of the stress off the parents!" became "Here is the whole system: how it works and how to bring it into your family. I hope it helps your kids and takes some of the stress off you."
+
+### Family meeting repeats removed (round 2 additions only)
+- The FAQs "Who runs the meeting?" and "How long should it take?" are gone. The ground rules already cover both.
+- "Around age 4 is a great time to start them" was removed from the ground rules card. Your FAQ answer about ages stays.
+
+### New: "Teach a job until they own it" (Chapter 5)
+- Five steps: show them, do it together, make it visible, let them do it alone, cut back the reminders.
+- It works with or without the Effort Bank.
+- Added to "In this chapter" and to the chapter's System at a glance.
+
+### "The system is broken," with more nuance
+- **Chapter 1 summary line:** "The problem usually isn't you. It's an unfair expectation, a missing system or a season that changed. You still get to fix your part."
+- **About page:** "Everything I teach comes back to one idea: the problem usually isn't you. More often it's an unfair expectation, a missing system or a season that changed."
+
+### Sources
+- **"Schools, doctors and apps often reach mom first"** (cited to a TikTok search page) became:
+  - "Schools often reach mom first, even when both parents are listed."
+  - plus a large US experiment that emailed schools as two-parent families and found schools called the mother back more often (Buzard, Gee and Stoddard, "Who You Gonna Call?").
+  - The percentages are left out because I couldn't open the coverage to confirm them.
+- **Barkley:** the HealthyPlace summary was replaced with his book *Taking Charge of ADHD*, 4th edition (Guilford Press, 2020).
+- **Skylight sources:** now say "Features checked November 2026."
+
+### Layout
+The Skylight page and the ADHD edition now follow on in Chapter 5, so there are no mostly empty pages. Still 63 pages.
