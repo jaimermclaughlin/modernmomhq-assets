@@ -1,23 +1,38 @@
-// Builds guides/pdf/Master-Your-Motherhood-Workbook.pdf (fillable) and
-// guides/pdf/Master-Your-Motherhood-Worksheet-Pack.pdf (fillable) from master-your-motherhood.html.
-// Usage: node guides/build.js   (needs Playwright with Chromium, Python 3 with pypdf, and Poppler's pdftotext)
+// Builds one workbook as a fillable PDF, plus its worksheet pack when the book has a pack cover.
+// Usage: node guides/build.js [book]   (needs Playwright with Chromium, Python 3 with pypdf, and Poppler's pdftotext)
+//   node guides/build.js                        Master Your Motherhood (workbook + worksheet pack)
+//   node guides/build.js the-woman-beyond-mom   The Woman Beyond Mom
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 const { execFileSync } = require('child_process');
 
+const BOOKS = {
+  'master-your-motherhood': {
+    name: 'Master Your Motherhood', out: 'Master-Your-Motherhood-Workbook.pdf', pack: 'Master-Your-Motherhood-Worksheet-Pack.pdf',
+    subject: 'Systems for your mental load, family meetings, kids and routines that still work on a bad day. ADHD-friendly.'
+  },
+  'the-woman-beyond-mom': {
+    name: 'The Woman Beyond Mom', out: 'The-Woman-Beyond-Mom-Workbook.pdf', pack: 'The-Woman-Beyond-Mom-Worksheet-Pack.pdf',
+    subject: 'Get to know yourself again: your patterns, your emotions, your health, real self-care and what you want next. ADHD-friendly.'
+  }
+};
+const BOOK_ID = process.argv[2] || 'master-your-motherhood';
+const BOOK = BOOKS[BOOK_ID];
+if (!BOOK) { console.error('Unknown book: ' + BOOK_ID + '. Choose one of: ' + Object.keys(BOOKS).join(', ')); process.exit(1); }
+
 const HERE = __dirname;
-const SRC = path.join(HERE, 'master-your-motherhood.html');
+const SRC = path.join(HERE, BOOK_ID + '.html');
 const OUT_DIR = path.join(HERE, 'pdf');
-const OUT = path.join(OUT_DIR, 'Master-Your-Motherhood-Workbook.pdf');
-const OUT_PACK = path.join(OUT_DIR, 'Master-Your-Motherhood-Worksheet-Pack.pdf');
-const TMP = fs.mkdtempSync(path.join(require('os').tmpdir(), 'mym-'));
+const OUT = path.join(OUT_DIR, BOOK.out);
+const OUT_PACK = path.join(OUT_DIR, BOOK.pack);
+const TMP = fs.mkdtempSync(path.join(require('os').tmpdir(), 'mmhq-'));
 const t = (n) => path.join(TMP, n);
 const py = (args) => execFileSync('python3', ['-I', path.join(HERE, 'pdf_tools.py'), ...args]).toString();
 
 const FOOT = '<div style="width:100%;padding:0 0.75in;display:flex;justify-content:space-between;font-family:Helvetica,Arial,sans-serif;font-size:7px;letter-spacing:1.2px;text-transform:uppercase;color:#A89A87">' +
-  '<span>Master Your Motherhood · Modern Mom HQ</span><span class="pageNumber"></span></div>';
-const FOOT_PACK = FOOT.replace('Master Your Motherhood · Modern Mom HQ', 'Master Your Motherhood · Worksheet Pack');
+  '<span>' + BOOK.name + ' · Modern Mom HQ</span><span class="pageNumber"></span></div>';
+const FOOT_PACK = FOOT.replace(BOOK.name + ' · Modern Mom HQ', BOOK.name + ' · Worksheet Pack');
 
 // Fillable fields. Every writing space gets two tiny white marker words, at its top-left (A) and
 // bottom-right (B) corner. They are absolutely positioned, so the layout does not move. pdf_tools.py
@@ -211,54 +226,59 @@ const BODY_OPTS = {
   fs.writeFileSync(t('fields-main.json'), JSON.stringify(fieldsMain));
   console.log('fields (workbook)', py(['locate', t('body-marked.pdf'), t('fields-main.json'), t('rects-main.json')]).trim());
 
-  // 3c. Worksheet pack: only the worksheets, the first 30 days and a pack cover with its own contents
-  const packSpec = await page.evaluate(() => {
-    document.documentElement.className = 'pack';
-    const list = document.querySelector('.pack-toc'); list.innerHTML = '';
-    let chapter = '';
-    const markers = [];
-    [...document.body.children].forEach(sec => {
-      const ch = sec.querySelector('[data-toc^="c"]');
-      if (ch) chapter = 'Ch. ' + ch.getAttribute('data-toc').slice(1);
-      if (!(sec.matches('section.ws') || sec.matches('section.pack-keep'))) return;
-      const id = 'pk' + markers.length;
-      let text, title, label;
-      if (sec.matches('section.ws')) {
-        text = sec.querySelector('.ws-head').textContent.trim();
-        title = sec.querySelector('.ws-head h3').textContent.trim();
-        label = chapter;
-      } else {
-        const eb = sec.querySelector('[data-toc]');
-        text = eb.textContent.trim(); title = eb.getAttribute('data-title'); label = 'Plan';
-      }
-      markers.push({ id, text, title: (label + ' \u00b7 ' + title).replace(/\u00a0/g, ' ') });
-      const li = document.createElement('li');
-      li.innerHTML = '<span class="n"></span><span class="t"></span><span class="p" data-p="' + id + '">00</span>';
-      li.querySelector('.n').textContent = label; li.querySelector('.t').textContent = title;
-      list.appendChild(li);
+  // 3c. Worksheet pack (only for books that have a pack cover): only the worksheets, the first 30 days
+  // and a pack cover with its own contents
+  const hasPack = await page.evaluate(() => !!document.querySelector('.pack-cover'));
+  let packSpec, packPages;
+  if (hasPack) {
+    packSpec = await page.evaluate(() => {
+      document.documentElement.className = 'pack';
+      const list = document.querySelector('.pack-toc'); list.innerHTML = '';
+      let chapter = '';
+      const markers = [];
+      [...document.body.children].forEach(sec => {
+        const ch = sec.querySelector('[data-toc^="c"]');
+        if (ch) chapter = 'Ch. ' + ch.getAttribute('data-toc').slice(1);
+        if (!(sec.matches('section.ws') || sec.matches('section.pack-keep'))) return;
+        const id = 'pk' + markers.length;
+        let text, title, label;
+        if (sec.matches('section.ws')) {
+          text = sec.querySelector('.ws-head').textContent.trim();
+          title = sec.querySelector('.ws-head h3').textContent.trim();
+          label = chapter;
+        } else {
+          const eb = sec.querySelector('[data-toc]');
+          text = eb.textContent.trim(); title = eb.getAttribute('data-title'); label = 'Plan';
+        }
+        markers.push({ id, text, title: (label + ' \u00b7 ' + title).replace(/\u00a0/g, ' ') });
+        const li = document.createElement('li');
+        li.innerHTML = '<span class="n"></span><span class="t"></span><span class="p" data-p="' + id + '">00</span>';
+        li.querySelector('.n').textContent = label; li.querySelector('.t').textContent = title;
+        list.appendChild(li);
+      });
+      return { toc: document.querySelector('[data-pack-toc-page]').textContent.trim(), markers };
     });
-    return { toc: document.querySelector('[data-pack-toc-page]').textContent.trim(), markers };
-  });
-  const PACK_OPTS = { ...BODY_OPTS, footerTemplate: FOOT_PACK };
-  await page.pdf({ ...PACK_OPTS, path: t('pack.pdf') });
-  fs.writeFileSync(t('pack-markers.json'), JSON.stringify(packSpec));
-  const packPages = JSON.parse(py(['find', t('pack.pdf'), t('pack-markers.json')]));
-  await page.evaluate((p) => { Object.keys(p).forEach(id => { const el = document.querySelector('.pack-toc [data-p="' + id + '"]'); if (el) el.textContent = p[id]; }); }, packPages);
-  await page.pdf({ ...PACK_OPTS, path: t('pack.pdf') });
-  const packCheck = JSON.parse(py(['find', t('pack.pdf'), t('pack-markers.json')]));
-  if (JSON.stringify(packCheck) !== JSON.stringify(packPages)) throw new Error('Pack page numbers moved after filling its contents');
-  const fieldsPack = await page.evaluate(MARK);
-  await page.pdf({ ...PACK_OPTS, path: t('pack-marked.pdf') });
-  await page.evaluate(UNMARK);
-  samePages(t('pack.pdf'), t('pack-marked.pdf'));
-  fs.writeFileSync(t('fields-pack.json'), JSON.stringify(fieldsPack));
-  console.log('fields (pack)', py(['locate', t('pack-marked.pdf'), t('fields-pack.json'), t('rects-pack.json')]).trim());
+    const PACK_OPTS = { ...BODY_OPTS, footerTemplate: FOOT_PACK };
+    await page.pdf({ ...PACK_OPTS, path: t('pack.pdf') });
+    fs.writeFileSync(t('pack-markers.json'), JSON.stringify(packSpec));
+    packPages = JSON.parse(py(['find', t('pack.pdf'), t('pack-markers.json')]));
+    await page.evaluate((p) => { Object.keys(p).forEach(id => { const el = document.querySelector('.pack-toc [data-p="' + id + '"]'); if (el) el.textContent = p[id]; }); }, packPages);
+    await page.pdf({ ...PACK_OPTS, path: t('pack.pdf') });
+    const packCheck = JSON.parse(py(['find', t('pack.pdf'), t('pack-markers.json')]));
+    if (JSON.stringify(packCheck) !== JSON.stringify(packPages)) throw new Error('Pack page numbers moved after filling its contents');
+    const fieldsPack = await page.evaluate(MARK);
+    await page.pdf({ ...PACK_OPTS, path: t('pack-marked.pdf') });
+    await page.evaluate(UNMARK);
+    samePages(t('pack.pdf'), t('pack-marked.pdf'));
+    fs.writeFileSync(t('fields-pack.json'), JSON.stringify(fieldsPack));
+    console.log('fields (pack)', py(['locate', t('pack-marked.pdf'), t('fields-pack.json'), t('rects-pack.json')]).trim());
+  }
   await browser.close();
 
   // 4. Merge with bookmarks
   const meta = {
-    title: 'Master Your Motherhood: The Workbook', author: 'Jaime McLaughlin, Modern Mom HQ',
-    subject: 'Systems for your mental load, family meetings, kids and routines that still work on a bad day. ADHD-friendly.',
+    title: BOOK.name + ': The Workbook', author: 'Jaime McLaughlin, Modern Mom HQ',
+    subject: BOOK.subject,
     outline: spec.markers.map(m => ({ title: m.title, page: pages[m.id] }))
   };
   fs.writeFileSync(t('meta.json'), JSON.stringify(meta));
@@ -268,9 +288,10 @@ const BODY_OPTS = {
   console.log('wrote', OUT);
 
   // 5. Worksheet pack with bookmarks, then its fillable fields
+  if (!hasPack) { console.log('no worksheet pack for this book (no .pack-cover section)'); return; }
   const packMeta = {
-    title: 'Master Your Motherhood: The Worksheet Pack', author: 'Jaime McLaughlin, Modern Mom HQ',
-    subject: 'Every worksheet from Master Your Motherhood, printable and fillable.',
+    title: BOOK.name + ': The Worksheet Pack', author: 'Jaime McLaughlin, Modern Mom HQ',
+    subject: 'Every worksheet from ' + BOOK.name + ', printable and fillable.',
     outline: packSpec.markers.map(m => ({ title: m.title, page: packPages[m.id] }))
   };
   fs.writeFileSync(t('pack-meta.json'), JSON.stringify(packMeta));
