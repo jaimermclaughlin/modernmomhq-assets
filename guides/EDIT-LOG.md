@@ -679,3 +679,20 @@ New writing only. Your existing words didn't change, apart from three cross-refe
   - "the ownership map from Your Mental Load" became "from Chapter 2"
   - "the routines in Keep Mom Going matter more" became "protecting your capacity (Chapter 7) matters more"
 - **Layout:** slightly tighter Contents rows so the page fits on one sheet.
+
+## Round 8: Master Your Motherhood Round C (fillable PDF and worksheet pack)
+
+- **The workbook PDF is now fillable.**
+  - There are 277 fields on 19 pages: every writing area, empty worksheet table cell and blank, plus the checkbox lists and the Keep, Change and Drop squares on the Pivot Check.
+  - Empty fields are invisible. A before-and-after comparison of all 63 pages showed the printed pages are identical, apart from the Pivot Check change below.
+  - Anything a reader types or ticks prints with the page.
+  - Example cells, filled-in text and the cut-out Effort Bucks are not fillable.
+- **New: `Master-Your-Motherhood-Worksheet-Pack.pdf`** (20 pages, 266 fields).
+  - A cover listing every worksheet with its chapter and page number.
+  - All 18 worksheets, including the Effort Bucks, plus Your First 30 Days.
+  - Its own footer and bookmarks.
+- **Pivot Check:** the Keep, Change or Drop rows still listed the old chapter names ("Your Mindset," "Keep Mom Going" and others). They now list Chapters 2 to 7 by their new names.
+- **Checks run:**
+  - every field outlined on the rendered pages to confirm it sits on its line area, cell, blank or checkbox
+  - every field filled with sample text and every box ticked, then rendered
+  - the ticked boxes use a drawn check mark, so they look the same in every PDF app

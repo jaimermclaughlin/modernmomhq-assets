@@ -1,5 +1,6 @@
-// Builds guides/pdf/Master-Your-Motherhood-Workbook.pdf from master-your-motherhood.html.
-// Usage: node guides/build.js   (needs Playwright with Chromium, Python 3 with pypdf)
+// Builds guides/pdf/Master-Your-Motherhood-Workbook.pdf (fillable) and
+// guides/pdf/Master-Your-Motherhood-Worksheet-Pack.pdf (fillable) from master-your-motherhood.html.
+// Usage: node guides/build.js   (needs Playwright with Chromium, Python 3 with pypdf, and Poppler's pdftotext)
 const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
@@ -9,12 +10,47 @@ const HERE = __dirname;
 const SRC = path.join(HERE, 'master-your-motherhood.html');
 const OUT_DIR = path.join(HERE, 'pdf');
 const OUT = path.join(OUT_DIR, 'Master-Your-Motherhood-Workbook.pdf');
+const OUT_PACK = path.join(OUT_DIR, 'Master-Your-Motherhood-Worksheet-Pack.pdf');
 const TMP = fs.mkdtempSync(path.join(require('os').tmpdir(), 'mym-'));
 const t = (n) => path.join(TMP, n);
 const py = (args) => execFileSync('python3', ['-I', path.join(HERE, 'pdf_tools.py'), ...args]).toString();
 
 const FOOT = '<div style="width:100%;padding:0 0.75in;display:flex;justify-content:space-between;font-family:Helvetica,Arial,sans-serif;font-size:7px;letter-spacing:1.2px;text-transform:uppercase;color:#A89A87">' +
   '<span>Master Your Motherhood · Modern Mom HQ</span><span class="pageNumber"></span></div>';
+const FOOT_PACK = FOOT.replace('Master Your Motherhood · Modern Mom HQ', 'Master Your Motherhood · Worksheet Pack');
+
+// Fillable fields. Every writing space gets two tiny white marker words, at its top-left (A) and
+// bottom-right (B) corner. They are absolutely positioned, so the layout does not move. pdf_tools.py
+// reads where they landed and adds a real PDF form field there. Example cells, filled-in text and
+// the cut-out Effort Bucks are skipped.
+const MARK = () => {
+  const out = []; let i = 0;
+  const style = 'position:absolute;font:2px/1 Helvetica,Arial,sans-serif;color:#fff;white-space:nowrap;letter-spacing:0;';
+  const add = (host, kind, multi) => {
+    if (getComputedStyle(host).position === 'static') host.style.position = 'relative';
+    const a = document.createElement('span'); a.className = 'fm'; a.setAttribute('style', style + 'left:0;top:0'); a.textContent = 'QZA' + i + 'Q';
+    const b = document.createElement('span'); b.className = 'fm'; b.setAttribute('style', style + 'right:0;bottom:0'); b.textContent = 'QZB' + i + 'Q';
+    host.appendChild(a); host.appendChild(b);
+    out.push({ i, kind, multi }); i++;
+  };
+  const blank = el => el.textContent.replace(/[\s\u00a0\u2003]/g, '') === '' && !el.querySelector('*');
+  document.querySelectorAll('section.ws .lines, section.ws td, section.ws u, section.ws .sq, ul.cb li').forEach(el => {
+    if (el.closest('.buck, .example, .cover') || !el.getClientRects().length) return;
+    if (el.matches('ul.cb li')) {
+      const box = document.createElement('span'); box.className = 'fm';
+      box.setAttribute('style', 'position:absolute;left:0;top:2.5pt;width:9pt;height:9pt');
+      el.appendChild(box); add(box, 'check', false); return;
+    }
+    if (el.matches('.sq')) { add(el, 'check', false); return; }
+    if (el.tagName === 'TD') { if (blank(el)) add(el, 'text', el.getBoundingClientRect().height > 40); return; }
+    if (el.tagName === 'U') { if (blank(el)) add(el, 'text', false); return; }
+    add(el, 'text', true);
+  });
+  return out;
+};
+const UNMARK = () => { document.querySelectorAll('.fm').forEach(e => e.remove()); };
+const samePages = (a, b) => { const x = py(['pages', a]).trim(), y = py(['pages', b]).trim(); if (x !== y) throw new Error('Field markers changed the page count: ' + x + ' vs ' + y); };
+
 const BODY_OPTS = {
   format: 'Letter', printBackground: true, displayHeaderFooter: true,
   headerTemplate: '<span></span>', footerTemplate: FOOT,
@@ -166,6 +202,57 @@ const BODY_OPTS = {
   await page.pdf({ ...BODY_OPTS, path: t('body.pdf') });
   const check = JSON.parse(py(['find', t('body.pdf'), t('markers.json')]));
   if (JSON.stringify(check) !== JSON.stringify(pages)) throw new Error('Page numbers moved after filling the contents page');
+
+  // 3b. Fillable fields for the workbook: one more render with the corner markers
+  const fieldsMain = await page.evaluate(MARK);
+  await page.pdf({ ...BODY_OPTS, path: t('body-marked.pdf') });
+  await page.evaluate(UNMARK);
+  samePages(t('body.pdf'), t('body-marked.pdf'));
+  fs.writeFileSync(t('fields-main.json'), JSON.stringify(fieldsMain));
+  console.log('fields (workbook)', py(['locate', t('body-marked.pdf'), t('fields-main.json'), t('rects-main.json')]).trim());
+
+  // 3c. Worksheet pack: only the worksheets, the first 30 days and a pack cover with its own contents
+  const packSpec = await page.evaluate(() => {
+    document.documentElement.className = 'pack';
+    const list = document.querySelector('.pack-toc'); list.innerHTML = '';
+    let chapter = '';
+    const markers = [];
+    [...document.body.children].forEach(sec => {
+      const ch = sec.querySelector('[data-toc^="c"]');
+      if (ch) chapter = 'Ch. ' + ch.getAttribute('data-toc').slice(1);
+      if (!(sec.matches('section.ws') || sec.matches('section.pack-keep'))) return;
+      const id = 'pk' + markers.length;
+      let text, title, label;
+      if (sec.matches('section.ws')) {
+        text = sec.querySelector('.ws-head').textContent.trim();
+        title = sec.querySelector('.ws-head h3').textContent.trim();
+        label = chapter;
+      } else {
+        const eb = sec.querySelector('[data-toc]');
+        text = eb.textContent.trim(); title = eb.getAttribute('data-title'); label = 'Plan';
+      }
+      markers.push({ id, text, title: (label + ' \u00b7 ' + title).replace(/\u00a0/g, ' ') });
+      const li = document.createElement('li');
+      li.innerHTML = '<span class="n"></span><span class="t"></span><span class="p" data-p="' + id + '">00</span>';
+      li.querySelector('.n').textContent = label; li.querySelector('.t').textContent = title;
+      list.appendChild(li);
+    });
+    return { toc: document.querySelector('[data-pack-toc-page]').textContent.trim(), markers };
+  });
+  const PACK_OPTS = { ...BODY_OPTS, footerTemplate: FOOT_PACK };
+  await page.pdf({ ...PACK_OPTS, path: t('pack.pdf') });
+  fs.writeFileSync(t('pack-markers.json'), JSON.stringify(packSpec));
+  const packPages = JSON.parse(py(['find', t('pack.pdf'), t('pack-markers.json')]));
+  await page.evaluate((p) => { Object.keys(p).forEach(id => { const el = document.querySelector('.pack-toc [data-p="' + id + '"]'); if (el) el.textContent = p[id]; }); }, packPages);
+  await page.pdf({ ...PACK_OPTS, path: t('pack.pdf') });
+  const packCheck = JSON.parse(py(['find', t('pack.pdf'), t('pack-markers.json')]));
+  if (JSON.stringify(packCheck) !== JSON.stringify(packPages)) throw new Error('Pack page numbers moved after filling its contents');
+  const fieldsPack = await page.evaluate(MARK);
+  await page.pdf({ ...PACK_OPTS, path: t('pack-marked.pdf') });
+  await page.evaluate(UNMARK);
+  samePages(t('pack.pdf'), t('pack-marked.pdf'));
+  fs.writeFileSync(t('fields-pack.json'), JSON.stringify(fieldsPack));
+  console.log('fields (pack)', py(['locate', t('pack-marked.pdf'), t('fields-pack.json'), t('rects-pack.json')]).trim());
   await browser.close();
 
   // 4. Merge with bookmarks
@@ -175,7 +262,19 @@ const BODY_OPTS = {
     outline: spec.markers.map(m => ({ title: m.title, page: pages[m.id] }))
   };
   fs.writeFileSync(t('meta.json'), JSON.stringify(meta));
-  console.log(py(['merge', t('cover.pdf'), t('body.pdf'), OUT, t('meta.json')]).trim());
+  console.log(py(['merge', t('cover.pdf'), t('body.pdf'), t('merged.pdf'), t('meta.json')]).trim());
+  console.log('workbook form', py(['fields', t('merged.pdf'), t('rects-main.json'), '1', OUT]).trim());
   console.log('chapter pages', JSON.stringify(pages));
   console.log('wrote', OUT);
+
+  // 5. Worksheet pack with bookmarks, then its fillable fields
+  const packMeta = {
+    title: 'Master Your Motherhood: The Worksheet Pack', author: 'Jaime McLaughlin, Modern Mom HQ',
+    subject: 'Every worksheet from Master Your Motherhood, printable and fillable.',
+    outline: packSpec.markers.map(m => ({ title: m.title, page: packPages[m.id] }))
+  };
+  fs.writeFileSync(t('pack-meta.json'), JSON.stringify(packMeta));
+  console.log(py(['single', t('pack.pdf'), t('pack-merged.pdf'), t('pack-meta.json')]).trim());
+  console.log('pack form', py(['fields', t('pack-merged.pdf'), t('rects-pack.json'), '0', OUT_PACK]).trim());
+  console.log('wrote', OUT_PACK);
 })().catch(e => { console.error(e); process.exit(1); });

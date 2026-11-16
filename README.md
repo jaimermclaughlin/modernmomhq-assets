@@ -15,8 +15,9 @@ Shared styles for Modern Mom HQ Kajabi lessons and pages.
 
 ## Workbook (November 2026)
 
-- `guides/pdf/Master-Your-Motherhood-Workbook.pdf`: Master Your Motherhood, the general Modern Mom HQ workbook (Letter size, printable), rebuilt from the 2020 Master Your workbooks and the audience research.
-- `guides/master-your-motherhood.html` and `guides/guide.css`: the source. Edit these, then run `node guides/build.js` (needs Playwright with Chromium and Python 3 with pypdf). The build fills in the contents page numbers and adds chapter bookmarks.
+- `guides/pdf/Master-Your-Motherhood-Workbook.pdf`: Master Your Motherhood, the general Modern Mom HQ workbook (Letter size), rebuilt from the 2020 Master Your workbooks and the audience research. It is fillable: every writing space, table cell, blank and checkbox can be filled in on a device, and it prints exactly the same when empty.
+- `guides/pdf/Master-Your-Motherhood-Worksheet-Pack.pdf`: every worksheet from the workbook, plus the Effort Bucks and Your First 30 Days, with its own cover and contents. Also fillable.
+- `guides/master-your-motherhood.html` and `guides/guide.css`: the source. Edit these, then run `node guides/build.js` (needs Playwright with Chromium, Python 3 with pypdf, and Poppler's `pdftotext`). One build makes both PDFs. It fills in the contents page numbers, adds bookmarks, and adds the fillable fields: it renders the pages once more with tiny invisible markers at the corners of each writing space, reads where they landed, and places real PDF form fields there (`guides/pdf_tools.py`).
 - `guides/fonts/`: Instrument Serif and Work Sans (SIL Open Font License, license files included). The script font, Awesome Ways, is licensed and not committed: put `AwesomeWays.otf` in `guides/fonts/` before building, or the build falls back to Faustine.
 - `guides/EDIT-LOG.md`: every copyedit made to Jaime's original 2020 text, before and after.
 - `guides/drafts/`: holding files for the companion resources (The Woman Beyond Mom, the Real-Life Wellness Guide, the Personal Planning Guide). They hold, word for word, every section that moved out of Master Your Motherhood in its November 2026 restructure, with their sources. They are not built yet.

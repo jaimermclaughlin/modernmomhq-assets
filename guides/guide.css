@@ -202,3 +202,14 @@ html.no-cover .cover{display:none !important}
 .glance .lead{margin:14pt 0 8pt;font-size:13pt}
 .glance ol.steps{margin:4pt 0 14pt;padding-left:18pt}
 .glance ol.steps li{margin-bottom:10pt;font-size:12.5pt;line-height:1.4}
+
+/* Round 8: worksheet pack (build.js renders the page with html.pack) */
+.pack-only{display:none}
+html.pack body > section{display:none !important}
+html.pack body > section.ws, html.pack body > section.pack-keep, html.pack body > section.pack-only{display:block !important}
+.pack-cover h2{font-size:40pt;margin:6pt 0 10pt}
+.pack-cover .lead{max-width:5.9in}
+.pack-toc{margin-top:16pt}
+.pack-toc li{padding:2.5pt 0}
+.pack-toc .n{font-family:var(--sans);font-size:7.5pt;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--cherry);width:44pt}
+.pack-toc .t{font-size:13pt}
