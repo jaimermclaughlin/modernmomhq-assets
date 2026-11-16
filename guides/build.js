@@ -171,7 +171,7 @@ const BODY_OPTS = {
   // 4. Merge with bookmarks
   const meta = {
     title: 'Master Your Motherhood: The Workbook', author: 'Jaime McLaughlin, Modern Mom HQ',
-    subject: 'Systems for your mindset, mental load, family, kids and self-care that still work on a bad day. ADHD-friendly.',
+    subject: 'Systems for your mental load, family meetings, kids and routines that still work on a bad day. ADHD-friendly.',
     outline: spec.markers.map(m => ({ title: m.title, page: pages[m.id] }))
   };
   fs.writeFileSync(t('meta.json'), JSON.stringify(meta));

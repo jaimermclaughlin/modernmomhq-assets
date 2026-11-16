@@ -595,3 +595,58 @@ Rewritten at your request so it no longer says that a lot of what gets called mo
 - **Kept from 2020:** lower that wall of protection; have hard conversations, and accept hard conversations; share openly, honestly and kindly; a surplus of advice once you become a mom (don't shoot it all down); winging it every day; create a tribe and do this mom thing together.
 - **Removed:** "I freaking hate that term," "a lot of what I see is simply moms sharing wisdom," and "their delivery might be off."
 - **Layout:** headings inside your story blocks now stay with the text that follows them. Tip 6's heading had been stranded at the bottom of a page.
+
+## Round 6: Master Your Motherhood reshaped into 8 chapters (Round A)
+
+Follows the approved outline in "Modern Mom HQ Core Resources: Outline and Overlap Map." The book went from 74 to 46 pages because the mindset, personal self-care and ADHD and hormones material moved out. None of it was deleted.
+
+### What moved out, and where it is now
+Every moved section was copied word for word into a draft holding file in `guides/drafts/`, with its sources:
+- **woman-beyond-mom.html:**
+  - from old Chapter 1: the full society story, Hold both truths, choices and mindsets, fixed vs. growth, tips 2 to 7, mental roadblocks, labels, lies and truths and its worksheet, have you lost yourself and the audit
+  - from old Chapter 7: what moms actually want, routines 1, 6 and 7, schedule your bad day, ways to reset your mind, the Keep Mom Going worksheet
+  - all of old Chapter 8
+- **wellness.html:** routines 2 to 5 (sleep, fuel, movement, appointments) and the Chapter 7 ADHD note.
+- **planning.html:** "Embrace your strengths and your weaknesses," the energy map worksheet and its ADHD note, and "Why a missed day doesn't ruin it."
+
+### The new chapters
+1. **Take Inventory:** a short version of the society story, Hold both truths, the brain dump, Sort it and Your path.
+2. **The Work Nobody Sees:** the old Chapter 2.
+3. **Stop Being the Default Manager:** the old Chapter 5, including Stuart's letter.
+4. **Run Family Meetings That Actually Work:** the old Chapter 3, without chores.
+5. **Raise Kids Who Participate:** chores by strengths plus the old Chapter 4.
+6. **Build Routines Around Real Life:** the old Chapter 6, without the energy map.
+7. **Protect Your Capacity:** rest by subtraction, and Drop, hand off, lower.
+8. **Adjust When Life Changes:** the Pivot Check.
+
+### Your words that changed
+- **Society story (Chapter 1):** shortened to four paragraphs, using your own sentences. The full version is in the WBM draft.
+- **"Just a note" (Chapter 2):**
+  - Before: "These statements come from our own experience and that of close friends and family."
+  - After: "These statements come from statistics and from our own experience and that of close friends and family," as in 2020.
+- **Where this system came from:** "reward and consequence system" became "reward system."
+- **What to encourage:**
+  - "discourage bad ones by connecting them to a tangible consequence" became "respond to bad ones with calm, fair consequences."
+  - "After they struggle a few times, they will eventually cave and start asking for help" became "After a few tries, most kids will start asking for help on their own."
+
+### Other changes
+- **Design:**
+  - Your writing is now the main page text, with no shading.
+  - The "What the research says" boxes are shaded instead.
+  - Stuart's letter has a thin letter border.
+  - Small headings have a little less letter-spacing.
+  - Section headings stay with the text after them.
+- **Inside cover:** the note now says the rest of the book is your writing, "drawn from my research on motherhood and from raising our family."
+- **Rewards:**
+  - "Earned bucks stay earned." Consequences, when needed, are separate, calm and related to what happened.
+  - The ADHD edition was updated to match.
+- **Worksheets:**
+  - The weekly meeting has a "Decisions and next steps" table.
+  - The handoff note says to use a shared password manager instead of writing passwords down.
+- **Start Here:** "The first two take about 20 minutes." The brain dump is now in Chapter 1.
+- **Your path:** points to the new chapters. A line mentions the companion workbook, *The Woman Beyond Mom*, for working on you.
+- **Contents:** clickable, and each row jumps to its chapter.
+- **Sources:**
+  - The AAP guideline is now cited directly (Wolraich and others, *Pediatrics*, 2019, doi.org/10.1542/peds.2019-2528) instead of a summary of it.
+  - Sources that left with their sections are in the draft files.
+- **Chapters 6 and 7:** new short "If ADHD is in your house" notes, because their old notes moved out.

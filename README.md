@@ -19,4 +19,5 @@ Shared styles for Modern Mom HQ Kajabi lessons and pages.
 - `guides/master-your-motherhood.html` and `guides/guide.css`: the source. Edit these, then run `node guides/build.js` (needs Playwright with Chromium and Python 3 with pypdf). The build fills in the contents page numbers and adds chapter bookmarks.
 - `guides/fonts/`: Instrument Serif and Work Sans (SIL Open Font License, license files included). The script font, Awesome Ways, is licensed and not committed: put `AwesomeWays.otf` in `guides/fonts/` before building, or the build falls back to Faustine.
 - `guides/EDIT-LOG.md`: every copyedit made to Jaime's original 2020 text, before and after.
+- `guides/drafts/`: holding files for the companion resources (The Woman Beyond Mom, the Real-Life Wellness Guide, the Personal Planning Guide). They hold, word for word, every section that moved out of Master Your Motherhood in its November 2026 restructure, with their sources. They are not built yet.
 - The build also checks the layout: it fails if any text spills outside its box or past the page edge, or if any line holds a single word that ends a sentence or paragraph.
