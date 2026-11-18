@@ -4,14 +4,13 @@ This guide has had three rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
-3. **Round 3 (your photos, November 18, 2026):** your Lauren J Photography photos (199 files, uploaded to your private modernmomhq repo) are in: sharper originals for three canvas photos, and one photo on each chapter title page.
+3. **Round 3 (your photos, November 18, 2026):** your Lauren J Photography photos (199 files, uploaded to your private modernmomhq repo) are in: a new cover photo, sharper originals for three canvas photos, and one photo on each chapter title page.
 
 ## Please check
 
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
 - **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
-- **Photos not in this upload.** Your cover photo, the concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
-- **A new cover?** Your cover photo is 900 by 649 pixels and may look soft in print. This shoot has sharper portraits that could work as a cover (for example, 5277, 5279 or 5773). Want me to try one?
+- **Photos not in this upload.** The concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
 - **Photo rights.** Most product photos are the brands' own images. Before you sell the guide, confirm you have permission to use them (through ShopMy, the brands or your affiliate programs).
 - **Your Eyebrow Masterclass link.** Your 2019 page said "Click here to get the class." Chapter 4 lists what the class teaches, but there is no link yet. Send me the link if you want one.
 - **MAC Paint Pot shades.** Your 2019 note on Painterly is back on the MAC Pro Longwear Paint Pot card. Retailer listings show Painterly as a Pro Longwear Paint Pot shade (for example, superbalist.com/women/beauty/eyes/pro-longwear-paint-pot-painterly/485427 and ounass.ae/shop-mac-cosmetics-painterly-pro-longwear-paint-pot-5g-for-women-214362681_8651.html). I couldn't find a current listing for Camel Coat, your pick for darker skin tones (only a 2013 review), so it is not on the card. Want it added back?
@@ -26,6 +25,8 @@ This guide has had three rounds of work:
 ## Round 3: your photos
 
 You uploaded 199 photos from Lauren J Photography to your private repo, jaimermclaughlin/modernmomhq. I only read them; nothing in that repo was changed. They had no location data or other photo metadata, and the copies in this guide have none either (the color profile is kept so colors stay true).
+
+**New cover photo** (you asked for one of the new professional photos): LaurenJPhotography-5790, you smiling with a hand in your hair. It is a wide shot, so it fits the cover without cutting off your face, and it is 1600 by 1067 pixels (the old cover photo was 900 by 649). It isn't used anywhere else in the guide. If you'd rather have one where you look at the camera, 5268 is a good option.
 
 **Sharper originals for three canvas photos** (same spot, same crop, same file name):
 
