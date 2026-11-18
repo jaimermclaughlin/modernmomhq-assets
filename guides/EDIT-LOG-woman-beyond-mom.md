@@ -244,6 +244,20 @@ Everything else in these sections is word for word. Not carried over: the two ol
 - Could not confirm, so summarized or removed: The Road Back to You quotes, the Flannery O'Connor passage's source, the Nagoski quote's exact wording, the It Didn't Start With You quotes, the Psychology Today getting-ready quote, the "Without a context..." pull quote, the emotional intelligence definition's source, the self-care and escapism dictionary wording, and John Ortberg's original page.
 - Affirmations list: I searched for distinctive lines and found no published list they were copied from, so they stay as yours.
 
+## Round B (November 2026)
+
+At your request, this book has **no "System at a glance" summary pages**. Round B added three things, all new writing for your review:
+
+- **Your First 30 Days** (after Chapter 9): one gentle step a week through Chapters 1 to 4 and 6 to 9, each week with a bad-day version. Chapter 5 and the trauma pages are on your own timeline.
+- **When It Isn't Working** (troubleshooting): six common snags, each pointing to the page that helps: guilt about time for yourself, not knowing what you want, no time, old patterns coming back, every day feeling like a bad day, and a family that isn't on board.
+- **The worksheet pack** (`guides/pdf/The-Woman-Beyond-Mom-Worksheet-Pack.pdf`, 33 pages, fillable): every worksheet plus the 30-day plan, with its own cover and contents.
+
+Small changes that came with it:
+
+- The contents page gained rows for the two new pages. Its intro sentence ("Each chapter builds on the one before...") came out, because it repeated the inside cover word for word and the page needed the room.
+- Start Here, step 2, now also says: "Or follow the 30-day plan near the back."
+- No new facts, so no new sources.
+
 ## Where each Healthy Happy Mom page went
 
 - **p. 1:** Not used (course introduction; your About page is used instead).

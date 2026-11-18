@@ -221,3 +221,7 @@ html.pack body > section.ws, html.pack body > section.pack-keep, html.pack body 
 .pyramid div:last-child{background:var(--wine);color:var(--ivory);border-color:var(--wine)}
 .pyramid.flip div:last-child{background:var(--ivory);color:var(--wine);border-color:var(--oat)}
 .pyramid.flip div:first-child{background:var(--wine);color:var(--ivory);border-color:var(--wine)}
+/* The Woman Beyond Mom pack: a longer worksheet list, so a tighter contents list */
+.pack-toc.dense{margin-top:8pt}
+.pack-toc.dense li{padding:.5pt 0;line-height:1.15}
+.pack-toc.dense .t{font-size:10pt}
