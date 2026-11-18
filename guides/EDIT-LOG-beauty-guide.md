@@ -1,15 +1,18 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had two rounds of work:
+This guide has had three rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
+3. **Round 3 (your photos, November 18, 2026):** your Lauren J Photography photos (199 files, uploaded to your private modernmomhq repo) are in: sharper originals for three canvas photos, and one photo on each chapter title page.
 
 ## Please check
 
-- **Photos.** You said you'll upload your photos next. When they arrive, your originals replace the canvas images, and new photos go where your 2019 layout had them (for example, the concealer placement and cheek placement photos).
+- **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
+- **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
+- **Photos not in this upload.** Your cover photo, the concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
+- **A new cover?** Your cover photo is 900 by 649 pixels and may look soft in print. This shoot has sharper portraits that could work as a cover (for example, 5277, 5279 or 5773). Want me to try one?
 - **Photo rights.** Most product photos are the brands' own images. Before you sell the guide, confirm you have permission to use them (through ShopMy, the brands or your affiliate programs).
-- **Cover photo size.** It is 900 by 649 pixels, which looks fine on screens but may look a little soft if printed. A larger original would print sharper.
 - **Your Eyebrow Masterclass link.** Your 2019 page said "Click here to get the class." Chapter 4 lists what the class teaches, but there is no link yet. Send me the link if you want one.
 - **MAC Paint Pot shades.** Your 2019 note on Painterly is back on the MAC Pro Longwear Paint Pot card. Retailer listings show Painterly as a Pro Longwear Paint Pot shade (for example, superbalist.com/women/beauty/eyes/pro-longwear-paint-pot-painterly/485427 and ounass.ae/shop-mac-cosmetics-painterly-pro-longwear-paint-pot-5g-for-women-214362681_8651.html). I couldn't find a current listing for Camel Coat, your pick for darker skin tones (only a 2013 review), so it is not on the card. Want it added back?
 - **Brow color advice.** The canvas had changed your advice to "choose a shade close to your natural brow hair." Your 2019 advice is back: go a little darker than your hair color, but not too dark. Is that still what you want to teach?
@@ -19,6 +22,29 @@ This guide has had two rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 3: your photos
+
+You uploaded 199 photos from Lauren J Photography to your private repo, jaimermclaughlin/modernmomhq. I only read them; nothing in that repo was changed. They had no location data or other photo metadata, and the copies in this guide have none either (the color profile is kept so colors stay true).
+
+**Sharper originals for three canvas photos** (same spot, same crop, same file name):
+
+- Foundation page, Chapter 2: the foundation swirl on a Sigma brush, now LaurenJPhotography-5734 (was 601 by 900 pixels, now 1067 by 1600).
+- Eyeshadow page, Chapter 3: hands holding brushes, now LaurenJPhotography-5390 (was 591 by 887, now 1067 by 1600).
+- My current makeup bag, Chapter 7: the blush and brush flat lay, now LaurenJPhotography-5871, cropped to match the canvas (was 695 by 900, now 942 by 1220).
+
+**New: one photo on each chapter title page,** in the empty space between "In this chapter" and the one thing to remember, like the chapter openers in your 2019 guide. Each is a wide crop, and its height adjusts to the space on that page, so no page count or page number changed.
+
+- Chapter 1, Before You Start: you smiling with a handful of brushes (5849).
+- Chapter 2, The Face: foundations and swatches, including Estée Lauder Double Wear (5695).
+- Chapter 3, The Eyes: a close-up of eyeliner, shadow and lashes (5773).
+- Chapter 4, The Brows: a close-up of full, defined brows (5279).
+- Chapter 5, The Lips: MAC Prep + Prime lip primer, lipstick and gloss with swatches (5446).
+- Chapter 6, The Tools: Sigma brushes (5376).
+- Chapter 7, Your Routine: brushes, blush, bronzer and the Sigma eyeshadow base primer (5870).
+- Chapter 8, Hair: long, wavy hair in motion (5758).
+
+**Not used, and why:** the desk flat lays (5884 to 5909) show a newspaper with a crime headline; the Rodan + Fields shots (5356, 5363) are not one of your picks; the phone and Instagram shots (5340 to 5351) don't fit a beauty how-to; the rest are extra takes of the same setups. Tell me if you want any of them somewhere specific.
 
 ## Round 2: your 2019 writing restored
 
