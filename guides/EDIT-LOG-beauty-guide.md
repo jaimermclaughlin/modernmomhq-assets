@@ -40,6 +40,7 @@ This guide has had four rounds of work:
 - Product cards went from 86 to 51. Each pick has a small tag: "My #1" only where you wrote that it is your #1 (Double Wear, Love Joy, the Laura Mercier powder, and the Sigma F80 brush), "In my bag now" only for your current makeup bag, and "Drugstore" only for drugstore brands. The other tags (like "Everyday," "Dewy" or "The red") come from your own notes.
 - Shorter chapters: Chapter 2 is now Foundation, Find your shade, Concealer, Bronzer and contour, Blush, Highlighter (with the face map), and Setting. Chapter 3 is Primer and eyeshadow, Eyeliner, and Mascara and lashes. The foundation brush comparison moved to Chapter 6 as three short cards.
 - New photo: the "Hi, I'm Jaime" page now has your smiling portrait (LaurenJPhotography-5268), saved with no metadata.
+- Your face placement graphic (highlighter, blush and contour) replaced the canvas face map on the "Highlighter, and where it all goes" page. It was flattened onto white and saved as a JPEG with no metadata.
 - Sources: the guide cites 25 sources, the same 25 as before; the product page list at the back now covers only the products still in the guide.
 - Master Your Motherhood and The Woman Beyond Mom are unchanged: the new styles only apply to the beauty guide's quick-win pages.
 

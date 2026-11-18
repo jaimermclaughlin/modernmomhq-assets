@@ -293,7 +293,8 @@ ol.howto.compact li{padding:3pt 0 3pt 24pt}
 ol.howto.compact li::before{font-size:13pt;top:2pt}
 .order2 ol.howto{margin:0}
 .qw .split img.side{width:1.8in;height:2.2in}
-.qw .split > .facemap{flex:none;width:1.8in}
+.qw .split > .facemap{flex:none;width:2.4in}
 .qw h4{break-after:avoid}
 .picks.compact .ph{display:none}
 .picks.compact .pick{padding:7pt 10pt}
+.qw .facemap img{width:100%;height:auto;display:block}
