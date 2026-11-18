@@ -295,6 +295,27 @@ ol.howto.compact li::before{font-size:13pt;top:2pt}
 .qw .split img.side{width:1.8in;height:2.2in}
 .qw .split > .facemap{flex:none;width:2.4in}
 .qw h4{break-after:avoid}
-.picks.compact .ph{display:none}
+.picks.compact .ph{height:.45in}
+.picks.compact .ph img{max-height:.45in}
+.picks.four{grid-template-columns:repeat(4,1fr)}
+.qw p.shopit{font-size:8pt;margin:0 0 6pt;color:var(--muted)}
+.qw p.shopit a{color:var(--cherry);font-weight:600}
+.baggrid{display:grid;grid-template-columns:repeat(5,1fr);gap:7pt;margin:4pt 0 6pt}
+.bagitem{border:1px solid var(--oat);border-radius:8pt;padding:6pt 6pt 7pt;text-align:center;background:#fff;break-inside:avoid}
+.bagitem .ph{height:.62in;display:flex;align-items:center;justify-content:center;margin-bottom:4pt}
+.bagitem .ph img{max-height:.62in;max-width:100%;object-fit:contain;display:block}
+.bagitem .pb{font-size:5.8pt;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--taupe)}
+.bagitem .pn{font-family:var(--serif);font-size:9.5pt;line-height:1.15;margin-top:1pt}
 .picks.compact .pick{padding:7pt 10pt}
 .qw .facemap img{width:100%;height:auto;display:block}
+.picks.five{grid-template-columns:repeat(5,1fr);gap:7pt}
+.picks.five .pick{padding:7pt 8pt}
+.picks.five .ph{height:.5in}
+.picks.five .ph img{max-height:.5in}
+.picks.five .pn{font-size:10.5pt}
+.picks.five p{font-size:7.8pt}
+.qw .bagitem .ph{height:.5in}
+.qw .bagitem .ph img{max-height:.5in}
+.qw table.rhythm td,.qw table.rhythm th{padding:2pt 6pt}
+.qw .side-pick{flex:0 0 2.2in}
+.picks.one{grid-template-columns:1fr}
