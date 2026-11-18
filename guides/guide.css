@@ -264,3 +264,36 @@ ul.prodsrc li{margin:0 0 1.5pt;overflow-wrap:anywhere;break-inside:avoid}
 .legal p{font-size:7.8pt;line-height:1.45;color:var(--muted)}
 table.rhythm td{padding:3pt 6pt}
 .opener img.band{display:block;width:100%;flex:1 1 0;height:0;min-height:1.5in;max-height:3.2in;object-fit:cover;border-radius:12pt;margin:18pt 0}
+/* The Ultimate Beauty Guide, quick-win pages (round 4) */
+.qw h2{margin-top:4pt}
+.qw .lead{margin-bottom:6pt}
+.qwin{display:flex;gap:12pt;align-items:baseline;border-left:3px solid var(--cherry);background:var(--ivory-2);padding:9pt 14pt;margin:10pt 0 12pt;border-radius:0 10pt 10pt 0}
+.qwin b{flex:none;font-size:7.5pt;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--cherry)}
+.qwin p{font-family:var(--serif);font-size:17pt;line-height:1.2;margin:0;color:var(--ink)}
+.protip{background:var(--ivory);border-radius:12pt;padding:11pt 16pt;margin:12pt 0;break-inside:avoid}
+.protip b.l{display:block;font-size:7.5pt;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--wine);margin-bottom:3pt}
+.protip p{margin:0}
+p.expert{font-size:8.6pt;line-height:1.45;color:var(--muted);border-top:1px solid var(--line);padding-top:6pt;margin:10pt 0}
+p.expert b{color:var(--olive)}
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:9pt;margin:4pt 0 10pt}
+.pick{border:1px solid var(--oat);border-radius:10pt;padding:9pt 10pt;background:#fff;break-inside:avoid;display:flex;flex-direction:column;align-items:flex-start}
+.pick .ph{width:100%;height:.62in;display:flex;align-items:center;justify-content:center;margin-bottom:5pt}
+.pick .ph img{max-height:.62in;max-width:100%;object-fit:contain;display:block}
+.pick .tag{font-size:6.4pt;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--cherry);border-radius:999px;padding:1.5pt 7pt;margin-bottom:5pt}
+.pick .pb{font-size:6.6pt;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--taupe)}
+.pick .pn{font-family:var(--serif);font-size:12pt;line-height:1.15;margin:1pt 0 3pt}
+.pick p{font-size:8.5pt;line-height:1.4;margin:0;color:var(--ink-2)}
+.qw .grid3{gap:9pt;margin:4pt 0 8pt}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin:4pt 0 8pt}
+.qw .card{padding:8pt 10pt}
+.qw .card h4{margin-bottom:3pt}
+ul.six{list-style:none;padding:0;margin:4pt 0 8pt}
+ul.six li{padding:4pt 0;border-top:1px solid var(--line);margin:0}
+ol.howto.compact li{padding:3pt 0 3pt 24pt}
+ol.howto.compact li::before{font-size:13pt;top:2pt}
+.order2 ol.howto{margin:0}
+.qw .split img.side{width:1.8in;height:2.2in}
+.qw .split > .facemap{flex:none;width:1.8in}
+.qw h4{break-after:avoid}
+.picks.compact .ph{display:none}
+.picks.compact .pick{padding:7pt 10pt}

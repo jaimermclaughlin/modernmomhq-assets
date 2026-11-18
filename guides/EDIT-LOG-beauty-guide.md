@@ -1,10 +1,11 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had three rounds of work:
+This guide has had four rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
 3. **Round 3 (your photos, November 18, 2026):** your Lauren J Photography photos (199 files, uploaded to your private modernmomhq repo) are in: a new cover photo, sharper originals for three canvas photos, and one photo on each chapter title page.
+4. **Round 4 (quick-win redesign, November 18, 2026):** you asked for a guide that is high value, simpler, easier on the eyes, with quick wins and pro advice in every section and much less copy. Every topic is now one page: a quick win, a few short steps, one pro tip and your top three picks. About 13,400 words became about 6,300, and 51 pages became 38.
 
 ## Please check
 
@@ -16,11 +17,62 @@ This guide has had three rounds of work:
 - **MAC Paint Pot shades.** Your 2019 note on Painterly is back on the MAC Pro Longwear Paint Pot card. Retailer listings show Painterly as a Pro Longwear Paint Pot shade (for example, superbalist.com/women/beauty/eyes/pro-longwear-paint-pot-painterly/485427 and ounass.ae/shop-mac-cosmetics-painterly-pro-longwear-paint-pot-5g-for-women-214362681_8651.html). I couldn't find a current listing for Camel Coat, your pick for darker skin tones (only a 2013 review), so it is not on the card. Want it added back?
 - **Brow color advice.** The canvas had changed your advice to "choose a shade close to your natural brow hair." Your 2019 advice is back: go a little darker than your hair color, but not too dark. Is that still what you want to teach?
 - **False lash removal.** Your 2019 line "You simply just pull them off. They won't damage your current lashes" now says to gently peel them off, starting at the outer corner, because I couldn't confirm the no-damage claim. OK?
-- **The everyday face (Chapter 7).** It uses your original product list. I couldn't confirm MAC Soba shadow and MAC Pro Longwear Brow Gel are still sold, so the page says so and suggests swaps from the guide. Want to switch it to your current makeup bag instead?
-- **Fingers or no fingers.** The foundation page says never to apply foundation with your fingers, but the concealer page says you use your finger to get concealer onto the skin, and the eye primer page says to apply primer with your finger. Is that the distinction you want (foundation never; concealer and primer fine)?
+- **Your top three picks (round 4).** I chose them from your strongest 2019 favorites and what is in your makeup bag now. The products that came out are listed in the round 4 section below. Want any swapped back in?
+- **The everyday face (Chapter 7).** It now lists the steps only. Your original product list for it (MAC Soba shadow and MAC Pro Longwear Brow Gel, which I couldn't confirm are still sold, plus Laura Mercier, Benefit and Sigma picks) came out to save space. Want a product list back, from your current makeup bag?
+- **Fingers or no fingers.** The foundation page says never to apply foundation with your fingers, but the eyeshadow page says to swipe your shadow base on with your finger. Is that the distinction you want (foundation never; a cream eye base is fine)?
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 4: quick-win redesign
+
+### Your decisions
+
+- **Layout:** quick-win pages. Each topic gets one page: a one-line quick win, 3 or 4 short steps (plus how to pick your color), one pro tip box, and your picks. Lots of white space.
+- **Products:** your top 3 per category, each with a one-line note. The rest are listed below and stay on your ShopMy page.
+- **Pro tips:** your own, from your 20 years as a makeup artist. Every pro tip comes from your 2019 writing or your product notes; nothing was invented.
+- **Your longer text:** shortened in your voice. The full versions are not lost (see "Where the longer text lives" below).
+
+### What changed
+
+- About 13,400 words became about 6,300 (5,460 before the sources and the About page). 51 pages became 38, including the cover.
+- Every topic page has the same parts: **Quick win**, **How to**, **Pick your color** (where it matters), **Pro tip**, **What the experts say** (only where safety or a disputed point needs it) and **My picks**.
+- Product cards went from 86 to 51. Each pick has a small tag: "My #1" only where you wrote that it is your #1 (Double Wear, Love Joy, the Laura Mercier powder, and the Sigma F80 brush), "In my bag now" only for your current makeup bag, and "Drugstore" only for drugstore brands. The other tags (like "Everyday," "Dewy" or "The red") come from your own notes.
+- Shorter chapters: Chapter 2 is now Foundation, Find your shade, Concealer, Bronzer and contour, Blush, Highlighter (with the face map), and Setting. Chapter 3 is Primer and eyeshadow, Eyeliner, and Mascara and lashes. The foundation brush comparison moved to Chapter 6 as three short cards.
+- New photo: the "Hi, I'm Jaime" page now has your smiling portrait (LaurenJPhotography-5268), saved with no metadata.
+- Sources: the guide cites 25 sources, the same 25 as before; the product page list at the back now covers only the products still in the guide.
+- Master Your Motherhood and The Woman Beyond Mom are unchanged: the new styles only apply to the beauty guide's quick-win pages.
+
+### Where the longer text lives
+
+- **Your full 2019 text:** in the appendix of this log ("Your original 2019 guide text"), page by page.
+- **The copyedited full version from round 2:** in the "Restored passages" section below, and in the guide's history on GitHub (the version before this round is commit 37a5a9c).
+- **What came out of the guide text this round:** the longer intro and "Where to spend" sections, the coverage intros (heavy, medium and light), the vein test for undertone, the "What's the difference?" paragraph on bronzer and blush, most of the concealer, highlighter and eyeliner explanations, your hair story and the "So, a hair routine?" and "Will it work for everyone?" sections, most of the stylist section, the everyday face product list, the "Also on my list" lines (Makeup By Mario SoftSculpt Bronzer, Beautiful Skin Sun-Kissed Glow Cream Bronzer, the ABH Brow Pen and Lifted and Defined Brow Duo), and the full Eyebrow Masterclass list (now one sentence).
+
+### Your picks now (51)
+
+- **Foundation:** Estée Lauder Double Wear Lightweight Matte (My #1); MAC Studio Fix Fluid (Any skin type); Makeup By Mario SurrealSkin Luminous Hydrating Foundation (Radiant finish).
+- **Lighter days:** Laura Mercier Tinted Moisturizer Light Revealer (Everyday); IT Cosmetics CC+ Cream (SPF 50+); L’Oréal Paris Lumi Le Glow Skin Tint (In my bag now).
+- **Concealer:** Tarte Creaseless Creamy Concealer (No creasing); NARS Radiant Creamy Concealer (Dewy); Makeup By Mario SurrealSkin Awakening Concealer (In my bag now).
+- **Bronzer and contour:** Benefit Hoola Matte Powder Bronzer (Classic); Makeup By Mario SoftSculpt Cream Contour and Bronzer Shaping Stick (In my bag now); Merit Bronze Balm Sheer Sculpting Bronzer (In my bag now).
+- **Blush:** MAC Mineralize Powder Blush in Love Joy (My #1); NARS Blush in Orgasm (Brightening); Merit Flush Balm Cream Blush (In my bag now).
+- **Highlighter:** MAC Mineralize Skinfinish in Soft and Gentle (All year); Makeup By Mario Soft Glow Highlighter (Smoothing); Charlotte Tilbury Glowgasm Beauty Highlighter Wand (Liquid).
+- **Setting:** Laura Mercier Translucent Loose Setting Powder (My #1); MAC Studio Fix Powder Plus Foundation (More coverage); Urban Decay All Nighter Waterproof Setting Spray (Long wear).
+- **Primer and eyeshadow:** Sigma Eyeshadow Base Primer (Base); MAC Pro Longwear Paint Pot (Base); Urban Decay Naked2 Basics (Beginner palette); Makeup By Mario Master Mattes Palette: The Original and The Neutrals (All matte); Makeup By Mario Master Mattes Cream Eyeshadow (In my bag now).
+- **Eyeliner:** Stila Stay All Day Waterproof Liquid Eye Liner (Easiest); Tarte Sex Kitten Black Liquid Eyeliner (Skinny tip); MAC Eye Kohl Eyeliner Pencil (Pencil).
+- **Mascara and lashes:** Rare Beauty Perfect Strokes Universal Volumizing Mascara (In my bag now); Too Faced Better Than Sex Volumizing & Lengthening Mascara (Volume); L’Oréal Paris Voluminous Original Mascara (Drugstore); Ardell Demi Wispies (Drugstore lashes); Ardell Double Up Demi Wispies (Big pop); Duo Eyelash Adhesive, Dark Tone (Best glue).
+- **Brows: fill:** Anastasia Beverly Hills DIPBROW Pomade (Defined); Anastasia Beverly Hills Brow Powder Duo (In my bag now); Anastasia Beverly Hills MicroStroke Brow Detailing Pen (In my bag now).
+- **Brows: hold:** L’Oréal Paris Infallible Up to 24H Brow Lamination (In my bag now); Anastasia Beverly Hills Brow Freeze Styling Wax (Strong hold); e.l.f. Cosmetics Brow Lift (Drugstore).
+- **Lipstick:** MAC M·A·Cximal Sleek Satin Lipstick in Modesty (Everyday); Charlotte Tilbury Matte Revolution Lipstick in Pillow Talk (Popular nude); MAC M·A·Cximal Silky Matte Lipstick in Ruby Woo (The red).
+- **Make it last:** MAC Prep + Prime Lip Primer (Primer); MAC Retro Matte Liquid Lipstick in Burnt Spice (All day); Make Up For Ever Artist Color Pencil Lip Liners (Liner).
+- **Gloss:** NYX Professional Makeup Butter Gloss (Drugstore); MAC Lipglass High Shine Lip Gloss (Events); Makeup By Mario MoistureGlow Plumping Lip Serum (Plumping).
+- **Sponge:** Beautyblender The Original Makeup Sponge (Use it damp).
+
+### Products that came out (34)
+
+None of these were removed for a problem; they just weren't in your top three. Tell me if you want any back.
+
+- NARS Natural Radiant Longwear; NARS Pure Radiant Tinted Moisturizer; e.l.f. Cosmetics Camo CC Cream; Makeup By Mario SoftSculpt Transforming Skin Enhancer; IT Cosmetics Bye Bye Under Eye; Maybelline Instant Age Rewind Multi-Use Dark Circles Concealer; Charlotte Tilbury Refillable Airbrush Matte Bronzer; Makeup By Mario SoftSculpt Bronzing and Shaping Serum; Charlotte Tilbury Hollywood Contour Wand; Makeup By Mario Soft Pop Powder Blush and Cream Blush Stick; Rare Beauty Soft Pinch Liquid Blush; Makeup By Mario SurrealSkin Waterproof Setting Spray; Charlotte Tilbury Pillow Talk and Super Nudes Palettes; Charlotte Tilbury Eyes to Mesmerise Cream Eyeshadow; Tarte Fake Awake Eye Highlight; Anastasia Beverly Hills Brow Wiz and Brow Definer; Glossier Boy Brow Arch 2-in-1 Pencil; Anastasia Beverly Hills Dual-Ended Angled Brush 7B; Tarte Opening Act Eyelash Primer; Benefit They’re Real! Lengthening Mascara; Stila Huge Extreme Lash Volumizing Mascara; Tarte Big Ego Vegan Mascara and Tartelette Tubing Mascara; Sephora Collection False Lashes; MAC Lustreglass Sheer-Shine Lipstick; Makeup By Mario Ultra Suede and SuperSatin Lipsticks; Makeup By Mario Ultra Suede Sculpting Lip Pencil; Sigma F80 Flat Kabuki; Sigma F10 Powder/Blush; Sigma F35 Tapered Highlighter; Sigma E40 Tapered Blending; Sigma E25 Blending; Sigma E65 Small Angle; Sigma F30 Large Powder Brush; Makeup By Mario Dual-Ended Brushes: F1, F2, F3, F4 and EF1.
 
 ## Round 3: your photos
 
