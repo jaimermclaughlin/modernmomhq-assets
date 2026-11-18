@@ -225,3 +225,41 @@ html.pack body > section.ws, html.pack body > section.pack-keep, html.pack body 
 .pack-toc.dense{margin-top:8pt}
 .pack-toc.dense li{padding:.5pt 0;line-height:1.15}
 .pack-toc.dense .t{font-size:10pt}
+/* The Ultimate Beauty Guide: photo cover, product cards, tips, photos, steps and tables */
+.cover.photo{padding:0}
+.cover.photo .ph{height:5.3in;overflow:hidden;background:#fff}
+.cover.photo .ph img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+.cover.photo .tx{padding:.3in .9in 0}
+.cover.photo h1{font-size:56pt;margin:.14in 0 0}
+.cover.photo .wb{font-size:36pt;margin-top:2pt}
+.cover.photo .sub{margin-top:.1in;font-size:12.5pt}
+.tip{background:var(--ivory);border:1px solid var(--oat)}
+.tip h4{color:var(--wine)}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:8pt;margin:6pt 0 12pt}
+.product{display:flex;gap:10pt;border:1px solid var(--oat);border-radius:10pt;padding:8pt 10pt;background:#fff;break-inside:avoid}
+.product .pi{flex:0 0 .55in;display:flex;align-items:flex-start;justify-content:center;padding-top:2pt}
+.product .pi img{max-width:.55in;max-height:.85in;object-fit:contain;display:block}
+.product .bd{flex:1;min-width:0}
+.product .pb{font-size:6.8pt;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cherry)}
+.product .pn{font-family:var(--serif);font-size:12pt;line-height:1.15;margin:1pt 0 3pt}
+.product p{font-size:8.6pt;line-height:1.42;margin:0;color:var(--ink-2)}
+.split{display:flex;gap:18pt;align-items:flex-start}
+.split > div{flex:1;min-width:0}
+.split img.side{width:2.1in;height:2.6in;object-fit:cover;border-radius:10pt;flex:none;display:block}
+.split img.side.small{height:auto;max-height:1.4in;object-fit:contain;border-radius:0}
+.facemap{flex:none;width:2.3in}
+.facemap svg{width:100%;height:auto;display:block}
+img.hero{width:100%;height:2.3in;object-fit:cover;border-radius:10pt;margin:0 0 12pt;display:block}
+ol.howto{list-style:none;padding:0;margin:6pt 0 10pt}
+ol.howto li{counter-increment:ht;position:relative;padding:6pt 0 6pt 26pt;border-top:1px solid var(--line);margin:0}
+ol.howto li:last-child{border-bottom:1px solid var(--line)}
+ol.howto{counter-reset:ht}
+ol.howto li::before{content:counter(ht);position:absolute;left:2pt;top:4pt;font-family:var(--serif);font-size:17pt;line-height:1;color:var(--cherry)}
+.browmap .card img{width:100%;height:1.6in;object-fit:cover;border-radius:6pt;display:block;margin-bottom:6pt}
+table.order td.n{font-family:var(--serif);font-size:13pt;line-height:1;color:var(--cherry)}
+ul.cols2{columns:2;column-gap:22pt}
+ul.cols2 li{break-inside:avoid}
+ul.prodsrc{columns:2;column-gap:16pt;font-size:6.6pt;line-height:1.3;padding-left:11pt;color:var(--muted)}
+ul.prodsrc li{margin:0 0 1.5pt;overflow-wrap:anywhere;break-inside:avoid}
+.legal p{font-size:7.8pt;line-height:1.45;color:var(--muted)}
+table.rhythm td{padding:3pt 6pt}

@@ -12,6 +12,10 @@ const BOOKS = {
     name: 'Master Your Motherhood', out: 'Master-Your-Motherhood-Workbook.pdf', pack: 'Master-Your-Motherhood-Worksheet-Pack.pdf',
     subject: 'Systems for your mental load, family meetings, kids and routines that still work on a bad day. ADHD-friendly.'
   },
+  'the-ultimate-beauty-guide': {
+    name: 'The Ultimate Beauty Guide 2027', title: 'The Ultimate Beauty Guide 2027', out: 'The-Ultimate-Beauty-Guide-2027.pdf', pack: 'The-Ultimate-Beauty-Guide-2027-Worksheet-Pack.pdf',
+    subject: 'Simple, current makeup and hair advice for busy moms: how to apply it, how to pick your color, and Jaime McLaughlin\'s product picks.'
+  },
   'the-woman-beyond-mom': {
     name: 'The Woman Beyond Mom', out: 'The-Woman-Beyond-Mom-Workbook.pdf', pack: 'The-Woman-Beyond-Mom-Worksheet-Pack.pdf',
     subject: 'Get to know yourself again: your patterns, your emotions, your health, real self-care and what you want next. ADHD-friendly.'
@@ -277,7 +281,7 @@ const BODY_OPTS = {
 
   // 4. Merge with bookmarks
   const meta = {
-    title: BOOK.name + ': The Workbook', author: 'Jaime McLaughlin, Modern Mom HQ',
+    title: BOOK.title || BOOK.name + ': The Workbook', author: 'Jaime McLaughlin, Modern Mom HQ',
     subject: BOOK.subject,
     outline: spec.markers.map(m => ({ title: m.title, page: pages[m.id] }))
   };
