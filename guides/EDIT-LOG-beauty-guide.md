@@ -34,7 +34,11 @@ Each graphic was flattened onto white and saved as a JPEG with no metadata in gu
 - Blush page: your blush graphic (blush on the apples, swept back toward the ear).
 - Primer and eyeshadow page: your eyeshadow close-up, in place of the canvas photo of eyeshadow being applied.
 - Eyeliner page: your eyeliner close-up (thin line and a small wing).
-- Mascara and lashes page: your lashes close-up.
+- Mascara and lashes page: your three-step mascara graphic (wipe the wand on the tube, lash primer, then mascara). It replaces your lashes close-up, which is still in the repo if you want it back.
+- Foundation page: your three-step foundation graphic (kabuki brush, damp sponge, then a little more only where you need it), in place of the canvas photo of the foundation brush. That photo is still in the repo.
+- Make it last, then add shine page: your three-step lip graphic (lip primer, lipstick, gloss), beside the pro tip. To match it, the pro tip now ends with one sentence I added from your own lipstick steps: "Then add your lipstick, and gloss on top if you like." Tell me if you want that sentence out.
+- One sponge, and keep it clean page: your three-step sponge graphic (wet it, squeeze it, use it damp), beside the "Keep it clean" steps.
+- Quick fixes for common hair problems page: your shampoo and conditioner graphic (shampoo at the scalp, conditioner on the ends), beside the four problem cards. The last words of the "Super thick hair" card are kept together so "accelerator." isn't left alone on a line.
 - Brow mapping page: your brow mapping graphic with the three lines. It replaces the three brow-mapping photos; the three steps are now a numbered list beside it. The photos are still in the repo if you want them back.
 - Lipstick page: your four lip finishes, lined up above the satin, sheer, matte and liquid matte labels.
 - Bronzer and contour page: your bronzer vs. contour graphic (warm bronzer on the cheekbones and forehead, cooler contour in the hollow), beside the steps.
