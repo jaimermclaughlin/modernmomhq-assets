@@ -321,3 +321,9 @@ ol.howto.compact li::before{font-size:13pt;top:2pt}
 .picks.one{grid-template-columns:1fr}
 .qw .split img.side.g{object-position:center 45%}
 .qw img.lipstrip{width:100%;display:block;margin:2pt 0 4pt}
+.qw .yesno{flex:0 0 2.7in;display:grid;grid-template-columns:1fr 1fr;gap:8pt}
+.qw .yesno figure{margin:0;text-align:center}
+.qw .yesno img{width:100%;height:auto;display:block;border-radius:8pt}
+.qw .yesno figcaption{font-size:8pt;margin-top:3pt;color:var(--ink-2)}
+.qw .yesno figcaption b{color:var(--cherry)}
+.qw .split img.side.g.sm{width:1.45in;height:1.8in}

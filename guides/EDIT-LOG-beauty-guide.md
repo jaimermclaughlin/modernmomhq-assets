@@ -18,7 +18,7 @@ This guide has had six rounds of work:
 - **Three picks came out because I couldn't get a reliable photo:** Makeup By Mario Soft Glow Highlighter and Pureology Hydrate Conditioner (their photos are only on retailer sites that block automated downloads), and Makeup By Mario MoistureGlow Plumping Lip Serum (the ShopMy photo for it looks like the MoistureGlow Lip Color stick, so I couldn't confirm it's the right product). Send me a photo of any of them, or add one to its ShopMy pin, and I'll put it back.
 - **False lashes.** Ardell Demi Wispies, Ardell Double Up and Duo lash glue aren't on your ShopMy, so the lash picks came out. The "for events, add false lashes" step stays. Add them to your Mascara collection if you want them back in the guide.
 - **The everyday face (Chapter 7).** To match your current bag, I made three small wording changes to your steps: "with the Sigma F80 brush" is now "with a flat-top brush" (your bag has the Sonia Kashuk Flat-Top No. 168), "with the Sigma E40" came out of the eyeshadow step, and "Brow gel, then mascara" is now "Brows, then mascara" (your bag has a brow pen, powder and gel). Change any back?
-- **Four graphics still to come.** Bronzer vs. contour, the concealer triangle and thin line, the jawline swatches (find your shade) and the bare face showed up in our chat while I was working, so they weren't saved as files. Send them in one message after my reply, and I'll place them.
+- **One graphic still to come.** Bronzer vs. contour showed up in our chat while I was working, so it wasn't saved as a file. Send it in a message after my reply, and I'll put it on the Bronzer and contour page.
 - **Photo rights.** Most product photos are the brands' own images. Before you sell the guide, confirm you have permission to use them (through ShopMy, the brands or your affiliate programs).
 - **Your Eyebrow Masterclass link.** Your 2019 page said "Click here to get the class." Chapter 4 lists what the class teaches, but there is no link yet. Send me the link if you want one.
 - **Brow color advice.** The canvas had changed your advice to "choose a shade close to your natural brow hair." Your 2019 advice is back: go a little darker than your hair color, but not too dark. Is that still what you want to teach?
@@ -38,6 +38,10 @@ Each graphic was flattened onto white and saved as a JPEG with no metadata in gu
 - Mascara and lashes page: your lashes close-up.
 - Brow mapping page: your brow mapping graphic with the three lines. It replaces the three brow-mapping photos; the three steps are now a numbered list beside it. The photos are still in the repo if you want them back.
 - Lipstick page: your four lip finishes, lined up above the satin, sheer, matte and liquid matte labels.
+- Start with your skin page: your bare face graphic, beside the steps.
+- Find your shade page: your jawline swatch graphic, beside the steps (a little smaller, so the page doesn't spill).
+- Concealer page: your two concealer graphics as a "Yes: a triangle / No: a thin line" pair, in place of the canvas photo of concealer being applied.
+- The second copy of your face placement graphic you sent is the same as the one already on the highlighter page, so it wasn't added again.
 
 ## Round 5: only your ShopMy picks, each with a photo
 
