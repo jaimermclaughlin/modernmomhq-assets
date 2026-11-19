@@ -39,6 +39,9 @@ Each graphic was flattened onto white and saved as a JPEG with no metadata in gu
 - Lipstick page: your four lip finishes, lined up above the satin, sheer, matte and liquid matte labels.
 - Bronzer and contour page: your bronzer vs. contour graphic (warm bronzer on the cheekbones and forehead, cooler contour in the hollow), beside the steps.
 - Start with your skin page: your bare face graphic, beside the steps.
+- Start Here page: your makeup bag illustration, beside the "In a hurry?" box.
+- The everyday face and my current makeup bag page: your three-step everyday face graphic (skin tint, brow gel, lipstick), beside the steps. The bag product photos are a little smaller so the page still fits.
+- My weekly hair rhythm page: your three-step hair graphic (blow-dry, curl, dry shampoo), beside the weekly table. The table text is a little smaller, and the day column is wider so "Wednesday night or Thursday" fits on one line.
 - Find your shade page: your jawline swatch graphic, beside the steps (a little smaller, so the page doesn't spill).
 - Concealer page: your two concealer graphics as a "Yes: a triangle / No: a thin line" pair, in place of the canvas photo of concealer being applied.
 - The second copies of your face placement and blush graphics you sent are the same as the ones already in the guide, so they weren't added again.

@@ -314,8 +314,8 @@ ol.howto.compact li::before{font-size:13pt;top:2pt}
 .picks.five .ph img{max-height:.5in}
 .picks.five .pn{font-size:10.5pt}
 .picks.five p{font-size:7.8pt}
-.qw .bagitem .ph{height:.5in}
-.qw .bagitem .ph img{max-height:.5in}
+.qw .bagitem .ph{height:.44in}
+.qw .bagitem .ph img{max-height:.44in}
 .qw table.rhythm td,.qw table.rhythm th{padding:2pt 6pt}
 .qw .side-pick{flex:0 0 2.2in}
 .picks.one{grid-template-columns:1fr}
@@ -327,3 +327,10 @@ ol.howto.compact li::before{font-size:13pt;top:2pt}
 .qw .yesno figcaption{font-size:8pt;margin-top:3pt;color:var(--ink-2)}
 .qw .yesno figcaption b{color:var(--cherry)}
 .qw .split img.side.g.sm{width:1.45in;height:1.8in}
+.starthere-row{margin-top:20pt;align-items:center}
+.starthere-row .inthis{margin-top:0}
+img.starthere{display:block;flex:0 0 1.8in;width:1.8in;height:auto}
+.qw .split img.side.g.hair{width:1.3in;height:1.73in;object-fit:contain}
+.qw .split table.rhythm{font-size:8.4pt}
+.qw .split img.side.g.eface{width:1.2in;height:1.6in;object-fit:contain}
+.starthere-row .inthis ul{columns:1}
