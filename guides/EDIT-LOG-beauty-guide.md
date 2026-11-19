@@ -1,12 +1,13 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had five rounds of work:
+This guide has had six rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
 3. **Round 3 (your photos, November 18, 2026):** your Lauren J Photography photos (199 files, uploaded to your private modernmomhq repo) are in: a new cover photo, sharper originals for three canvas photos, and one photo on each chapter title page.
 4. **Round 4 (quick-win redesign, November 18, 2026):** you asked for a guide that is high value, simpler, easier on the eyes, with quick wins and pro advice in every section and much less copy. Every topic is now one page: a quick win, a few short steps, one pro tip and your top three picks. About 13,400 words became about 6,300, and 51 pages became 38.
 5. **Round 5 (your ShopMy picks, November 18, 2026):** every product recommendation now comes from your ShopMy "The Beauty Guide" collections, each with its ShopMy product photo and a "Shop these on ShopMy" link. Your current makeup bag is now on the everyday face page with photos, and the skin and hair pages have picks from your Skincare and Hair Products collections.
+6. **Round 6 (your graphics, November 18 and 19, 2026):** your illustrated graphics are going onto their pages as you send them.
 
 ## Please check
 
@@ -17,7 +18,7 @@ This guide has had five rounds of work:
 - **Three picks came out because I couldn't get a reliable photo:** Makeup By Mario Soft Glow Highlighter and Pureology Hydrate Conditioner (their photos are only on retailer sites that block automated downloads), and Makeup By Mario MoistureGlow Plumping Lip Serum (the ShopMy photo for it looks like the MoistureGlow Lip Color stick, so I couldn't confirm it's the right product). Send me a photo of any of them, or add one to its ShopMy pin, and I'll put it back.
 - **False lashes.** Ardell Demi Wispies, Ardell Double Up and Duo lash glue aren't on your ShopMy, so the lash picks came out. The "for events, add false lashes" step stays. Add them to your Mascara collection if you want them back in the guide.
 - **The everyday face (Chapter 7).** To match your current bag, I made three small wording changes to your steps: "with the Sigma F80 brush" is now "with a flat-top brush" (your bag has the Sonia Kashuk Flat-Top No. 168), "with the Sigma E40" came out of the eyeshadow step, and "Brow gel, then mascara" is now "Brows, then mascara" (your bag has a brow pen, powder and gel). Change any back?
-- **Your new graphics.** The 12 graphics you sent while I was working showed up in our chat but weren't saved as files I can use. Please send them again in one message, and I'll place each one on its page.
+- **Four graphics still to come.** Bronzer vs. contour, the concealer triangle and thin line, the jawline swatches (find your shade) and the bare face showed up in our chat while I was working, so they weren't saved as files. Send them in one message after my reply, and I'll place them.
 - **Photo rights.** Most product photos are the brands' own images. Before you sell the guide, confirm you have permission to use them (through ShopMy, the brands or your affiliate programs).
 - **Your Eyebrow Masterclass link.** Your 2019 page said "Click here to get the class." Chapter 4 lists what the class teaches, but there is no link yet. Send me the link if you want one.
 - **Brow color advice.** The canvas had changed your advice to "choose a shade close to your natural brow hair." Your 2019 advice is back: go a little darker than your hair color, but not too dark. Is that still what you want to teach?
@@ -26,6 +27,17 @@ This guide has had five rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 6: your graphics
+
+Each graphic was flattened onto white and saved as a JPEG with no metadata in guides/img/beauty/graphics/. Each one sits beside the steps on its page, and the guide is still 38 pages.
+
+- Blush page: your blush graphic (blush on the apples, swept back toward the ear).
+- Primer and eyeshadow page: your eyeshadow close-up, in place of the canvas photo of eyeshadow being applied.
+- Eyeliner page: your eyeliner close-up (thin line and a small wing).
+- Mascara and lashes page: your lashes close-up.
+- Brow mapping page: your brow mapping graphic with the three lines. It replaces the three brow-mapping photos; the three steps are now a numbered list beside it. The photos are still in the repo if you want them back.
+- Lipstick page: your four lip finishes, lined up above the satin, sheer, matte and liquid matte labels.
 
 ## Round 5: only your ShopMy picks, each with a photo
 
