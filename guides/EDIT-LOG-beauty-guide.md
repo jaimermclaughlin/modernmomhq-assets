@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had eight rounds of work:
+This guide has had nine rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -10,10 +10,14 @@ This guide has had eight rounds of work:
 6. **Round 6 (your graphics, November 18 and 19, 2026):** your illustrated graphics are going onto their pages as you send them.
 7. **Round 7 (your story, November 19, 2026):** a new opening, written from the story you sent, replaces the old "Hi, I'm Jaime" intro.
 8. **Round 8 (the opening reordered, November 19, 2026):** your story now comes right after the Contents, there is no "Before You Start" page, and Chapter 1 is renamed "Skin First".
+9. **Round 9 (your story, retold as a timeline, November 19, 2026):** your story is now an emotional timeline in the style of the "our story" design you sent, built from your notes, your Substack and your earlier writing.
 
 ## Please check
 
-- **Your story (right after the Contents).** Please read the two new opening pages closely. Everything in them is from your notes or your own earlier writing, except the few connecting lines listed in Round 7 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
+- **Your story (right after the Contents).** Please read the three My Story pages closely. Every line is from your notes, your Substack or your earlier writing, except the few connecting lines listed in Round 9 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
+- **Two years or three?** Your notes say you spent two years trying to heal from Bell's palsy. Your Substack post "The Work I Stopped Teaching" (March 9, 2026) says three years. The guide says "years" for now. Tell me which number to use.
+- **Personal details from your Substack and workbook.** The story now includes being a single mom with your first two babies, doing a wedding four days after giving birth, and "I am disgusting, and I am literally ruined" after your third baby. Please confirm you want those in the beauty guide.
+- **Photos for the timeline.** Only two polaroids are real images: your 2019 guide cover and your photo for "Today". The others are designed cards (1st, 100s, No. 4, the studio, one morning) so no photo claims a year it isn't from. Send real photos for any moment (your early weddings, baby number four, the studio) and I'll put them in. Also, is the "Today" photo (LaurenJPhotography-5268) recent?
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
 - **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
 - **Photos not in this upload.** The concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
@@ -29,6 +33,39 @@ This guide has had eight rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 9: your story, retold as a timeline
+
+You said the story felt too chronological, not emotional, and sent an "our story" timeline design you liked (polaroid photos on a line, short headings, handwritten notes), with information in between to help readers understand why this matters to you. You also asked me to pull from your Substack. I downloaded all 79 posts on thejaimemclaughlin.substack.com, searched them for your story (Bell's palsy, your face, makeup, weddings, the studio, getting ready, burnout, identity), and read the matching ones in full. To do that, I added the site to this project's allowed network list, with your approval.
+
+### The design
+
+- Three "My Story" pages (the guide is now 40 pages, one more than before). A title that reads "my STORY", then a line down the middle of each page with a polaroid and a short heading at each moment, a handwritten note beside some of them, and a box between moments with what it felt like and why it mattered.
+- The polaroids: designed cards for 2006 ("1st"), 2006 to 2017 ("100s"), 2017 ("No. 4"), 2021 ("the studio") and the turning point ("one morning"); your real 2019 guide cover for 2018 to 2023 (from your 2019_Beauty_Guide_Update PDF, created in August 2019); and your photo for "Today".
+- The story now opens with the morning your face was paralyzed, then goes back to the beginning.
+- The Contents line for My Story now reads "Why getting ready matters so much to me".
+
+### Where every line comes from
+
+- **Your notes (November 19 message):** 2006 weddings; hundreds of weddings, events and red carpets; 2017, baby four, burnout, "I had to stop. So I did."; done working outside the house but not done working, no plan; 2018 Instagram and The Ultimate Beauty Guide; 2018 to 2023 webinars and The Confident Mom Method; the 2021 studio ("amazing", "the landlord was a nightmare"); too much on your plate, drowning, shutting things down; waking up with half your face paralyzed; Bell's palsy, it was permanent, a surgeon, surgery, "a hard road ever since"; your career and your face as your biggest advertisement; losing your identity; working your way back to posting and being seen; getting ready as the one thing that makes you feel better and as the boost you needed while raising babies.
+- **"If You're New Here, Read This" (May 16, 2025, https://thejaimemclaughlin.substack.com/p/read-this-first):** "almost by accident!"; hair and makeup "made good money, let me stay home, and gave me flexibility when I needed it most"; "it took off!"; "I loved it. But I wasn't prepared. Always being on. Always giving."
+- **"Who Am I Without the Hustle?" (December 20, 2025, https://thejaimemclaughlin.substack.com/p/who-am-i-without-the-hustle):** a single mom with your first two babies; a wedding four days after giving birth with one and a week after with the other; "Survival dictated everything."; "Work stopped. Rest was nonnegotiable. When I couldn't produce, I didn't know where my worth lived."
+- **"Two Weeks Post-Op" (October 27, 2025, https://thejaimemclaughlin.substack.com/p/two-weeks-post-op):** "I was petrified before going under"; every incision as "a step toward" "a face that finally feels a little more like mine again".
+- **"Coming Back to Life" (July 29, 2026, https://thejaimemclaughlin.substack.com/p/coming-back-to-life):** "I actually enjoy getting dressed, and I like what I see in the mirror instead of avoiding it."
+- **The Woman Beyond Mom:** "I am disgusting, and I am literally ruined." (your inner critic story, after your third baby); "I don't always feel like getting ready each day. But I do it anyway, because it protects me."; the "Beauty isn't fluffy" pull quote.
+- **Your 2019 guide:** "I've done it all!" and "from five-year-old flower girls to seasoned grandmothers" (your intro); everyone asking the same questions and millions of videos but none that made it simple for everyday women "without the overwhelm" (your intro and About page).
+
+### My wording (please check)
+
+- "To understand why that changed everything, and why getting ready matters so much to me, I have to start at the beginning."
+- "It mattered at home, too."
+- "That's what I wanted to do." (after the 2019 About page line about the gap you saw)
+- "And these days, it feels good again." (leading into your "Coming Back to Life" line)
+- "And remember," before "my face was my biggest advertisement."
+- Headings: Where it started; Hundreds of faces; Baby number four; Starting over online; My own studio; Bell's palsy; Getting ready again. Polaroid label: "The turning point".
+- "I spent years trying to heal it": your notes say two years, your Substack says three (see Please check).
+
+Removed from the Round 7 version: the timeline list beside your photo, the short intro ("Getting ready was my career for a long time..."), and "That something became everything you see above." Your closing, the "Why it matters for you, too" box, your signature and "Where to spend, where to save" are unchanged.
 
 ## Round 8: the opening, reordered
 
