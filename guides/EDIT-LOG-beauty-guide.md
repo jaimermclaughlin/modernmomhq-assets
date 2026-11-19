@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had nine rounds of work:
+This guide has had ten rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -11,11 +11,12 @@ This guide has had nine rounds of work:
 7. **Round 7 (your story, November 19, 2026):** a new opening, written from the story you sent, replaces the old "Hi, I'm Jaime" intro.
 8. **Round 8 (the opening reordered, November 19, 2026):** your story now comes right after the Contents, there is no "Before You Start" page, and Chapter 1 is renamed "Skin First".
 9. **Round 9 (your story, retold as a timeline, November 19, 2026):** your story is now an emotional timeline in the style of the "our story" design you sent, built from your notes, your Substack and your earlier writing.
+10. **Round 10 (new cover photo and a simpler timeline, November 19, 2026):** a new cover photo, and the My Story timeline simplified because the polaroid version felt chaotic.
 
 ## Please check
 
 - **Your story (right after the Contents).** Please read the three My Story pages closely. Every line is from your notes, your Substack or your earlier writing, except the few connecting lines listed in Round 9 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
-- **Photos for the timeline.** Only two polaroids are real images: your 2019 guide cover and your photo for "Today". The others are designed cards (1st, 100s, No. 4, the studio, one morning) so no photo claims a year it isn't from. You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox, so please send your one or two favorites in a chat message. Send real photos for any other moment (your early weddings, baby number four) the same way. Also, is the "Today" photo (LaurenJPhotography-5268) recent?
+- **Studio photo.** You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox. Send your favorite in a chat message and I'll put it next to 2021 in My Story, the way your 2019 guide cover sits next to 2018 to 2023. Also, is the "Today" photo (LaurenJPhotography-5268) recent?
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
 - **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
 - **Photos not in this upload.** The concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
@@ -31,6 +32,17 @@ This guide has had nine rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 10: a new cover photo and a simpler timeline
+
+You asked for a different front cover photo, and said the timeline looked very chaotic and should be simpler.
+
+- **Cover photo:** now LaurenJPhotography-5195, you smiling at the camera in your black lace top, cropped to the cover's wide shape (1067 by 665 pixels) with your whole head and shoulders in frame. It isn't used anywhere else in the guide. The old cover photo (5790) is saved if you want it back. Other good options that look at the camera: 5329 (white shirt, hand in your hair) and 5193.
+- **Timeline:** the tilted polaroids, the designed cards (1st, 100s, No. 4, the studio, one morning), the handwritten notes and the arrows are gone. Now each moment has its year on the left, a thin line with a dot, and a heading with the story on the right. The only photos are your 2019 guide cover (2018 to 2023) and your photo (Today), both small and straight, under the year.
+- **Layout:** three calm pages. Page 1: 2006, 2006 to 2017 and 2017. Page 2: 2018 to 2023, 2021 and Bell's palsy. Page 3: Today, then the closing. Pages 1 and 2 each end with one pull quote of your own words: "I had to stop. So I did." and "When I couldn't produce, I didn't know where my worth lived."
+- **Title:** "my STORY" is now "My story." in the same style as every other page title.
+- **Words:** the same as Round 9. The handwritten notes moved into the story text: "almost by accident", "I've done it all." and "It took off." The "(the landlord was a nightmare)" note is back in the studio sentence.
+- The guide is still 40 pages.
 
 ## Round 9: your story, retold as a timeline
 
