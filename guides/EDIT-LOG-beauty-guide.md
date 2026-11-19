@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had ten rounds of work:
+This guide has had eleven rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -12,6 +12,7 @@ This guide has had ten rounds of work:
 8. **Round 8 (the opening reordered, November 19, 2026):** your story now comes right after the Contents, there is no "Before You Start" page, and Chapter 1 is renamed "Skin First".
 9. **Round 9 (your story, retold as a timeline, November 19, 2026):** your story is now an emotional timeline in the style of the "our story" design you sent, built from your notes, your Substack and your earlier writing.
 10. **Round 10 (new cover photo and a simpler timeline, November 19, 2026):** a new cover photo, and the My Story timeline simplified because the polaroid version felt chaotic.
+11. **Round 11 (fewer pages up front, November 19, 2026):** the Welcome page, the Woman Beyond Mom pointer and "Where to spend, where to save" came out.
 
 ## Please check
 
@@ -32,6 +33,20 @@ This guide has had ten rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 11: the Welcome page and two sections removed
+
+You asked me to remove the Welcome page, then the Woman Beyond Mom line and "Where to spend, where to save" at the end of your story. The guide is now 39 pages, and your story ends on your signature.
+
+### Removed
+
+- **The Welcome page** (after the cover): "You don't need 97 products. You need the right few."; "This is my little golden makeup bag: quick wins, short how-tos, my pro tips and my top three picks for everything, from everyday faces to weddings."; and the "How this guide handles facts" box. The Sources page already explains the source numbers and the "per the page" product details, so nothing from the box is lost.
+- "For more on making getting ready a daily habit, see Chapter 6 of my companion workbook, The Woman Beyond Mom."
+- "Where to spend, where to save", both cards: Spend ("Foundation first. It lets the rest of your makeup stay put. Good tools. My last blow dryer was $100 and lasted seven years. Regular haircuts. They keep your hair easy to style.") and Save ("Not everything has to be expensive. Some of my favorite picks are drugstore buys, like L'Oréal Voluminous mascara, the e.l.f. Brow Lift and NYX Butter Gloss. Look for the “Drugstore” tag."). The "Drugstore" tags on the product picks stay.
+
+### Moved, not removed
+
+Two lines from the Welcome page's small print weren't anywhere else, so they now sit in "Disclosure and copyright" on the About page at the back: "This guide is not medical advice. If you have a skin or scalp condition, allergies, or a reaction to any product, stop using it and talk with your doctor or a dermatologist." and "© 2026 Jaime McLaughlin, Modern Mom HQ. For personal use. Please do not share or resell. A new edition of my original beauty guide." The affiliate-link note and the no-sharing rule were already there.
 
 ## Round 10: a new cover photo and a simpler timeline
 
