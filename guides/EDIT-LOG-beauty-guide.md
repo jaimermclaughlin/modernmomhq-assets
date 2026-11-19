@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had twelve rounds of work:
+This guide has had thirteen rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -14,6 +14,7 @@ This guide has had twelve rounds of work:
 10. **Round 10 (new cover photo and a simpler timeline, November 19, 2026):** a new cover photo, and the My Story timeline simplified because the polaroid version felt chaotic.
 11. **Round 11 (fewer pages up front, November 19, 2026):** the Welcome page, the Woman Beyond Mom pointer and "Where to spend, where to save" came out.
 12. **Round 12 (a ShopMy page, November 19, 2026):** a new "Shop My Picks" page with a screenshot of your ShopMy page and a QR code.
+13. **Round 13 (a makeup cover photo, November 19, 2026):** the cover photo is now a makeup flat lay instead of a portrait.
 
 ## Please check
 
@@ -35,6 +36,12 @@ This guide has had twelve rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 13: a makeup photo on the cover
+
+You asked for a makeup photo on the cover. It is now LaurenJPhotography-5882: a hand holding a tube of liquid highlighter, with blush, bronzer, a highlighter compact and makeup brushes around it. The original is square (1600 by 1600), so it is cropped through the middle to the cover's wide shape (1600 by 997 pixels), the sharpest of the makeup options. It is saved as guides/img/beauty/cover-makeup.jpg; the portrait cover file (5195) was removed from the guide folder, and the original is still in your photo folder.
+
+Other makeup photos that crop well for the cover: 5452 (lip primer, lipstick and gloss with swatches) and 5676 (four foundations in a row with swatches). Your chapter 7 title page uses a similar flat lay (5870), but without the hand and the tube.
 
 ## Round 12: a page about your ShopMy
 
