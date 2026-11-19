@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had eleven rounds of work:
+This guide has had twelve rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -13,9 +13,11 @@ This guide has had eleven rounds of work:
 9. **Round 9 (your story, retold as a timeline, November 19, 2026):** your story is now an emotional timeline in the style of the "our story" design you sent, built from your notes, your Substack and your earlier writing.
 10. **Round 10 (new cover photo and a simpler timeline, November 19, 2026):** a new cover photo, and the My Story timeline simplified because the polaroid version felt chaotic.
 11. **Round 11 (fewer pages up front, November 19, 2026):** the Welcome page, the Woman Beyond Mom pointer and "Where to spend, where to save" came out.
+12. **Round 12 (a ShopMy page, November 19, 2026):** a new "Shop My Picks" page with a screenshot of your ShopMy page and a QR code.
 
 ## Please check
 
+- **Test the QR code.** On the Shop My Picks page, scan the code with your phone's camera and make sure it opens your ShopMy page. I checked that the printed code matches shopmy.us/shop/jmclaughlin, but I couldn't test it with a real camera.
 - **Your story (right after the Contents).** Please read the three My Story pages closely. Every line is from your notes, your Substack or your earlier writing, except the few connecting lines listed in Round 9 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
 - **Studio photo.** You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox. Send your favorite in a chat message and I'll put it next to 2021 in My Story, the way your 2019 guide cover sits next to 2018 to 2023. Also, is the "Today" photo (LaurenJPhotography-5268) recent?
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
@@ -33,6 +35,17 @@ This guide has had eleven rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 12: a page about your ShopMy
+
+You asked for a page about ShopMy with a screenshot: what it is, that all the products are linked, and that it will have your most up-to-date products, especially newly released ones you find.
+
+- **Where:** right after Start Here, before Chapter 1, and in the Contents as "Shop My Picks: Every product, linked and up to date". The guide is now 40 pages.
+- **Headline:** "Every product, one tap away." Intro: "Every product in this guide is linked on my ShopMy page, and that's where you'll always find my newest favorites."
+- **Screenshot:** the top of your "My Current Makeup Bag" collection (shopmy.us/shop/collections/8307954), taken on November 19, 2026, in a simple browser frame. It shows your title, your description, "15 products", ShopMy's affiliate note and the first row of products. It's cropped above the second row because three product photos there are hosted by Sephora, which blocks my test browser, so they showed as broken images in the screenshot (they load normally for shoppers).
+- **Three cards:** "What it is" (ShopMy is where you save every product you recommend, in collections; tap a product to go to the store and buy it), "Every pick is linked" (the "Shop these on ShopMy" links under your picks open that exact collection) and "Always up to date" (a guide can't change once it's finished, but your ShopMy page can; new favorites and newly released products go there; if something is sold out or discontinued, check ShopMy for your latest pick).
+- **Shop everything box:** shopmy.us/shop/jmclaughlin as a tappable link, a QR code for the same address, and your affiliate note ("Some links are affiliate links. If you buy through one, I earn a portion of the sale at no extra cost to you." from your About page disclosure).
+- All of the wording on this page is mine, written from your request; the facts in it come from your ShopMy page itself.
 
 ## Round 11: the Welcome page and two sections removed
 

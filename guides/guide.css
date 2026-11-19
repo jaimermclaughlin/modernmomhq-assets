@@ -356,3 +356,16 @@ img.starthere{display:block;flex:0 0 1.8in;width:1.8in;height:auto}
 .qw .tl-yr img.tl-ph.me{object-position:center 20%}
 .qw .tl-q{margin:28pt .6in 0}
 .qw .tl-q p{font-size:19pt}
+.qw .shotframe{margin:12pt 0 4pt;border:1px solid var(--line);border-radius:8pt;overflow:hidden;background:#fff}
+.qw .shotframe .bar{display:flex;align-items:center;gap:4pt;height:18pt;padding:0 9pt;background:var(--ivory);border-bottom:1px solid var(--line)}
+.qw .shotframe .bar i{display:block;width:6pt;height:6pt;border-radius:50%;background:var(--oat)}
+.qw .shotframe .bar span{margin-left:10pt;font-size:7pt;letter-spacing:.04em;color:var(--muted)}
+.qw .shotframe img{display:block;width:100%}
+.qw p.shotcap{font-size:7.5pt;color:var(--muted);margin:0 0 10pt;text-align:right}
+.qw .shopbox{display:flex;align-items:center;justify-content:space-between;gap:18pt;background:var(--ivory-2);border-radius:10pt;padding:12pt 16pt;margin:12pt 0 8pt}
+.qw .shopbox p{margin:0}
+.qw .shopbox p.sb-l{font-size:8pt;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--cherry);margin-bottom:3pt}
+.qw .shopbox p.sb-link{font-family:var(--serif);font-size:22pt;line-height:1.15;margin-bottom:4pt}
+.qw .shopbox p.sb-link a{color:var(--wine);text-decoration:none}
+.qw .shopbox img.qr{flex:0 0 1in;width:1in;height:1in;display:block}
+.qw .shopbox p.sb-aff{margin-top:5pt;font-size:7.6pt}
