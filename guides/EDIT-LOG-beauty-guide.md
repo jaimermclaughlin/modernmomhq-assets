@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had thirteen rounds of work:
+This guide has had fourteen rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -15,12 +15,12 @@ This guide has had thirteen rounds of work:
 11. **Round 11 (fewer pages up front, November 19, 2026):** the Welcome page, the Woman Beyond Mom pointer and "Where to spend, where to save" came out.
 12. **Round 12 (a ShopMy page, November 19, 2026):** a new "Shop My Picks" page with a screenshot of your ShopMy page and a QR code.
 13. **Round 13 (a makeup cover photo, November 19, 2026):** the cover photo is now a makeup flat lay instead of a portrait.
+14. **Round 14 (your own My Story text, November 19, 2026):** My Story is now the text you wrote, word for word, as simple letter-style pages.
 
 ## Please check
 
 - **Test the QR code.** On the Shop My Picks page, scan the code with your phone's camera and make sure it opens your ShopMy page. I checked that the printed code matches shopmy.us/shop/jmclaughlin, but I couldn't test it with a real camera.
-- **Your story (right after the Contents).** Please read the three My Story pages closely. Every line is from your notes, your Substack or your earlier writing, except the few connecting lines listed in Round 9 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
-- **Studio photo.** You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox. Send your favorite in a chat message and I'll put it next to 2021 in My Story, the way your 2019 guide cover sits next to 2018 to 2023. Also, is the "Today" photo (LaurenJPhotography-5268) recent?
+- **Studio photo.** You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox. If you'd like one next to the studio paragraph in My Story, send your favorite in a chat message.
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
 - **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
 - **Photos not in this upload.** The concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
@@ -36,6 +36,27 @@ This guide has had thirteen rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 14: your own My Story text
+
+You rewrote the intro yourself and asked me to use it, as simple story pages (you chose this over keeping the timeline look). My Story is now your seven paragraphs, word for word, with your italics (What do I buy, and how do I use it?; The Ultimate Beauty Guide; The Confident Mom Method) and your signature, "Jaime". I checked the PDF text against what you sent: all seven paragraphs match exactly.
+
+### The layout
+
+- Two pages. Page 1: the "My story." title and your first four paragraphs, with your 2019 guide cover beside "I started sharing what I knew on Instagram". Page 2 starts at "Then in 2023, I woke up one morning", with your smiling portrait (5268) beside "I enjoy getting ready again".
+- The text is a little larger than the rest of the guide so it reads like a letter. The guide is 39 pages.
+- The Contents line for My Story now reads "How I got here, and what's in this guide" (was "Why getting ready matters so much to me").
+
+### Removed, because it isn't in your new text
+
+- The timeline (years, line and dots) and its headings: Where it started, Hundreds of faces, Baby number four, Starting over online, My own studio, Bell's palsy, Getting ready again.
+- The opening line "Hi, I'm Jaime. One morning, I woke up and half of my face was paralyzed. To understand why that changed everything, and why getting ready matters so much to me, I have to start at the beginning."
+- The statement lines "Getting ready was my career. Makeup was my career. Hair was my career. And my face was my biggest advertisement." and "The one thing that makes me feel better, every single day, is getting ready."
+- The pull quotes "I had to stop. So I did.", "When I couldn't produce, I didn't know where my worth lived." and "Beauty isn't fluffy. For me, it is tied to how I feel, mentally and emotionally."
+- The "Why it matters for you, too" box.
+- The closing "That's why I made this guide. It's my little golden makeup bag: the quick wins, the pro tips and the products I recommend. I hope it gives you that boost, too." and "xx, Jaime".
+
+New facts that come from your text: Bell's palsy in 2023; your fourth baby in 2017; the studio in 2021; your Instagram questions leading to the first guide and then The Confident Mom Method. Everything in Rounds 9 to 13 that came from your Substack and earlier writing is no longer in My Story unless your new text says it.
 
 ## Round 13: a makeup photo on the cover
 
