@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had fifteen rounds of work:
+This guide has had sixteen rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -17,10 +17,11 @@ This guide has had fifteen rounds of work:
 13. **Round 13 (a makeup cover photo, November 19, 2026):** the cover photo is now a makeup flat lay instead of a portrait.
 14. **Round 14 (your own My Story text, November 19, 2026):** My Story is now the text you wrote, word for word, as simple letter-style pages.
 15. **Round 15 (your skin care routine, tretinoin and Dysport, November 19, 2026):** Chapter 1 now has your cleanse, treat, moisturize routine, your tretinoin recommendation with its benefits, and your Dysport experience.
+16. **Round 16 (skin care picks, November 19, 2026):** Paula's Choice came out, CeraVe stays, and the cleanser pick is waiting for the Versed cleansing balm to be added to your ShopMy.
 
 ## Please check
 
-- **Add an SPF moisturizer to your ShopMy Skincare collection.** Your routine says to use an SPF moisturizer during the day, but your Skincare collection doesn't have one yet. Add your favorite and I'll make it a pick. Tretinoin is prescription only, so it isn't a pick.
+- **Add two products to your ShopMy Skincare collection.** (1) The Versed cleansing balm: you want it as your cleanser pick, but it isn't on your ShopMy yet (I checked your Skincare collection and Latest Finds on November 19, 2026), and I can't add products to your ShopMy account for you. Once it's there, tell me and I'll put it in with its ShopMy photo and link. (2) An SPF moisturizer for daytime, which your routine recommends. Tretinoin is prescription only, so it isn't a pick.
 - **Test the QR code.** On the Shop My Picks page, scan the code with your phone's camera and make sure it opens your ShopMy page. I checked that the printed code matches shopmy.us/shop/jmclaughlin, but I couldn't test it with a real camera.
 - **Studio photo.** You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox. If you'd like one next to the studio paragraph in My Story, send your favorite in a chat message.
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
@@ -38,6 +39,16 @@ This guide has had fifteen rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 16: skin care picks
+
+You asked me to remove Paula's Choice, use the Versed cleansing balm as the cleanser (and add it to your ShopMy), and keep CeraVe as the moisturizer.
+
+- Removed: Paula's Choice Skin Perfecting 2% BHA Liquid Exfoliant (the "Treat" pick).
+- Removed: La Roche-Posay Toleriane Hydrating Gentle Cleanser, since you want the Versed cleansing balm as your cleanser instead.
+- Kept: CeraVe Moisturizing Cream ("Moisturize": "A regular moisturizer for night. During the day, use one with SPF."). It now shows as a single card at normal card width.
+- Not added yet: the Versed cleansing balm. It isn't on your ShopMy (I checked your Skincare collection and Latest Finds), and I can't add products to your ShopMy account, so it needs to be added by you. Every pick in this guide comes from your ShopMy with its ShopMy photo, so I'll add it as soon as it's there.
+- The two removed product photos were deleted from the guide's shopmy photo folder, since nothing uses them now. Paula's Choice is still in your ShopMy Skincare collection; this only changes the guide.
 
 ## Round 15: your skin care routine, tretinoin and Dysport
 
@@ -277,7 +288,7 @@ Each graphic was flattened onto white and saved as a JPEG with no metadata in gu
 
 ### Your picks now, by ShopMy collection
 
-- **Skin care** (Skincare): La Roche-Posay Toleriane Hydrating Gentle Cleanser (Cleanse); Paula’s Choice Skin Perfecting 2% BHA Liquid Exfoliant (Treat); CeraVe Moisturizing Cream (Moisturize).
+- **Skin care** (Skincare): CeraVe Moisturizing Cream (Moisturize).
 - **Foundation** (Foundation): Estée Lauder Double Wear Stay-in-Place Matte Foundation (My #1); MAC Studio Fix Fluid SPF 15 (Any skin type); Makeup By Mario SurrealSkin Liquid Foundation (Radiant finish).
 - **Lighter days** (Foundation): Laura Mercier Tinted Moisturizer Light Revealer SPF 25 (Everyday); IT Cosmetics CC+ Cream SPF 50+ (SPF 50+); L’Oréal Paris Lumi Le Glow Skin Tint (In my bag now).
 - **Concealer** (Concealer): Tarte Creaseless Creamy Concealer (No creasing); NARS Radiant Creamy Concealer (Dewy); Makeup By Mario SurrealSkin Awakening Concealer (In my bag now).
