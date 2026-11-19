@@ -15,9 +15,7 @@ This guide has had nine rounds of work:
 ## Please check
 
 - **Your story (right after the Contents).** Please read the three My Story pages closely. Every line is from your notes, your Substack or your earlier writing, except the few connecting lines listed in Round 9 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
-- **Two years or three?** Your notes say you spent two years trying to heal from Bell's palsy. Your Substack post "The Work I Stopped Teaching" (March 9, 2026) says three years. The guide says "years" for now. Tell me which number to use.
-- **Personal details from your Substack and workbook.** The story now includes being a single mom with your first two babies, doing a wedding four days after giving birth, and "I am disgusting, and I am literally ruined" after your third baby. Please confirm you want those in the beauty guide.
-- **Photos for the timeline.** Only two polaroids are real images: your 2019 guide cover and your photo for "Today". The others are designed cards (1st, 100s, No. 4, the studio, one morning) so no photo claims a year it isn't from. Send real photos for any moment (your early weddings, baby number four, the studio) and I'll put them in. Also, is the "Today" photo (LaurenJPhotography-5268) recent?
+- **Photos for the timeline.** Only two polaroids are real images: your 2019 guide cover and your photo for "Today". The others are designed cards (1st, 100s, No. 4, the studio, one morning) so no photo claims a year it isn't from. You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox, so please send your one or two favorites in a chat message. Send real photos for any other moment (your early weddings, baby number four) the same way. Also, is the "Today" photo (LaurenJPhotography-5268) recent?
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
 - **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
 - **Photos not in this upload.** The concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
@@ -63,7 +61,9 @@ You said the story felt too chronological, not emotional, and sent an "our story
 - "And these days, it feels good again." (leading into your "Coming Back to Life" line)
 - "And remember," before "my face was my biggest advertisement."
 - Headings: Where it started; Hundreds of faces; Baby number four; Starting over online; My own studio; Bell's palsy; Getting ready again. Polaroid label: "The turning point".
-- "I spent years trying to heal it": your notes say two years, your Substack says three (see Please check).
+- "I spent a couple of years trying to heal it": your notes said two years and your Substack said three; you chose "a couple years".
+
+You confirmed the personal details can stay: being a single mom with your first two babies, the wedding four days after giving birth, and "I am disgusting, and I am literally ruined" after your third baby.
 
 Removed from the Round 7 version: the timeline list beside your photo, the short intro ("Getting ready was my career for a long time..."), and "That something became everything you see above." Your closing, the "Why it matters for you, too" box, your signature and "Where to spend, where to save" are unchanged.
 
