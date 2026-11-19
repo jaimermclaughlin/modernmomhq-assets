@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had seven rounds of work:
+This guide has had eight rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -9,10 +9,11 @@ This guide has had seven rounds of work:
 5. **Round 5 (your ShopMy picks, November 18, 2026):** every product recommendation now comes from your ShopMy "The Beauty Guide" collections, each with its ShopMy product photo and a "Shop these on ShopMy" link. Your current makeup bag is now on the everyday face page with photos, and the skin and hair pages have picks from your Skincare and Hair Products collections.
 6. **Round 6 (your graphics, November 18 and 19, 2026):** your illustrated graphics are going onto their pages as you send them.
 7. **Round 7 (your story, November 19, 2026):** a new opening, written from the story you sent, replaces the old "Hi, I'm Jaime" intro.
+8. **Round 8 (the opening reordered, November 19, 2026):** your story now comes right after the Contents, there is no "Before You Start" page, and Chapter 1 is renamed "Skin First".
 
 ## Please check
 
-- **Your story (Chapter 1).** Please read the two new opening pages closely. Everything in them is from your notes or your own earlier writing, except the few connecting lines listed in Round 7 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
+- **Your story (right after the Contents).** Please read the two new opening pages closely. Everything in them is from your notes or your own earlier writing, except the few connecting lines listed in Round 7 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
 - **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
 - **Photos not in this upload.** The concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
@@ -28,6 +29,29 @@ This guide has had seven rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 8: the opening, reordered
+
+You didn't like the "There is another way" angle or title, didn't want a "Before You Start" page, and wanted the whole intro together right after the table of contents. You said to keep the chapters but rename and reorder them, with your story before Start Here.
+
+### New order
+
+- Cover, then the "Welcome" page (the old "Before you start" label; the page itself is the same), then Contents.
+- My Story: "Hi, I'm Jaime" and "Why getting ready matters". No wording changes. The small label on both pages is now "My Story" instead of "Before You Start".
+- Start Here (how every page works).
+- Chapter 1, renamed "Skin First", then "Start with your skin". Chapters 2 to 8 keep their names, numbers and order.
+- The guide is still 39 pages. The Contents page has a new "My Story" line, and the PDF bookmarks include it.
+
+### Chapter 1 title page
+
+- Name: "Before You Start" is now "Skin First".
+- Headline: "There is another way." is now "Great makeup starts with your skin." (my wording, based on your lines "Makeup sits on top of your skin" and "Your foundation will only take you so far").
+- Intro line: "A little why before any product: why getting ready is worth your time, where your money matters most, and the skin care that makes everything else work." is now "The skin care that makes everything else work, and my picks to get you there." (my wording, shortened from the old line).
+- "In this chapter" now lists what is on the skin page: Four steps for ready skin; What the experts say about sunscreen; My skin care picks.
+- Contents line for Chapter 1: "Ready skin, and my skin care picks" (was "Hi, why getting ready matters, and your skin").
+- Your photo with the brushes and "Makeup sits on top of your skin. Start there." are unchanged.
+
+"Where to spend, where to save" stays at the bottom of the "Why getting ready matters" page. I tried it on the Start Here page, but it didn't fit there without a page of its own.
 
 ## Round 7: your story, as the new opening
 
