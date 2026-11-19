@@ -361,3 +361,5 @@ img.starthere{display:block;flex:0 0 1.8in;width:1.8in;height:auto}
 .qw p.story-sig{font-size:28pt;margin:6pt 0 0}
 .qw.story > p:not(.eyebrow):not(.story-sig){font-size:10.9pt;line-height:1.65;margin:0 0 10pt}
 .qw.story p.story-pb{break-before:page;margin-top:0}
+.qw .protip ul.benefits{margin:4pt 0 0;padding-left:14pt}
+.qw .protip ul.benefits li{margin:0 0 3pt}

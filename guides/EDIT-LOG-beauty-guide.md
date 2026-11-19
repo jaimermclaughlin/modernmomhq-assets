@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had fourteen rounds of work:
+This guide has had fifteen rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -16,9 +16,11 @@ This guide has had fourteen rounds of work:
 12. **Round 12 (a ShopMy page, November 19, 2026):** a new "Shop My Picks" page with a screenshot of your ShopMy page and a QR code.
 13. **Round 13 (a makeup cover photo, November 19, 2026):** the cover photo is now a makeup flat lay instead of a portrait.
 14. **Round 14 (your own My Story text, November 19, 2026):** My Story is now the text you wrote, word for word, as simple letter-style pages.
+15. **Round 15 (your skin care routine, tretinoin and Dysport, November 19, 2026):** Chapter 1 now has your cleanse, treat, moisturize routine, your tretinoin recommendation with its benefits, and your Dysport experience.
 
 ## Please check
 
+- **Add an SPF moisturizer to your ShopMy Skincare collection.** Your routine says to use an SPF moisturizer during the day, but your Skincare collection doesn't have one yet. Add your favorite and I'll make it a pick. Tretinoin is prescription only, so it isn't a pick.
 - **Test the QR code.** On the Shop My Picks page, scan the code with your phone's camera and make sure it opens your ShopMy page. I checked that the printed code matches shopmy.us/shop/jmclaughlin, but I couldn't test it with a real camera.
 - **Studio photo.** You shared your studio photos as a Dropbox folder (Professional Studio Chelsea, 100 photos), but this session can't download from Dropbox. If you'd like one next to the studio paragraph in My Story, send your favorite in a chat message.
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
@@ -36,6 +38,39 @@ This guide has had fourteen rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 15: your skin care routine, tretinoin and Dysport
+
+You asked me to rewrite "Start with your skin" around your own advice (a minimal cleanser and moisturizer plus a treatment for your skin's needs; cleanse, treat, moisturize; a regular moisturizer at night and an SPF moisturizer during the day), to talk about the benefits of tretinoin, to add your Dysport experience, and to drop all the other information. Chapter 1 is now its title page plus two pages, and the guide is 40 pages.
+
+### Page 1: Start with your skin
+
+- Intro, in your words: "A lot of times, people overcomplicate their skin care routines. My suggestion is to use a minimal cleanser and moisturizer, and add in a treatment depending on your skin's needs."
+- Quick win: "Cleanse, treat, moisturize. In that order." Steps: cleanse with a minimal, gentle cleanser; treat with one treatment for what your skin needs; moisturize with a regular moisturizer at night and an SPF moisturizer during the day. Your bare-face graphic stays beside the steps.
+- "My favorite treatment: tretinoin" box: "Tretinoin is the best product ever, and it has so many benefits." (your words), then the benefits, each with its source: it unclogs pores and treats acne, and helps prevent and reduce acne scars (AAD, MedlinePlus); it speeds up skin cell turnover and boosts collagen, which improves skin tone and reduces fine lines and wrinkles (AAD); dermatologists say retinoids like tretinoin are a good option for mild acne, mild uneven pigmentation and mild fine lines and wrinkles (AAD); the FDA approved it as an acne treatment in 1971 (AAD).
+- "What the experts say": prescription only, so ask a board-certified dermatologist; start slowly, every other night, use it only at night and wear sunscreen every day; retinoids should not be used during pregnancy (AAD). It can cause dryness, peeling or redness; acne can look worse for the first 7 to 10 days; fine wrinkles can take 3 to 6 months to improve; don't use other topical treatments like benzoyl peroxide or salicylic acid with it unless your doctor says to (MedlinePlus).
+
+### Page 2: Just skin care and Dysport
+
+- Your words, lightly copyedited (capital letters, "3 to 4 months" instead of "3-4"): "I personally have been getting Dysport injections since I was about 27. I always get WAY less than suggested, and it's worked so well. I still want facial movement, just not as much." Then "My results: Today I'm 38, I have no wrinkles, and my skin is healthy." and "That's all I've done. I don't get fillers or any other treatments. Just skin care and Dysport every 3 to 4 months."
+- "What the experts say" (MedlinePlus): Dysport is a prescription injection used to temporarily smooth frown lines (the wrinkles between your eyebrows); a doctor injects it, and you may get more every 3 to 4 months depending on how long the effects last; your doctor should examine you first because it may not smooth everyone's wrinkles; it has serious risks, including the medicine spreading from where it was injected; tell your doctor if you're pregnant, planning to become pregnant or breastfeeding.
+- My skin care picks moved here, in your order: Cleanse (La Roche-Posay Toleriane Hydrating Gentle Cleanser, note unchanged), Treat (Paula's Choice 2% BHA Liquid Exfoliant, was "Exfoliate"; its note now adds "Not with tretinoin unless your doctor says so.", because it is a salicylic acid exfoliant and MedlinePlus says not to use salicylic acid with tretinoin unless your doctor directs), Moisturize (CeraVe Moisturizing Cream, note now "A regular moisturizer for night. During the day, use one with SPF." instead of "Moisturize, then let it soak in for a few minutes before foundation.").
+
+### Removed (the other information)
+
+- The old intro: "Makeup sits on top of your skin. When your skin is ready, everything goes on smoother and lasts longer." (The chapter title page still says "Makeup sits on top of your skin. Start there.")
+- The old quick win "Moisturize, then wait a few minutes before foundation." and the steps: moisturize and let it soak in; add sunscreen after moisturizer and before makeup; exfoliate gently; take it all off at night, eye makeup included.
+- The pro tip "Your foundation will only take you so far. If your skin is in bad shape, no foundation will give you the coverage you want. Skin care is important!"
+- The AAD paragraph on sunscreen (SPF 30 or higher, about 1 teaspoon for your face, reapplied every 2 hours), scrubbing and removing makeup at night. Those two AAD sources (How to apply sunscreen; Habits to stop) dropped out of the Sources list because nothing cites them now.
+
+### Sources added (read on November 19, 2026)
+
+- Retinoid or retinol? American Academy of Dermatology, last updated May 25, 2021. https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging/retinoid-retinol
+- Tretinoin topical. MedlinePlus, U.S. National Library of Medicine, last revised December 15, 2025. https://medlineplus.gov/druginfo/meds/a682437.html
+- AbobotulinumtoxinA injection (Dysport). MedlinePlus, U.S. National Library of Medicine, last revised September 15, 2023. https://medlineplus.gov/druginfo/meds/a609035.html
+- To read them, I added www.aad.org and medlineplus.gov to this project's allowed network list, with your approval.
+
+Also updated: the Chapter 1 "In this chapter" list (Cleanse, treat, moisturize; Why I love tretinoin; Just skin care and Dysport; My skin care picks), its Contents line ("Cleanse, treat, moisturize, and what I do") and the Sources page note on when sources were checked.
 
 ## Round 14: your own My Story text
 
@@ -242,7 +277,7 @@ Each graphic was flattened onto white and saved as a JPEG with no metadata in gu
 
 ### Your picks now, by ShopMy collection
 
-- **Skin care** (Skincare): La Roche-Posay Toleriane Hydrating Gentle Cleanser (Cleanse); Paula’s Choice Skin Perfecting 2% BHA Liquid Exfoliant (Exfoliate); CeraVe Moisturizing Cream (Moisturize).
+- **Skin care** (Skincare): La Roche-Posay Toleriane Hydrating Gentle Cleanser (Cleanse); Paula’s Choice Skin Perfecting 2% BHA Liquid Exfoliant (Treat); CeraVe Moisturizing Cream (Moisturize).
 - **Foundation** (Foundation): Estée Lauder Double Wear Stay-in-Place Matte Foundation (My #1); MAC Studio Fix Fluid SPF 15 (Any skin type); Makeup By Mario SurrealSkin Liquid Foundation (Radiant finish).
 - **Lighter days** (Foundation): Laura Mercier Tinted Moisturizer Light Revealer SPF 25 (Everyday); IT Cosmetics CC+ Cream SPF 50+ (SPF 50+); L’Oréal Paris Lumi Le Glow Skin Tint (In my bag now).
 - **Concealer** (Concealer): Tarte Creaseless Creamy Concealer (No creasing); NARS Radiant Creamy Concealer (Dewy); Makeup By Mario SurrealSkin Awakening Concealer (In my bag now).
