@@ -1,6 +1,6 @@
 # Edit log: The Ultimate Beauty Guide 2027
 
-This guide has had six rounds of work:
+This guide has had seven rounds of work:
 
 1. **Round 1 (rebuilt from your canvas):** the guide was rebuilt from your design canvas (34 pages, https://claude.ai/artifact/7KB1vprEFT4vDasRBCB5nH) in the same style and build system as Master Your Motherhood and The Woman Beyond Mom. The canvas itself was not changed, so it is still there as your draft.
 2. **Round 2 (your 2019 writing restored, November 18, 2026):** your original guide, 2019_Beauty_Guide_Update (77 pages), was compared sentence by sentence with the guide, and your full 2019 writing is back, copyedited, with your current product picks.
@@ -8,9 +8,11 @@ This guide has had six rounds of work:
 4. **Round 4 (quick-win redesign, November 18, 2026):** you asked for a guide that is high value, simpler, easier on the eyes, with quick wins and pro advice in every section and much less copy. Every topic is now one page: a quick win, a few short steps, one pro tip and your top three picks. About 13,400 words became about 6,300, and 51 pages became 38.
 5. **Round 5 (your ShopMy picks, November 18, 2026):** every product recommendation now comes from your ShopMy "The Beauty Guide" collections, each with its ShopMy product photo and a "Shop these on ShopMy" link. Your current makeup bag is now on the everyday face page with photos, and the skin and hair pages have picks from your Skincare and Hair Products collections.
 6. **Round 6 (your graphics, November 18 and 19, 2026):** your illustrated graphics are going onto their pages as you send them.
+7. **Round 7 (your story, November 19, 2026):** a new opening, written from the story you sent, replaces the old "Hi, I'm Jaime" intro.
 
 ## Please check
 
+- **Your story (Chapter 1).** Please read the two new opening pages closely. Everything in them is from your notes or your own earlier writing, except the few connecting lines listed in Round 7 below. Tell me anything you want changed, added or left out, especially in the Bell's palsy part.
 - **Photo credit.** All the new photos are from Lauren J Photography. If your agreement with the photographer asks for a credit, tell me the wording and I'll add it (for example, on the About page).
 - **Photo sharpness.** The photos you uploaded are 1600 pixels on the long side, which looks good on screens. Most chapter photos come out at about 150 pixels per inch across the page (print usually wants about 300), so a printed copy would look a little soft. The three swapped photos are sharp (over 440 pixels per inch). If Lauren J can send the full-size files, I can swap them in.
 - **Photos not in this upload.** The concealer, eyeshadow and brow how-to photos, and the brow-mapping photos are from a different shoot, so the canvas versions stay. Your 2019 guide also had a concealer "correct / incorrect" photo and a cheek placement photo; send those originals if you have them and I'll add them.
@@ -26,6 +28,42 @@ This guide has had six rounds of work:
 - **Removed from the course pages:** "Watch videos in Module 5", the Master Your Hair + Makeup Routine course, the TheMacHouseBlog.com skincare quiz, and the Beautycounter Flawless in Five plug. Add any back if they are still current.
 - **Faith wording:** "or God's potential for me and my life" (HHM p. 88) came out, following the no-faith rule from The Woman Beyond Mom. Tell me if this guide should be different.
 - **Two sources are only a site name:** the canvas recorded Maybelline (maybelline.co.in) and Birchbox UK (birchbox.co.uk) for brow mapping without the page address.
+
+## Round 7: your story, as the new opening
+
+You asked me to replace the old intros with your story and expand where it matters. Chapter 1 now opens with two pages, and the guide is 39 pages (one more than before).
+
+### What changed
+
+- **"Hi, I'm Jaime" page:** a short intro, then a timeline (2006 weddings; 2006 to 2017 hundreds of weddings, events and red carpets; 2017 your fourth baby and burnout; 2018 Instagram and The Ultimate Beauty Guide; 2018 to 2023 sharing online, webinars and The Confident Mom Method; 2021 your studio) beside your photo. Then the burnout, the studio and shutting things down, ending on the morning you woke up with half your face paralyzed, Bell's palsy, two years of trying to heal it, and surgery.
+- **"Why getting ready matters" page:** getting ready was your career and your face was your biggest advertisement; losing your identity after Bell's palsy; working your way back to being seen; and getting ready as the tool that helps you through hard times. It ends with your signature.
+- **Where to spend, where to save** moved to the bottom of the "Why getting ready matters" page, unchanged.
+- **Chapter 1 title page:** the "In this chapter" list is in page order now (Where to spend comes before Start with your skin). The headline "There is another way." is unchanged.
+
+### Removed (the old intro)
+
+- "If you're a mom, chances are you don't have time to stroll the makeup counters in peace, and the budget is going to diapers. Or you're just overwhelmed by the zillion YouTube videos and the 97,000 contour kits. Friend, there is another way."
+- "Have you ever had the lady at the department store counter match your skin “perfectly,” only to walk outside with an orange face? You're not alone. After 20 years in the beauty industry, I get asked the same questions over and over: what do I buy, and how do I use it?"
+- "My kit is overflowing, but 90% of the time I use a teeny portion of it. This guide is that portion: my little golden makeup bag. These are the products I never run out of, that I recommend to every client, and that have glammed faces from five-year-old flower girls to seasoned grandmothers."
+- "Want the whole story? It's in Chapter 6 of my companion workbook, The Woman Beyond Mom." (Now: "For more on making getting ready a daily habit, see Chapter 6 of my companion workbook, The Woman Beyond Mom." That chapter has your "Why getting ready actually matters" section.)
+
+### Kept from your own earlier writing
+
+- "From five-year-old flower girls to seasoned grandmothers" and "my little golden makeup bag" (your 2019 intro).
+- The pull quote "Beauty isn't fluffy. For me, it is tied to how I feel, mentally and emotionally." (your "Why getting ready actually matters" section, in Chapter 6 of The Woman Beyond Mom).
+- The "Why it matters for you, too" box is the same text as the old "Why getting ready matters" box, word for word. Only its label changed.
+
+### My wording (please check)
+
+Everything else follows your notes closely, lightly edited. These lines are mine, written to connect the parts:
+
+- "Getting ready was my career for a long time. It's also the one thing that has carried me through the hardest seasons of my life. So before we talk products, here's my story."
+- "That something became everything you see above." (pointing to the timeline)
+- "So" at the start of "So after Bell's palsy, I lost my identity."
+- "That's why I made this guide. It's my little golden makeup bag: the quick wins, the pro tips and the products I recommend. I hope it gives you that boost, too."
+- Timeline wording: "My fourth baby, and total burnout. I stopped."
+
+Nothing medical was added about Bell's palsy. The page only says what you told me happened to you.
 
 ## Round 6: your graphics
 

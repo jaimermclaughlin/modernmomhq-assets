@@ -339,3 +339,13 @@ img.starthere{display:block;flex:0 0 1.8in;width:1.8in;height:auto}
 .qw .split img.side.g.tri.lips{width:1.1in;height:1.47in}
 .qw .split img.side.g.tri.hairwash{width:1.35in;height:1.8in}
 .qw .split img.side.g.tri.sponge{width:1.3in;height:1.73in}
+.qw ol.timeline{list-style:none;padding:0;margin:0}
+.qw ol.timeline li{display:flex;gap:10pt;align-items:baseline;padding:5pt 0;border-top:1px solid var(--line);margin:0;font-size:9.8pt;line-height:1.4}
+.qw ol.timeline li:last-child{border-bottom:1px solid var(--line)}
+.qw ol.timeline .yr{flex:0 0 1.05in;font-family:var(--serif);font-size:14pt;line-height:1.1;color:var(--cherry)}
+.qw .story-top{margin:10pt 0 14pt}
+.qw .story-top img.side{width:2.2in;height:2.95in}
+.qw p.turn{font-family:var(--serif);font-size:21pt;line-height:1.2;margin:20pt 0 8pt;color:var(--wine)}
+.qw p.turn::before{content:"";display:block;border-top:1px solid var(--line);margin-bottom:14pt}
+.qw p.statement{font-family:var(--serif);font-size:17pt;line-height:1.25;margin:12pt 0 8pt;color:var(--ink)}
+.qw p.statement em{color:var(--cherry)}
